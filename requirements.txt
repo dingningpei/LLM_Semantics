@@ -4,3 +4,4 @@ pydot
 git+https://github.com/huggingface/transformers
 gguf
 openai
+yaml
