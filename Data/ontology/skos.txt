@@ -1,0 +1,43 @@
+Nodes:
+skos:Collection
+skos:Concept
+skos:ConceptScheme
+skos:OrderedCollection -> skos:Collection
+
+Properties:
+skos:altLabel -> rdfs:label
+dct:issued
+skos:hiddenLabel -> rdfs:label
+skos:prefLabel -> rdfs:label
+skos:broadMatch -> skos:broader,skos:mappingRelation
+skos:broader -> skos:broaderTransitive
+skos:broaderTransitive -> skos:semanticRelation
+skos:changeNote -> skos:note
+skos:closeMatch -> skos:mappingRelation
+skos:definition -> skos:note
+skos:editorialNote -> skos:note
+skos:exactMatch -> skos:closeMatch
+skos:example -> skos:note
+skos:hasTopConcept
+skos:historyNote -> skos:note
+skos:inScheme
+skos:mappingRelation
+skos:member
+skos:memberList
+skos:narrowMatch -> skos:mappingRelation,skos:narrower
+skos:narrower -> skos;narrowerTransitive
+skos:narrowerTransitive -> skos:semanticRelation
+skos:note
+skos:related -> skos:semanticRelation
+skos:relatedMatch -> skos:mappingRelation,skos:related
+skos:scopeNote -> skos:note
+skos:semanticRelation
+skos:topConceptOf -> skos:inScheme
+skos:notation
+
+Potential triples:
+<skos:ConceptScheme,skos:hasTopConcept,skos:Concept>
+<skos:Concept,skos:mappingRelation,skos:Concept>
+<skos:OrderedCollection,skos:memberList,rdf:List>
+<skos:Concept,skos:semanticRelation,skos:Concept>
+<skos:Concept,skos:topConceptOf,skos:ConceptScheme>

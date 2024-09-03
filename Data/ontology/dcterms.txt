@@ -1,0 +1,87 @@
+Nodes:
+dcterms:Agent
+dcterms:AgentClass -> rdfs:Class
+dcterms:BibliographicResource
+dcterms:FileFormat -> dcterms:MediaType
+dcterms:Frequency
+dcterms:Jurisdiction -> dcterms:LocationPeriodOrJurisdiction
+dcterms:LicenseDocument -> dcterms:RightsStatement
+dcterms:LinguisticSystem
+dcterms:Location -> dcterms:LocationPeriodOrJurisdiction
+dcterms:LocationPeriodOrJurisdiction
+dcterms:MediaType -> dcterms:MediaTypeOrExtent
+dcterms:MediaTypeOrExtent
+dcterms:MethodOfAccrual
+dcterms:MethodOfInstruction
+dcterms:PeriodOfTime -> dcterms:LocationPeriodOrJurisdiction
+dcterms:PhysicalMedium -> dcterms:MediaType
+dcterms:PhysicalResource
+dcterms:Policy
+dcterms:ProvenanceStatement
+dcterms:RightsStatement
+dcterms:SizeOrDuration -> dcterms:MediaTypeOrExtent
+dcterms:Standard
+
+Properties:
+dcterms:abstract -> dcterms:description
+dcterms:accessRights -> dcterms:rights
+dcterms:accrualMethod
+dcterms:accrualPeriodicity
+dcterms:accrualPolicy
+dcterms:alternative -> dcterms:title
+dcterms:audience
+dcterms:available -> dcterms:date
+dcterms:bibliographicCitation -> dcterms:identifier
+dcterms:conformsTo -> dcterms:relation
+dcterms:contributor
+dcterms:coverage
+dcterms:created -> dcterms:date
+dcterms:creator -> dcterms:contributor
+dcterms:date
+dcterms:dateAccepted -> dcterms:date
+dcterms:dateCopyrighted -> dcterms:date
+dcterms:dateSubmitted -> dcterms:date
+dcterms:description
+dcterms:educationLevel -> dcterms:audience
+dcterms:extent -> dcterms:format
+dcterms:format
+dcterms:hasFormat -> dcterms:relation
+dcterms:hasPart -> dcterms:relation
+dcterms:hasVersion -> dcterms:relation
+dcterms:identifier
+dcterms:instructionalMethod
+dcterms:isFormatOf -> dcterms:relation
+dcterms:isPartOf -> dcterms:relation
+dcterms:isReferencedBy -> dcterms:relation
+dcterms:isReplacedBy -> dcterms:relation
+dcterms:isRequiredBy -> dcterms:relation
+dcterms:issued -> dcterms:date
+dcterms:isVersionOf -> dcterms:relation
+dcterms:language
+dcterms:license -> dcterms:rights
+dcterms:mediator -> dcterms:audience
+dcterms:medium -> dcterms:format    
+dcterms:modified -> dcterms:date
+dcterms:provenance
+dcterms:publisher
+dcterms:references -> dcterms:relation
+dcterms:relation
+dcterms:replaces -> dcterms:relation
+dcterms:requires -> dcterms:relation
+dcterms:rights
+dcterms:rightsHolder
+dcterms:source -> dcterms:relation
+dcterms:spatial -> dcterms:coverage
+dcterms:subject
+dcterms:tableOfContents -> dcterms:description
+dcterms:temporal -> dcterms:coverage
+dcterms:title
+dcterms:type
+dcterms:valid -> dcterms:date
+
+Potential triples:
+<dcmitype:Collection,dcterms:accrualMethod,dcterms:MethodOfAccrual>
+<dcmitype:Collection,dcterms:accrualPeriodicity,dcterms:Frequency>
+<dcmitype:Collection,dcterms:accrualPolicy,dcterms:Policy>
+<dcterms:BibliographicResource,dcterms:bibliographicCitation,rdfs:Literal>
+<dcterms:PhysicalResource,dcterms:medium,dcterms:PhysicalMedium>

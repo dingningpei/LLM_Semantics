@@ -1,0 +1,30 @@
+Nodes:
+rdf:Statement -> rdfs:Resource
+rdf:langString -> rdfs:Literal
+rdf:Alt -> rdfs:Container
+rdf:HTML -> rdfs:Literal
+rdf:nil -> rdf:List
+rdf:List -> rdfs:Resource
+rdf:XMLLiteral -> rdfs:Literal
+rdf:PlainLiteral -> rdfs:Literal
+rdf:Property -> rdfs:Resource
+rdf:Seq -> rdfs:Container
+rdf:Bag -> rdfs:Container
+
+Properties:
+rdf:object
+rdf:predicate
+rdf:value
+rdf:subject
+rdf:first
+rdf:type
+rdf:rest
+
+Potential triples:
+<rdf:Statement,rdf:object,rdfs:Resource>
+<rdf:Statement,rdf:predicate,rdfs:Resource>
+<rdfs:Resource,rdf:value,rdfs:Resource>
+<rdf:Statement, rdf:subject, rdfs:Resource>
+<rdf:List, rdf:first, rdfs:Resource>
+<rdfs:Resource,rdf:type,rdfs:Class>
+<rdf:List,rdf:rest,rdf:List>

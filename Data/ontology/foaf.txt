@@ -1,0 +1,105 @@
+Nodes:
+foaf:OnlineEcommerceAccount -> foaf:OnlineAccount
+foaf:Organization -> foaf:Agent
+foaf:OnlineAccount -> owl:Thing
+foaf:OnlineGamingAccount -> foaf:OnlineAccount
+foaf:Document
+foaf:Agent
+foaf:PersonalProfileDocument -> foaf:Document
+foaf:Person -> foaf:Agent
+foaf:OnlineChatAccount -> foaf:OnlineAccount
+foaf:Image
+foaf:Group -> foaf:Agent
+
+Properties:
+foaf:fundedBy
+vs:term_status
+foaf:img -> foaf:depiction
+foaf:birthday
+foaf:currentProject
+foaf:homepage -> foaf:isPrimaryTopicOf,foaf:page
+foaf:knows
+foaf:geekcode
+foaf:mbox
+foaf:name -> rdfs:label
+foaf:sha1
+dc:date
+foaf:accountServiceHomepage
+foaf:yahooChatID -> foaf:nick
+foaf:primaryTopic
+foaf:icqChatID -> foaf:nick
+foaf:dnaChecksum
+foaf:thumbnail
+dc:description
+foaf:publications
+wot:assurance
+foaf:Project
+foaf:holdsAccount
+foaf:theme
+foaf:accountName
+foaf:workInfoHomepage
+foaf:phone
+foaf:member
+foaf:gender
+foaf:made
+foaf:workplaceHomepage
+foaf:surname
+foaf:mbox_sha1sum
+foaf:topic_interest
+foaf:page
+foaf:nick
+foaf:interest
+foaf:based_near
+foaf:schoolHomepage
+foaf:logo
+foaf:depicts
+foaf:weblog -> foaf:page
+foaf:aimChatID -> foaf:nick
+foaf:pastProject
+foaf:family_name
+foaf:maker
+foaf:plan
+dc:title
+foaf:membershipClass
+wot:src_assurance
+foaf:firstName
+foaf:givenname
+foaf:tipjar -> foaf:page
+foaf:jabberID
+foaf:topic
+foaf:isPrimaryTopicOf -> foaf:page
+foaf:openid -> foaf:isPrimaryTopicOf
+foaf:myersBriggs
+foaf:title
+foaf:depiction
+foaf:msnChatID -> foaf:nick
+
+Potential triples:
+<foaf:Person,foaf:img,foaf:Image>
+<foaf:Agent,foaf:birthday,xsd:date>
+<foaf:Person,foaf:knows,foaf:Person>
+<foaf:Person,foaf:geekcode,rdfs:Literal>
+<foaf:OnlineAccount,foaf:accountServiceHomepage,foaf:Document>
+<foaf:Agent,foaf:yahooChatID,rdfs:Literal>
+<foaf:Agent,foaf:icqChatID,rdfs:Literal>
+<foaf:Image,foaf:thumbnail,foaf:Image>
+<foaf:Person,foaf:publications,foaf:Document>
+<foaf:Agent,foaf:holdsAccount,foaf:OnlineAccount>
+<foaf:OnlineAccount,foaf:accountName,rdfs:Literal>
+<foaf:Person,foaf:workInfoHomepage,foaf:Document>
+<foaf:Group,foaf:member,foaf:Agent>
+<foaf:Person,foaf:workplaceHomepage,foaf:Document>
+<foaf:Person,foaf:surname,rdfs:Literal>
+<foaf:Agent,foaf:mbox_sha1sum,rdfs:Literal>
+<foaf:Person,foaf:interest,foaf:Document>
+<foaf:Person,foaf:schoolHomepage,foaf:Document>
+<foaf:Agent,foaf:weblog,foaf:Document>
+<foaf:Agent,foaf:aimChatID,rdfs:Literal>
+<foaf:Person,foaf:family_name,rdfs:Literal>
+<foaf:Person,foaf:plan,rdfs:Literal>
+<foaf:Person,foaf:firstName,rdfs:Literal>
+<foaf:Agent,foaf:tipjar,foaf:Document>
+<foaf:Agent,foaf:jabberID,rdfs:Literal>
+<foaf:Agent,foaf:openid,foaf:Document>
+<foaf:Person,foaf:myersBriggs,rdfs:Literal>
+<foaf:Agent,foaf:msnChatID,rdfs:Literal>

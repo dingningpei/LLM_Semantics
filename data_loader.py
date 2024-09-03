@@ -48,7 +48,7 @@ def generate_data(sources_dir, models_dir, num_files=0, size=0, test_size=0.2, r
             
             input_data = load_data(source_file_path, size)
             output_data = load_data(model_file_path)
-            data_tuples.append({"table":input_data, "semantic_graph":output_data})
+            data_tuples.append({"table":input_data, "semantic_triples":output_data['semantic_triples'], "internal_link_triples":output_data['internal_link_triples']})
         return data_tuples
     
     train_data_tuples = load_data_tuples(train_indices)
