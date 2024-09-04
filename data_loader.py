@@ -1,15 +1,48 @@
 import os
 import json
 import random
+import chardet
+
+
+def detect_encoding(file_path):
+    with open(file_path, 'rb') as file:
+        raw_data = file.read()
+    result = chardet.detect(raw_data)
+    return result['encoding']
+
 
 def load_data(file_path, size=0):
     """Load table data from a file."""
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding=detect_encoding(file_path)) as file:
         data = json.load(file)
+
+
+
+    # idx = 0
+    # result = []
+    # if size > 0:
+    #     while count < size:
+    #         if not check_data_empty(data[idx]):
+    #             count += 1
+    #             result.append(data[count])
+    #         idx += 1
+    #     return result
+    # else:
+    #     return data
     if size > 0:
-        data = data[:size]
+        data = data[: size]
+        for entry in data:
+            for key, value in entry.items():
+                if value is None or len(str(value)) < 1 or value == "\n":  # Check for null values
+                    entry[key] = "<Empty>"  # Replace null with <Empty>
     return data
 
+def check_data_empty(data):
+    for key, value in data.items():
+        if value is None or len(str(value)) < 1:
+            return True
+    return False
+    
 def generate_data(sources_dir, models_dir, num_files=0, size=0, test_size=0.2, random_state= None):
     """Load training input and output data from specified directories."""
     source_files = sorted(os.listdir(sources_dir))
@@ -48,7 +81,7 @@ def generate_data(sources_dir, models_dir, num_files=0, size=0, test_size=0.2, r
             
             input_data = load_data(source_file_path, size)
             output_data = load_data(model_file_path)
-            data_tuples.append({"table":input_data, "semantic_triples":output_data['semantic_triples'], "internal_link_triples":output_data['internal_link_triples']})
+            data_tuples.append({"table":input_data, "semantic_graph":output_data})
         return data_tuples
     
     train_data_tuples = load_data_tuples(train_indices)

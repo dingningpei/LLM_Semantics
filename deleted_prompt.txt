@@ -1,0 +1,79 @@
+#One column in the table may have multiple values, and the system should treat these multiple values as one column.
+#When one column in the table may contains multiple values which represent different types of information, the system should only choose one type of information from the values to represent the column to form the SetSemanticType triples instead of separating the values into multiple columns. It make sure that the number of the SetSemanticType triples is the same as the number of the columns in the table.
+# Messages Round 2: Certainly! To generate the semantic graph from the provided table, I follow a structured process that involves mapping the table columns to ontological concepts and establishing relationships between these concepts. Here's a step-by-step breakdown of how I do this:
+
+# ### Step 1: Identify Semantic Types
+# I identify the appropriate semantic types from the ontology for each column in the table. For example:
+
+# - `id` and `Accession Number` can be mapped to `crm:E42_Identifier`.
+# - `image` can be mapped to `crm:E38_Image`.
+# - `Date`, `date_latest`, and `date_earliest` can be mapped to `crm:E52_Time-Span`.
+# - `Geography` can be mapped to `crm:E53_Place`.
+# - `Medium` and `Classification` can be mapped to `crm:E55_Type`.
+# - `Credit Line` and `Provenance` can be mapped to `crm:E33_Linguistic_Object`.
+# - `object_uri`, `type_assignment_uri`, and `production_uri` can be mapped to `foaf:Document`.
+# - `Who` (Artist Name) can be mapped to `crm:E82_Actor_Appellation`.
+# - `artist_uri` can be mapped to `crm:E39_Actor`.
+# - `What` (Materials and Object Type) can be mapped to `skos:Concept`.
+# - `Description` can be mapped to `crm:E33_Linguistic_Object`.
+
+# ### Step 2: Establish Internal Links
+# I establish internal links between the semantic types based on the relationships defined in the ontology. For example:
+
+# - The `crm:E22_Man-Made_Object` (representing the object) is linked to `crm:E42_Identifier` (representing the ID and Accession Number) via the `crm:P1_is_identified_by` property.
+# - The `crm:E22_Man-Made_Object` is linked to `crm:E38_Image` (representing the image) via the `crm:P138i_has_representation` property.
+# - The `crm:E22_Man-Made_Object` is linked to `crm:E52_Time-Span` (representing the Date) via the `crm:P4_has_time-span` property.
+# - The `crm:E22_Man-Made_Object` is linked to `crm:E53_Place` (representing the Geography) via the `crm:P7_took_place_at` property.
+# - The `crm:E22_Man-Made_Object` is linked to `crm:E55_Type` (representing the Medium and Classification) via the `crm:P2_has_type` property.
+# - The `crm:E22_Man-Made_Object` is linked to `crm:E33_Linguistic_Object` (representing the Credit Line and Provenance) via the `crm:P67i_is_referred_to_by` property.
+# - The `crm:E22_Man-Made_Object` is linked to `foaf:Document` (representing the object_uri, type_assignment_uri, and production_uri) via the `foaf:homepage` property.
+# - The `crm:E22_Man-Made_Object` is linked to `crm:E82_Actor_Appellation` (representing the Artist Name) via the `crm:P14_carried_out_by` property.
+# - The `crm:E22_Man-Made_Object` is linked to `skos:Concept` (representing the Materials and Object Type) via the `dcterms:subject` property.
+# - The `crm:E22_Man-Made_Object` is linked to `crm:E33_Linguistic_Object` (representing the Description) via the `crm:P67i_is_referred_to_by` property.
+
+# ### Step 3: Construct the Semantic Graph
+# Using the identified semantic types and established internal links, I construct the semantic graph. This graph consists of two main components:
+
+# 1. **SetSemanticType**: A list of triples that link the columns in the table to the nodes in the ontology. Each triple has the form (subject, predicate, object), where the subject is the semantic type, the predicate is the property linking the subject to the object, and the object is the column in the table.
+
+# 2. **SetInternalLink**: A list of triples that link the nodes in the semantic graph to each other. Each triple has the form (subject, predicate, object), where the subject and object are nodes in the ontology, and the predicate is the property defining the relationship between them.
+
+# ### Example of SetSemanticType and SetInternalLink
+# Here's an example of how some of the columns might be represented in the semantic graph:
+
+# **SetSemanticType**:
+# - ['crm:E42_Identifier1', 'rdf:value', 'id']
+# - ['crm:E42_Identifier2', 'rdf:value', 'Accession Number']
+# - ['crm:E38_Image1', 'karma:classLink', 'image']
+# - ['crm:E52_Time-Span1', 'rdfs:label', 'Date']
+# - ['crm:E53_Place1', 'rdfs:label', 'Geography']
+# - ['crm:E55_Type1', 'rdfs:label', 'Medium']
+# - ['crm:E55_Type2', 'rdfs:label', 'Classification']
+# - ['crm:E33_Linguistic_Object1', 'rdf:value', 'Credit Line']
+# - ['crm:E33_Linguistic_Object2', 'rdf:value', 'Provenance']
+# - ['foaf:Document1', 'karma:classLink', 'object_uri']
+# - ['foaf:Document2', 'karma:classLink', 'type_assignment_uri']
+# - ['foaf:Document3', 'karma:classLink', 'production_uri']
+# - ['crm:E82_Actor_Appellation1', 'rdf:value', 'Who']
+# - ['skos:Concept1', 'skos:prefLabel', 'What']
+# - ['crm:E33_Linguistic_Object3', 'rdf:value', 'Description']
+
+# **SetInternalLink**:
+# - ['crm:E22_Man-Made_Object1', 'crm:P1_is_identified_by', 'crm:E42_Identifier1']
+# - ['crm:E22_Man-Made_Object1', 'crm:P1_is_identified_by', 'crm:E42_Identifier2']
+# - ['crm:E22_Man-Made_Object1', 'crm:P138i_has_representation', 'crm:E38_Image1']
+# - ['crm:E22_Man-Made_Object1', 'crm:P4_has_time-span', 'crm:E52_Time-Span1']
+# - ['crm:E22_Man-Made_Object1', 'crm:P7_took_place_at', 'crm:E53_Place1']
+# - ['crm:E22_Man-Made_Object1', 'crm:P2_has_type', 'crm:E55_Type1']
+# - ['crm:E22_Man-Made_Object1', 'crm:P2_has_type', 'crm:E55_Type2']
+# - ['crm:E22_Man-Made_Object1', 'crm:P67i_is_referred_to_by', 'crm:E33_Linguistic_Object1']
+# - ['crm:E22_Man-Made_Object1', 'crm:P67i_is_referred_to_by', 'crm:E33_Linguistic_Object2']
+# - ['crm:E22_Man-Made_Object1', 'foaf:homepage', 'foaf:Document1']
+# - ['crm:E22_Man-Made_Object1', 'foaf:homepage', 'foaf:Document2']
+# - ['crm:E22_Man-Made_Object1', 'foaf:homepage', 'foaf:Document3']
+# - ['crm:E22_Man-Made_Object1', 'crm:P14_carried_out_by', 'crm:E82_Actor_Appellation1']
+# - ['crm:E22_Man-Made_Object1', 'dcterms:subject', 'skos:Concept1']
+# - ['crm:E22_Man-Made_Object1', 'crm:P67i_is_referred_to_by', 'crm:E33_Linguistic_Object3']
+
+# This process ensures that the data from the table is semantically enriched and linked according to the ontology, allowing for more sophisticated querying and analysis.
+#The system will identify the appropriate semantic types from nodes in the ontology for each column in the table. 
