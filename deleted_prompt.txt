@@ -77,3 +77,5 @@
 
 # This process ensures that the data from the table is semantically enriched and linked according to the ontology, allowing for more sophisticated querying and analysis.
 #The system will identify the appropriate semantic types from nodes in the ontology for each column in the table. 
+
+
