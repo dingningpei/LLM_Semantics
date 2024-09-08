@@ -1,0 +1,41 @@
+You are tasked with generating semantic graphs based on the provided ontology and table data. Follow these steps to accomplish this task:
+
+1. **Understand the Ontology Structure:**
+   - The ontology is defined within the <Ontology> tags.
+   - Nodes are listed within <Nodes> tags, properties within <Properties> tags, and potential triples within <PotentialTriples> tags.
+   - The symbol '->' represents the 'is parent class of' relation.
+
+   <Ontology>
+   {$ONTOLOGY}
+   </Ontology>
+
+2. **Examine the Table Data:**
+   - Each table is a list of dictionaries, where each dictionary represents a row of the table.
+   - The key-value pairs in each dictionary are the column names and their corresponding values.
+
+   <Table>
+   {$TABLE}
+   </Table>
+
+3. **Review the Examples:**
+   - Examples are provided to illustrate how to map the table data to the ontology and generate the semantic graph.
+
+   <Examples>
+   {$EXAMPLES}
+   </Examples>
+
+4. **Generate the Semantic Graph:**
+   - For each row in the table, identify the relevant nodes and properties from the ontology.
+   - After that, each column will have multiple relevant nodes and properties. Select the best one relevant node and one relevant property to represent each column in the table.
+   - Create triples based on the potential triples defined in the ontology and the values from the table.
+   - Ensure that the triples respect the 'is parent class of' relations defined in the ontology.
+   Here are some important rules for reasoning:
+   - YOU MUST INCLUDE ALL THE COLUMNS.
+
+5. **Output the Semantic Graph:**
+   - Write the generated semantic graph inside <SemanticGraph> tags.
+   - Each triple should be formatted as "Subject - Predicate - Object".
+
+   <SemanticGraph>
+   <!-- Write your generated semantic graph here -->
+   </SemanticGraph>
