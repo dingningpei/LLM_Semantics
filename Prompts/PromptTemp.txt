@@ -1,4 +1,4 @@
-You are tasked with generating semantic graphs based on the provided ontology and table data. Follow these steps to accomplish this task:
+You are a linguist and a graph generator. You are tasked with generating semantic graphs based on the provided ontology and table data. Follow these steps to accomplish this task:
 
 1. **Understand the Ontology Structure:**
    - The ontology is defined within the <Ontology> tags.

@@ -629,3 +629,145 @@ table.
 <SemanticGraph>
 <!-- Write your generated semantic graph here -->
 </SemanticGraph>
+
+<SemanticGraph>
+{
+"SetSemanticType": [
+["crm:E82_Actor_Appellation1", "rdf:value", "Frishmuth, Harriet Whitney"],
+["crm:E52_Time-Span1", "karma:classLink", "www.imamuseum.org/person/Frishmuth, Harriet
+Whitney/birth_date"],
+["crm:E52_Time-Span1", "crm:P82a_begin_of_the_begin", "1880-01-01"],
+["crm:E52_Time-Span1", "crm:P82b_end_of_the_end", "1880-12-31"],
+["crm:E52_Time-Span1", "rdfs:label", "1880"],
+["crm:E52_Time-Span2", "karma:classLink", "www.imamuseum.org/person/Frishmuth, Harriet
+Whitney/death_date"],
+["crm:E52_Time-Span2", "crm:P82a_begin_of_the_begin", "1980-01-01"],
+["crm:E52_Time-Span2", "crm:P82b_end_of_the_end", "1980-12-31"],
+["crm:E52_Time-Span2", "rdfs:label", "1980"],
+["crm:E74_Group1", "rdfs:label", "American"],
+["crm:E39_Actor1", "karma:classLink", "www.imamuseum.org/person/Frishmuth, Harriet Whitney"],
+["crm:E63_Beginning_of_Existence1", "karma:classLink", "www.imamuseum.org/person/Frishmuth, Harriet
+Whitney/birth"],
+["crm:E64_End_of_Existence1", "karma:classLink", "www.imamuseum.org/person/Frishmuth, Harriet
+Whitney/death"]
+],
+"SetInternalLink": [
+["crm:E39_Actor1", "crm:P131_is_identified_by", "crm:E82_Actor_Appellation1"],
+["crm:E39_Actor1", "crm:P92i_was_brought_into_existence_by", "crm:E63_Beginning_of_Existence1"],
+["crm:E39_Actor1", "crm:P93i_was_taken_out_of_existence_by", "crm:E64_End_of_Existence1"],
+["crm:E63_Beginning_of_Existence1", "crm:P4_has_time-span", "crm:E52_Time-Span1"],
+["crm:E64_End_of_Existence1", "crm:P4_has_time-span", "crm:E52_Time-Span2"],
+["crm:E39_Actor1", "crm:P107i_is_current_or_former_member_of", "crm:E74_Group1"]
+]
+}
+</SemanticGraph>
+
+
+
+#### **Example 1: Artworks Table**
+
+**Attributes and Mappings:**
+- `Attribution` -> `crm:E82_Actor_Appellation1`, `rdf:value`
+- `ArtistURI` -> `crm:E39_Actor1`, `karma:classLink`
+- `ArtistAppellationURI` -> `crm:E82_Actor_Appellation1`, `karma:classLink`
+- `Begin Date` -> `crm:E52_Time-Span1`, `rdfs:label`
+- `BirthDateLatest` -> `crm:E52_Time-Span1`, `crm:P82b_end_of_the_end`
+- `BirthDateEarliest` -> `crm:E52_Time-Span1`, `crm:P82a_begin_of_the_begin`
+- `BirthDateURI` -> `crm:E52_Time-Span1`, `karma:classLink`
+- `BirthURI` -> `crm:E63_Beginning_of_Existence1`, `karma:classLink`
+- `End Date` -> `crm:E52_Time-Span2`, `rdfs:label`
+- `DeathDateLatest` -> `crm:E52_Time-Span2`, `crm:P82b_end_of_the_end`
+- `DeathDateEarliest` -> `crm:E52_Time-Span2`, `crm:P82a_begin_of_the_begin`
+- `DeathDateURI` -> `crm:E52_Time-Span2`, `karma:classLink`
+- `DeathURI` -> `crm:E64_End_of_Existence1`, `karma:classLink`
+- `ObjectURI` -> `crm:E22_Man-Made_Object1`, `karma:classLink`
+- `ProductionURI` -> `crm:E12_Production1`, `karma:classLink`
+- `Dated` -> `crm:E52_Time-Span3`, `rdfs:label`
+- `ProductionDateURI` -> `crm:E52_Time-Span3`, `karma:classLink`
+- `DateEnd` -> `crm:E52_Time-Span3`, `crm:P82b_end_of_the_end`
+- `DateBegin` -> `crm:E52_Time-Span3`, `crm:P82a_begin_of_the_begin`
+- `Medium` -> `crm:E33_Linguistic_Object1`, `rdf:value`
+- `MediumURI` -> `crm:E33_Linguistic_Object1`, `karma:classLink`
+- `Dimensions` -> `crm:E33_Linguistic_Object2`, `rdf:value`
+- `DimensionURI` -> `crm:E33_Linguistic_Object2`, `karma:classLink`
+
+#### **Example 2: Dallas Museum of Art Table**
+
+**Attributes and Mappings:**
+- `Object ID` -> `crm:E42_Identifier1`, `rdf:value`
+- `ObjectURI` -> `crm:E22_Man-Made_Object1`, `karma:classLink`
+- `object_id_uri` -> `crm:E42_Identifier2`, `karma:classLink`
+- `accession_uri` -> `crm:E42_Identifier1`, `karma:classLink`
+- `TypeAssignmentURI` -> `crm:E17_Type_Assignment1`, `karma:classLink`
+- `ProductionURI` -> `crm:E12_Production1`, `karma:classLink`
+- `ProductionDateURI` -> `crm:E52_Time-Span3`, `karma:classLink`
+- `Object Title` -> `crm:E35_Title1`, `rdf:value`
+- `Object Work Type` -> `crm:E55_Type1`, `rdfs:label`
+- `Alternate Object ID` -> `crm:E42_Identifier2`, `rdf:value`
+- `Artist Name` -> `crm:E82_Actor_Appellation1`, `rdf:value`
+- `NameURI` -> `crm:E82_Actor_Appellation1`, `karma:classLink`
+- `ArtistURI` -> `crm:E39_Actor1`, `karma:classLink`
+- `DeathDateURI` -> `crm:E52_Time-Span2`, `karma:classLink`
+- `DeathURI` -> `crm:E64_End_of_Existence1`, `karma:classLink`
+- `BirthDateURI` -> `crm:E52_Time-Span1`, `karma:classLink`
+- `BirthURI` -> `crm:E63_Beginning_of_Existence1`, `karma:classLink`
+- `Artist Birth Date` -> `crm:E52_Time-Span1`, `rdfs:label`
+- `BirthDateLatest` -> `crm:E52_Time-Span1`, `crm:P82b_end_of_the_end`
+- `BirthDateEarliest` -> `crm:E52_Time-Span1`, `crm:P82a_begin_of_the_begin`
+- `Artist Death Date` -> `crm:E52_Time-Span2`, `rdfs:label`
+- `DeathDateLatest` -> `crm:E52_Time-Span2`, `crm:P82b_end_of_the_end`
+- `DeathDateEarliest` -> `crm:E52_Time-Span2`, `crm:P82a_begin_of_the_begin`
+- `Artist Nationality` -> `crm:E74_Group1`, `rdfs:label`
+- `NationalityURI` -> `crm:E74_Group1`, `karma:classLink`
+- `Object Earliest Date` -> `crm:E52_Time-Span3`, `crm:P82a_begin_of_the_begin`
+- `Object Latest Date` -> `crm:E52_Time-Span3`, `crm:P82b_end_of_the_end`
+- `Object Earliest Date Display` -> `crm:E52_Time-Span3`, `rdfs:label`
+- `Object Rights` -> `crm:E33_Linguistic_Object1`, `rdf:value`
+- `Object Facet Value 1` -> `crm:E33_Linguistic_Object3`, `rdf:value`
+- `Object Link Source` -> `crm:E40_Legal_Body1`, `rdfs:label`
+- `dimensions` -> `crm:E33_Linguistic_Object2`, `rdf:value`
+
+#### **Example 3: Artists Table**
+
+**Attributes and Mappings:**
+- `name` -> `crm:E82_Actor_Appellation1`, `rdf:value`
+- `artist_uri` -> `crm:E39_Actor1`, `karma:classLink`
+- `death_uri` -> `crm:E64_End_of_Existence1`, `karma:classLink`
+- `birth_uri` -> `crm:E63_Beginning_of_Existence1`, `karma:classLink`
+- `nationality` -> `crm:E74_Group1`, `rdfs:label`
+- `deathDate` -> `crm:E52_Time-Span2`, `rdfs:label`
+- `death_date_latest` -> `crm:E52_Time-Span2`, `crm:P82b_end_of_the_end`
+- `death_date_earliest` -> `crm:E52_Time-Span2`, `crm:P82a_begin_of_the_begin`
+- `birthDate` -> `crm:E52_Time-Span1`, `rdfs:label`
+- `birth_date_latest` -> `crm:E52_Time-Span1`, `crm:P82b_end_of_the_end`
+- `birth_date_earliest` -> `crm:E52_Time-Span1`, `crm:P82a_begin_of_the_begin`
+
+#### **Example 4: Artworks with Missing Values Table**
+
+**Attributes and Mappings:**
+- `@title` -> `crm:E35_Title1`, `rdf:value`
+- `sourceURL` -> `foaf:Document1`, `karma:classLink`
+- `imageURL` -> `crm:E38_Image1`, `karma:classLink`
+- `artist` -> `crm:E82_Actor_Appellation1`, `rdf:value`
+- `artist_uri` -> `crm:E39_Actor1`, `karma:classLink`
+- `birth_uri` -> `crm:E63_Beginning_of_Existence1`, `karma:classLink`
+- `nationality` -> `crm:E74_Group1`, `rdfs:label`
+- `deathDate` -> `crm:E52_Time-Span2`, `rdfs:label`
+- `death_uri` -> `crm:E64_End_of_Existence1`, `karma:classLink`
+- `death_date_latest` -> `crm:E52_Time-Span2`, `crm:P82b_end_of_the_end`
+- `death_date_earliest` -> `crm:E52_Time-Span2`, `crm:P82a_begin_of_the_begin`
+- `birthDate` -> `crm:E52_Time-Span1`, `rdfs:label`
+- `birth_date_latest` -> `crm:E52_Time-Span1`, `crm:P82b_end_of_the_end`
+- `birth_date_earliest` -> `crm:E52_Time-Span1`, `crm:P82a_begin_of_the_begin`
+- `materials` -> `crm:E33_Linguistic_Object1`, `rdf:value`
+- `dimensions` -> `crm:E33_Linguistic_Object2`, `rdf:value`
+- `creditLine` -> `crm:E33_Linguistic_Object3`, `rdf:value`
+- `accessionNumber` -> `crm:E42_Identifier1`, `rdf:value`
+- `object_uri` -> `crm:E22_Man-Made_Object1`, `karma:classLink`
+- `production_uri` -> `crm:E12_Production1`, `karma:classLink`
+- `creationDate` -> `crm:E52_Time-Span3`, `rdfs:label`
+- `creation_date_latest` -> `crm:E52_Time-Span3`, `crm:P82b_end_of_the_end`
+- `creation_date_earliest` -> `crm:E52_Time-Span3`, `crm:P82a_begin_of_the_begin`
+- `galleryLabel` -> `crm:E33_Linguistic_Object4`, `rdf:value`
+- `provenance` -> `crm:E33_Linguistic_Object5`, `rdf:value`
+- `keywords|keyword` -> `skos:Concept1`, `skos:prefLabel`

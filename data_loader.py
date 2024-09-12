@@ -43,7 +43,7 @@ def check_data_empty(data):
             return True
     return False
     
-def generate_data(sources_dir, models_dir, num_files=0, size=0, test_size=0.2, random_state= None):
+def generate_data(sources_dir, models_dir, num_files=0, size=0, test_size=0.25, random_state= None):
     """Load training input and output data from specified directories."""
     source_files = sorted(os.listdir(sources_dir))
     model_files = sorted(os.listdir(models_dir))
