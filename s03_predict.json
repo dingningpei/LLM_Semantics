@@ -1,19 +1,18 @@
 {
   "SetSemanticType": [
-    ["foaf:Document1", "karma:classLink", "collection_URL"],
-    ["crm:E33_Linguistic_Object1", "rdf:value", "description"],
-    ["crm:E35_Title1", "rdf:value", "title"],
-    ["crm:E41_Appellation1", "rdf:value", "collection_name"],
-    ["crm:E82_Actor_Appellation1", "rdf:value", "artist"],
-    ["crm:E39_Actor1", "karma:classLink", "artist_uri"],
-    ["crm:E33_Linguistic_Object2", "rdf:value", "credit"],
-    ["crm:E57_Material1", "rdf:value", "materials"],
-    ["crm:E38_Image1", "karma:classLink", "image_URL"],
-    ["crm:E42_Identifier1", "rdf:value", "accession_id"],
-    ["crm:E22_Man-Made_Object1", "karma:classLink", "object_uri"],
-    ["crm:E12_Production1", "karma:classLink", "production_uri"],
-    ["crm:E54_Dimension1", "rdf:value", "dimensions"]
-],
+    ["crm:E42_Identifier1", "rdf:value", "id"], ["crm:E38_Image1", "karma:classLink", "image"],
+    ["crm:E52_Time-Span1", "rdfs:label", "Date"], ["crm:E52_Time-Span1", "crm:P82b_end_of_the_end",
+    "date_latest"], ["crm:E52_Time-Span1", "crm:P82a_begin_of_the_begin", "date_earliest"],
+    ["crm:E53_Place1", "rdfs:label", "Geography"], ["crm:E33_Linguistic_Object1", "rdf:value",
+    "Medium"], ["crm:E33_Linguistic_Object2", "rdf:value", "Dimensions"], ["crm:E55_Type1",
+    "rdfs:label", "Classification"], ["crm:E33_Linguistic_Object3", "rdf:value", "Credit Line"],
+    ["crm:E42_Identifier2", "rdf:value", "Accession Number"], ["crm:E22_Man-Made_Object1",
+    "karma:classLink", "object_uri"], ["crm:E17_Type_Assignment1", "karma:classLink",
+    "type_assignment_uri"], ["crm:E12_Production1", "karma:classLink", "production_uri"],
+    ["crm:E82_Actor_Appellation1", "rdf:value", "Who"], ["crm:E39_Actor1", "karma:classLink",
+    "artist_uri"], ["crm:E55_Type2", "rdfs:label", "What"], ["crm:E33_Linguistic_Object4", "rdf:value",
+    "Description"], ["crm:E33_Linguistic_Object5", "rdf:value", "Provenance"]
+  ],
   "SetInternalLink": [
     ["crm:E22_Man-Made_Object1", "foaf:homepage", "foaf:Document1"],
     ["crm:E22_Man-Made_Object1", "crm:P67i_is_referred_to_by", "crm:E33_Linguistic_Object1"],

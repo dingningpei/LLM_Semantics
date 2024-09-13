@@ -25,7 +25,7 @@ Before you start, you will first need to learn the knowledge in <Ontology> and t
    </Table>
 
    <Step1> is to identify the appropriate semantic type and property for each attribute in the table. 
-   - You should learn the map function of how the Examples map the features(attribute name, raw row values and other features processed by data augmentation ) of attributes in the table to the Class and Property in <Knowledge1>.
+   - You should learn the map function of how the Examples map the features(attribute name, properties of row values and other features processed by data augmentation ) of attributes in the table to the Class and Property in <Knowledge1>.
    - <Rule1> All the attributes in the table must be mapped to the <Ontology>. </Rule1>
    <Step1>
    {$STEP1}

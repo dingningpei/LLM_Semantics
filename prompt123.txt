@@ -1,0 +1,81 @@
+<Task>
+Act as a linguist, generate a semantic graph for the table.
+</Task> 
+<Instruction>
+You will be acting as a linguist and graph theorist equiped with the <Ontology>. Given the <Table> user provide, you will generate a appropriate <SemanticGraph> for the <Table>. 
+Before you start, you will first need to full explore the graph structures of <Ontology> and the <Examples> provided.
+1. **Understand the Ontology Structure:**
+   - The ontology is constructed by the following components: 1. Hierarchy Class <Class>, 2. Hierarchy Property <Property>, 3. Relation <Relation>
+   - Hierarchy Class <Class> is a list of classes which is organized in a hierarchy structure. Symbol '->' represents the 'is parent class of' relation. If class A -> class B, then class A is a parent class of class B. And class B will inherit all the properties of class A.
+   - Hierarchy Property <Property> is a list of properties which is organized in a hierarchy structure. Symbol '->' represents the 'is parent property of' relation. If property A -> property B, then property A is a parent property of property B. And property B will inherit all the properties of property A.
+   - Relation <Relation> is a list of basic relations whose domain and range are both <Class> in the ontology and property is a <Property>in the ontology. 
+   - Based on the information above, you will explore the basic relations into more complex relations by replacing the domain, range and property with their child classes or child properties.
+   <Knowledge1> The basic relations and their complex relations</Knowledge1>
+
+<Ontology>
+{$ONTOLOGY}
+</Ontology>
+
+2. **Understand the Reasoning details of Examples:**
+   - <Key Insight1> The examples are the key to understand the user's intention. </Key Insight>
+   <Examples>
+   - <Examples> is a list of examples which is organized in a list of <Table> and the corresponding solution steps <Step1> and <Step2> for generating the <SemanticGraph>.
+   <Table> is a list of dictionaries, where each dictionary represents a row of the table, and the key-value pairs are attributes of the table and their corresponding values. If the corresponding values are <Empty>, it means the value of the column is missing and you need to only consider the column name to conduct the following steps.
+   - <Key Insight2> The attribute names, the attribute multiple row values and the position of the attributes are the key information to be considered in the following steps. This key information will be process by data augmentation to generate a few features for each attribute. </Key Insight2>
+   <Table>
+   {$TABLE}
+   </Table>
+   <Step1> is to identify the appropriate semantic type and property for each attribute in the table. 
+   - <Key Insight3> The designed features in <Key Insight2> will be used in <Step1> as a score function to search the ontology for the appropriate semantic type and property for each attribute in the table. </Key Insight3>
+   - <Rule1> All the attributes in the table must be mapped to the <Ontology>. </Rule1>
+   - <Knowledge2> The semantic types and properties which is a list of <Relation> generated in <Step1> should be also equipped by you to conduct the <Step1> task user provided.</Knowledge>
+   <Step1>
+   {$STEP1}
+   </Step1>
+   <Step2> is to generate a semantic graph for semantic types mapped to the attributes in the table.
+   - <Key Insight4> The designed features in <Key Insight2> and their corresponding semantic types and properties in <Key Insight3> are used in <Step2> as a score function to search both the basic and complex relations in <Ontology> for building the internal structure of the semantic graph. </Key Insight4> 
+   - <Rule2> The internal structure of the semantic graph must be a tree structure </Rule2>
+   - <Rule3> All the semantic types must be linked to each other. You can not build isolated semantic types in the semantic graph.</Rule3>
+   - <Knowledge3> The semantic graph which is a list of <Relation> generated in <Step2> should be also equipped by you to conduct the <Step2> task user provided.</Knowledge>
+   <Step2>
+   {$STEP2}
+   </Step2>
+   </Examples>
+</Instruction>
+
+
+<Input>
+{$INPUT}
+</Input>
+
+<Out
+Give the <Input>, follow the reasoning process <Key Insight> in <Instruction> and generate the <Output>:
+1. using the <Knowledge2>, <Knowledge1> and <Key Insight2> to conduct <Key Insight3> to generate <Step1> and ensure <Rule1> is followed.
+Output your solution as the format below:
+<Output>
+**attribute name1**:
+- **Design Features**: 
+- **Knowledge2 Used**: 
+- **Knowledge1 Used**: 
+- **Mapped to**: 
+- **Consistency**: 
+  Note: The consistency is whether knowledge2 and knowledge3 are used correctly or not.
+
+**attribute name2**:
+- **Design Features**: 
+- **Knowledge2 Used**: 
+- **Knowledge1 Used**: 
+- **Mapped to**: 
+- **Consistency**: 
+
+**attribute name3**:
+- **Design Features**: 
+- **Knowledge2 Used**: 
+- **Knowledge1 Used**: 
+- **Mapped to**: 
+- **Consistency**:
+
+Output:
+<Step1>
+</Step1>
+</Output>
