@@ -1,0 +1,20 @@
+Give the <Table> and <Step1> output, generate <Step2> of the <Table> using <Knowledge3>:
+IMPORTANT: If you can not find the appropriate search function in <Knowledge3>, you can use reasoning steps to analyze semantic types in <Step1> to find appropriate relations to build the internal link among the semantic types.
+
+Output your solution as the format below:
+Reasoning:
+**attribute name1**:
+- **Search Function Used or Reasoning Step**: 
+- **Internal Link**: 
+
+**attribute name2**:
+- **Search Function Used or Reasoning Step**: 
+- **Internal Link**: 
+
+**attribute name3**:
+- **Search Function Used or Reasoning Step**: 
+- **Internal Link**: 
+
+Final output:
+<Step2>
+</Step2>

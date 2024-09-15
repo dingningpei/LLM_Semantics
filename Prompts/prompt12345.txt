@@ -25,21 +25,70 @@ Before you start, you will first need to learn the knowledge in <Ontology> and t
    </Table>
 
    <Step1> is to identify the appropriate semantic type and property for each attribute in the table. 
-   - You should learn the map function of how the Examples map the attributes in the table to the Class and Property in <Knowledge1>.
+   - You should analyze and learn the feature function of how the Examples process the table to get the features of attributes.
+   - You should learn the map function of how the Examples map these features of attributes in the table to the Class and Property in <Knowledge1>.
    - <Rule1> All the attributes in the table must be mapped to the <Ontology>. </Rule1>
    <Step1>
    {$STEP1}
    </Step1>
-   Knowledge you must learn: <Knowledge2> map function in <Examples> and <Rule1> <Knowledge2>
+   Knowledge you must learn: <Knowledge2> feature function, and map function in <Examples> and <Rule1> <Knowledge2>
 
    <Step2> is to build a internal link for all the semantic types in Step1
-   - You should learn the search function of how the Examples search in the <Knowledge1> to find appropriate relations to build the internal link among semantic types in <Step1>.
+   - You should learn the search function of how the Examples search in the <Knowledge1> to find appropriate relations to build the internal link among the semantic types in <Step1>.
    - <Rule2> The internal structure of the semantic graph must be a tree structure </Rule2>
    - <Rule3> All the semantic types must be linked to each other. You can not build isolated semantic types in the semantic graph.</Rule3>
-   
    <Step2>
    {$STEP2}
    </Step2>
    </Examples>
    Knowledge you must learn: <Knowledge3> search function in <Examples> and <Rule2> <Rule3> <Knowledge3>
 </Instruction>
+
+<Input>
+<Table>
+{$INPUT}
+</Table>
+</Input>
+
+Give the <Table> in<Input>, generate <Step1> of the <Table> using <Knowledge2>:
+IMPORTANT: If you can not find the appropriate map function in <Knowledge2>, you can use reasoning steps to analyze the features of attribute and map attribute to the <Knowledge1> and ensure the consistency.
+
+Output your solution as the format below:
+Reasoning:
+**attribute name1**:
+- **Feature Function used**: 
+- **Map function Used or Reasoning Step**: 
+- **Semantic Type**: 
+
+**attribute name2**:
+- **Feature Function used**: 
+- **Map function Used or Reasoning Step**: 
+- **Semantic Type**: 
+
+**attribute name3**:
+- **Feature Function used**: 
+- **Map function Used or Reasoning Step**: 
+- **Semantic Type**: 
+
+Final output:
+<Step1>
+</Step1>
+
+Give the <Table> and <Step1> output, generate <Step2> of the <Table> using <Knowledge3>:
+IMPORTANT: If you can not find the appropriate search function in <Knowledge3>, you can use reasoning steps to analyze the features of attribute and search in the <Knowledge1> to find appropriate relations to build the internal link among the semantic types.
+
+Output your solution as the format below:
+Reasoning:
+**attribute name1**:
+- **Search Function Used or Reasoning Step**: 
+- **Internal Link**: 
+
+**attribute name2**:
+- **Search Function Used or Reasoning Step**: 
+- **Internal Link**: 
+
+**attribute name3**:
+- **Search Function Used or Reasoning Step**: 
+- **Internal Link**: 
+
+Final output:
