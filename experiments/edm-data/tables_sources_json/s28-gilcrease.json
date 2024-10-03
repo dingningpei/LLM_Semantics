@@ -1,0 +1,35 @@
+[
+    {
+        "objectID":"13323",
+        "objectNumber":"0116.2077",
+        "classification":"Art- Painting",
+        "alphaSort":"Keith, William",
+        "title":"Sierra Nevada Mountains",
+        "dated":"1876",
+        "medium":"Oil on Canvas",
+        "dimensions":"Overall: 40 x 71 3/4 x 3 1/4 in. (101.6 x 182.2 x 8.3 cm)",
+        "description":"Keith, William - Sierra Nevada Mountains - oil on canvas."
+    },
+    {
+        "objectID":"256",
+        "objectNumber":"0126.727",
+        "classification":"Art- Painting",
+        "alphaSort":"Miller, Alfred Jacob",
+        "title":"Fort Laramie",
+        "dated":"1851",
+        "medium":"Oil on Canvas",
+        "dimensions":"Overall: 24 1/8 x 33 x 3 1/2 in. (61.3 x 83.8 x 8.9 cm)",
+        "description":"Miller, Alfred Jacob - Fort Laramie - oil on canvas."
+    },
+    {
+        "objectID":"260",
+        "objectNumber":"0126.731",
+        "classification":"Art- Painting",
+        "alphaSort":"Miller, Alfred Jacob",
+        "title":"Snake and Sioux Indians on Warpath",
+        "dated":"1856",
+        "medium":"Oil on Canvas",
+        "dimensions":"Overall: 33 1/2 x 40 1/2 x 2 in. (85.1 x 102.9 x 5.1 cm)",
+        "description":"Miller, Alfred Jacob - Snake and Sioux Indians on Warpath - oil | canvas"
+    }
+]

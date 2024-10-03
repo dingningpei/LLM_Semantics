@@ -1,0 +1,35 @@
+[
+    {
+        "title":"Table",
+        "technique":"Oak, walnut, and poplarveneeredwith purplewood, satinwood, ebony, and various fruitwoods",
+        "accessID":"84.DA.77",
+        "description":"Designed for writing, this elaborately decorated table includes two drawers at the back and a pull-out writing surface backed with three small drawers. The top is inlaid withmarquetryscenes ofclassicalgods copied fromantiquesarcophagi. FavoriteNeoclassicalmotifssuch aspalmettes,medallions, masks, and acanthus leaves adorn the table's border, sides, and the tops of the legs. The legs of the table inventively display male nudes as if they were three-dimensional, with each side showing a figure from a different angle.",
+        "dateMade":"1790s",       
+        "dimensions":"H: 2 ft. 6 5/8 x W: 2 ft. 10 7/16 x D: 2 ft. 10 7/16 in.",
+        "imgURL":"www.getty.edu/art/collections/images/l/00114601.jpg",
+        "artistName":"Francesco Abbiati",
+        "nationality":"Italian"
+    },
+    {
+        "title":"Mori's Restaurant",
+        "technique":"Gelatin silver print",
+        "accessID":"84.XM.222.6",
+        "description":"As Berenice Abbott made this picture of a once-famous Greenwich Village eatery, a lone man taking an early morning walk or perhaps going to work paused in front of the four-story structure. While the restaurant's grand facade remains imposing, the stained pillars and bricks and crumpled awning inform pedestrians and potential customers that the establishment is not as impressive as it had originally been.",
+        "dateMade":"21, 1935",    
+        "dimensions":"9 11/16 x 7 5/8 in.",
+        "imgURL":"www.getty.edu/art/collections/images/l/04402101.jpg",
+        "artistName":"Berenice Abbott",
+        "nationality":"American"
+    },
+    {
+        "title":"Two",
+        "technique":"Stainless steel",
+        "accessID":"2005.102",
+        "description":"Viewed frontally, this sculpture appears to be composed of a single sheet of highly-polished steel curling gently upward at its base. But viewed off-center, a second sheet of steel is revealed--as is the meaning of the work's title. At their bottom edges, these essentially identical forms almost meet; but at their top edges, they tilt away from one another. Although this large, vertical form is not unimposing, its gleaming surface subtly reflects its surroundings, allowing the sculpture to exist harmoniously in nature.In the last decade of his career, Robert Adams largely concentrated on relatively small pieces in bronze. This stainless steel form is one of his final large-scale sculptures. A careful and conscientious craftsman, Adams created numerous detailed drawings and elevations to work out the form. These documents, along with small models, would serve as a guide for the fabricator.Twowas cast in an edition of three.",
+        "dateMade":"1977",
+        "dimensions":"105 x 48 x 35 in., 1032 lb.",
+        "imgURL":"www.getty.edu/art/collections/images/l/26551901.jpg",
+        "artistName":"Robert Adams",
+        "nationality":"British"
+    }
+]

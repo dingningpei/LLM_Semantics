@@ -1,0 +1,36 @@
+{
+    "semantic_triples": [
+        [
+            "aac-ont:CulturalHeritageObject1",
+            "dcterms:title",
+            "title"
+        ],
+        [
+            "aac-ont:Person1",
+            "ElementsGr2:nameOfThePerson",
+            "name"
+        ],
+        [
+            "aac-ont:Person1",
+            "ElementsGr2:countryAssociatedWithThePerson",
+            "nationality"
+        ],
+        [
+            "aac-ont:Person1",
+            "ElementsGr2:dateOfBirth",
+            "birthDate"
+        ],
+        [
+            "aac-ont:Person1",
+            "ElementsGr2:dateOfDeath",
+            "deathDate"
+        ]
+    ],
+    "internal_link_triples": [
+        [
+            "aac-ont:CulturalHeritageObject1",
+            "dcterms:creator",
+            "aac-ont:Person1"
+        ]
+    ]
+}

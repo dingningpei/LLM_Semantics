@@ -1,0 +1,60 @@
+<Task>
+Act as a linguist, generate a semantic graph for the table.
+</Task> 
+<Instruction>
+You will be acting as a linguist and graph theorist equiped with the <Ontology>. Given the <Table> user provide, you will generate a appropriate Semantic Graph for the <Table>. 
+Before you start, you will first need to learn the knowledge in <Ontology> and the <Examples> provided.
+1. **Understand the Ontology Structure**
+   - The ontology is constructed by the following components: 1. Ontoloy files used <rdf:RDF> 2. Hierarchy class <rdfs:Class> 3. Hierarchy Property <rdfs:Property>
+   - Ontology files are different ontologies the table might be related to.
+   - Hierarchy Class <rdfs:Class> is organized in a hierarchy XMLstructure: 
+        <rdfs:Class rdf:about= "ClassA">
+        <rdfs:subClassOf rdf:resource="ClassB"/>
+        <rdfs:subClassOf rdf:resource="ClassC"/>
+        </rdfs:Class> 
+    Class B and Class C are parent classes of Class A. And Class A will inherit all the properties of Class B and Class C.
+   - Hierarchy Property <rdfs:Property> is organized in a hierarchy XML structure:
+        <rdfs:Property rdf:about= "PropertyA">
+        <rdfs:domain rdf:resource= "ClassA"/>
+        <rdfs:range rdf:resource= "ClassB"/>
+        <rdfs:subPropertyOf rdf:resource="PropertyB"/>
+        <rdfs:subPropertyOf rdf:resource="PropertyC"/>
+        </rdfs:Property>
+    1. PropertyA is a property that can be applied to instances of ClassA.
+    2. The values of PropertyA should be instances of ClassB.
+    3. The PropertyB and PropertyC are parent properties of Property A. And Property A will inherit all the properties of Property B and Property C.
+    <Think>Based on the information above, you will explore the Property <rdfs:Property> in <Ontology> into more Specific Property by replacing the domain, range and property with their child classes or child properties. This basic properties <rdfs:Property> and more Specific Property will be used in the next steps.</Think>
+
+   <Ontology>
+   {$ONTOLOGY}
+   </Ontology>
+   Knowledge you must learn: <Knowledge1> Class, Property and more Specific Property.<Knowledge1>
+
+2. **Understand Examples**
+   <Examples>
+   - <Examples> is constructed by <Table> and the corresponding solution steps <Step1> and <Step2> for generating semantic graph.
+   - <Table> is XML format. <row> is the basic unit of the table, where each <row> represents a row of the table, in each <row>, there are a few <Attribute> Value </Attribute> pairs.
+   If the corresponding values are <Empty>, it means the value of the Attribute is missing and you need to only consider the Attribute name to conduct the following steps.
+   <Table>
+   {$TABLE}
+   </Table>
+
+   <Step1> is to identify the appropriate semantic type for each attribute in the table. 
+   - You should learn the MAP FUNCTION of how the Examples map the attributes in the table to Class in <Knowledge1> and SEARCH FUNCTION of how the Examples search the appropriate Property and more Specific Property in <Knowledge1> to be applied to instances of these Class.
+   - <Rule1> All the attributes in the table must be mapped to the Class in <Ontology>. </Rule1>
+   <Step1>
+   {$STEP1}
+   </Step1>
+   Knowledge you must learn: <Knowledge2> MAP FUNCTION and SEARCH FUNCTION in <Step1> and <Rule1> <Knowledge2>
+
+   <Step2> is to build a internal link for all the semantic types in Step1
+   - You should learn the SEARCH FUNCTION of how the Examples search in the <Knowledge1> to find appropriate Property and more Specific Property in <Knowledge1> to build the internal link among semantic types in <Step1>.
+   - <Rule2> The internal structure of the semantic graph must be a tree structure </Rule2>
+   - <Rule3> All the semantic types must be linked to each other. You can not build isolated semantic types in the semantic graph.</Rule3>
+   
+   <Step2>
+   {$STEP2}
+   </Step2>
+   Knowledge you must learn: <Knowledge3> SEARCH FUNCTION in <Step2> and <Rule2> <Rule3> <Knowledge3>
+   </Examples>
+</Instruction>

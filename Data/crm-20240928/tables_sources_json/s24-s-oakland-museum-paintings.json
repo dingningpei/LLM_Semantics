@@ -1,0 +1,41 @@
+[
+    {
+        "artistName":"Arthur Mathews | Lucia Mathews",
+        "birthDate":"1860",
+        "deathDate":"1945",
+        "subtypeOfArt":"oil on wood panel",
+        "typeOfArt":"painting",
+        "title":"California Landscape  ((Hills around Sonoma))",
+        "dateMade":"",  
+        "credit":"Museum Donors' Acquisition Fund",
+        "inscription":"San Mateo Co. Arts Council, 1977",
+        "picURL":"http://collections.museumca.org/?q=system/files/imagecache/collection_image2/A59.7.1_DGMA_001_02.jpg",
+        "dimensions":"13 in HIGH x 18 in WIDE(33.02 cm HIGH x 45.72 cm WIDE)"
+    },
+    {
+        "artistName":"Lucia Mathews",
+        "birthDate":"1870",
+        "deathDate":"1955",
+        "subtypeOfArt":"oil on wood panel",
+        "typeOfArt":"painting",
+        "title":"Sand Dunes",
+        "dateMade":"",  
+        "credit":"Gift of Mr. Harold Wagner",
+        "inscription":"",
+        "picURL":"http://collections.museumca.org/?q=system/files/imagecache/collection_image2/A64.59.121_DGMA_038_02.jpg",
+        "dimensions":"18.625 in HIGH x 21.375 in WIDE(47.31 cm HIGH x 54.29 cm WIDE)"
+    },
+    {
+        "artistName":"William Smith Jewett",
+        "birthDate":"1812",
+        "deathDate":"1873",
+        "subtypeOfArt":"oil on canvas",
+        "typeOfArt":"painting",
+        "title":"Portrait of Theodore Dehone Judah",
+        "dateMade":"1855",  
+        "credit":"The Oakland Museum Kahn Collection",
+        "inscription":"",
+        "picURL":"http://collections.museumca.org/?q=system/files/imagecache/100_Square/0600122b.jpg",
+        "dimensions":"24 in HIGH x 20 in WIDE(60.96 cm HIGH x 50.80 cm WIDE)"
+    }
+]

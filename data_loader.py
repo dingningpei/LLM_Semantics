@@ -3,6 +3,11 @@ import json
 import random
 import chardet
 
+def load_ontologies_xml(file_path):
+    """Load ontologies from a XML file."""
+    with open(file_path, 'r', encoding='utf-8') as file:
+        ontologies = file.read()
+    return ontologies
 
 def detect_encoding(file_path):
     with open(file_path, 'rb') as file:
@@ -15,20 +20,6 @@ def load_data(file_path, size=0):
     """Load table data from a file."""
     with open(file_path, 'r', encoding=detect_encoding(file_path)) as file:
         data = json.load(file)
-
-
-
-    # idx = 0
-    # result = []
-    # if size > 0:
-    #     while count < size:
-    #         if not check_data_empty(data[idx]):
-    #             count += 1
-    #             result.append(data[count])
-    #         idx += 1
-    #     return result
-    # else:
-    #     return data
     if size > 0:
         data = data[: size]
         for entry in data:
@@ -37,13 +28,21 @@ def load_data(file_path, size=0):
                     entry[key] = "<Empty>"  # Replace null with <Empty>
     return data
 
+def load_data_xml(file_path, size=0):
+    """Load table data from a file."""
+    with open(file_path, 'r', encoding=detect_encoding(file_path)) as file:
+        data = file.read()
+    if size > 0:
+        data = data[: size]
+    return data
+
 def check_data_empty(data):
     for key, value in data.items():
         if value is None or len(str(value)) < 1:
             return True
     return False
     
-def generate_data(sources_dir, models_dir, num_files=0, size=0, test_size=0.25, random_state= None):
+def generate_data(sources_dir, models_dir, num_files=0, size=0, test_size=0.25, random_state= None, xml=False):
     """Load training input and output data from specified directories."""
     source_files = sorted(os.listdir(sources_dir))
     model_files = sorted(os.listdir(models_dir))
@@ -79,7 +78,7 @@ def generate_data(sources_dir, models_dir, num_files=0, size=0, test_size=0.25, 
             model_file_path = os.path.join(models_dir, model_file)
             print(f"Loading data from {source_file_path} and {model_file_path}")
             
-            input_data = load_data(source_file_path, size)
+            input_data = load_data_xml(source_file_path) if xml else load_data(source_file_path, size)            
             output_data = load_data(model_file_path)
             data_tuples.append({"table":input_data, "semantic_graph":output_data})
         return data_tuples

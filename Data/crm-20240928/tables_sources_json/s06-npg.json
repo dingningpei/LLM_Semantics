@@ -1,0 +1,47 @@
+[
+    {
+        "title":"Henry Larcom Abbot",
+        "classification":"Painting",
+        "medium":"Oil on canvas",
+        "dimension":"41.9cm x 36.8cm (16 1/2\" x 14 1/2\")",
+        "owner":"National Portrait Gallery, Smithsonian Institution",
+        "aquisitionDate":"1992-05-26",
+        "image":"http://npgportraits.si.edu/eMuseumNPG/media/previews/9200254a.jpg",
+        "description":"",
+        "dateOfWork":"1857",
+        "creditLine":"National Portrait Gallery, Smithsonian Institution; gift of Henry Merriam Abbot, in loving memory of his great-grandfather, Henry Larcom Abbot",
+        "artist":"Nahum Ball Onthank",
+        "artistBornDate":"1823",
+        "artistDiedDate":"1888"
+    },
+    {
+        "title":"Jean Louis Rodolphe Agassiz",      
+        "classification":"Painting",
+        "medium":"Oil on canvas",
+        "dimension":"88.9cm x 76.2cm (35\" x 30\"), Accurate",
+        "owner":"National Portrait Gallery, Smithsonian Institution",
+        "aquisitionDate":"1966",
+        "image":"http://npgportraits.si.edu/eMuseumNPG/media/previews/6600030a.jpg",
+        "description":"",
+        "dateOfWork":"1913",
+        "creditLine":"National Portrait Gallery, Smithsonian Institution; transfer from the National Museum of Natural History",
+        "artist":"Louis Mayer",
+        "artistBornDate":"26 Nov 1869",
+        "artistDiedDate":"1969"
+    },
+    {
+        "title":"Jean Louis Rodolphe Agassiz",
+        "classification":"Painting",
+        "medium":"Oil on canvas",
+        "dimension":"92cm x 76.5cm (36 1/4\" x 30 1/8\"), Accurate",
+        "owner":"National Portrait Gallery, Smithsonian Institution",
+        "aquisitionDate":"1966-05",
+        "image":"http://npgportraits.si.edu/eMuseumNPG/media/previews/6600052a.jpg",
+        "description":"",
+        "dateOfWork":"1872-1873",
+        "creditLine":"National Portrait Gallery, Smithsonian Institution; transfer from the Smithsonian American Art Museum",
+        "artist":"Walter Ingalls",
+        "artistBornDate":"1805",
+        "artistDiedDate":"1874"
+    }
+]

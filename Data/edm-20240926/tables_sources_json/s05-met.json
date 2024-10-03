@@ -1,0 +1,102 @@
+[
+    {
+        "id":10000376,
+        "image":"http://images.metmuseum.org/CRDImages/ad/web-large/DP228047.jpg",
+        "relatedArtworks":[
+         10008751,
+         10001363,
+         10002811,
+         10008076,
+         10008753
+        ],
+        "date":"1770-76",
+        "geography":"Mid-Atlantic, New York City, New York, United States",
+        "medium":"Silver",
+        "dimensions":"11 3/16 x 14 7/16 x 11 3/8 in. (28.4 x 36.7 x 28.9 cm); 41 oz. 5 dwt. (1282.7 g)",
+        "classification":"Silver",
+        "creditLine":"Morris K. Jesup Fund, 1954",
+        "accessionNumber":"54.167",
+        "who":"Myer Myers",
+        "what":[
+         "Metal",
+         "Silver",
+         "Baskets"
+        ],
+        "description":"American baskets for bread, cake, or fruit are extremely rare. The monogram on the interior is for Susannah and Samuel Cornell. Myers made several objects for these wealthy patrons from New York and New Bern, North Carolina. According to the inscription on the underside of the basket, the Cornells later gave it to their daughter Hannah, who married Herman LeRoy on October 19, 1786.",
+        "provenance":[
+         "Made for Samuel (1731-1781) and Susannah Mabson (d. 1778) Cornell, New York, NY and New Bern, NC",
+         "to their daughter, Hannah Cornell Le Roy (ca. 1760-1818)",
+         "by descent to Stuyvesant Le Roy (b. 1865)",
+         "to his cousin, Augusta McCagg (b. 1895)I",
+         "bought by The Metropolitan Museum of Art, 1954."
+        ]
+    },
+    {
+        "id":10000831,
+        "image":"http://images.metmuseum.org/CRDImages/ad/web-large/DP104414.jpg",
+        "relatedArtworks":[
+         10008604,
+         10001261,
+         10001262,
+         10007839,
+         10008488
+        ],
+        "date":"1700-1710",
+        "geography":"Mid-Atlantic, New York City, New York, United States",
+        "medium":"Silver",
+        "dimensions":[
+         "Overall 5 3/8 x 13 13/16 in. (13.7 x 35.1 cm); 25 oz. 19 dwt. (806.9 g)",
+         "Lip Diam. 9 11/16 in. (24.6 cm)",
+         "Foot Diam. 4 13/16 in. (12.2 cm)"
+        ],
+        "classification":"Silver",
+        "creditLine":"Samuel D. Lee Fund, 1938",
+        "accessionNumber":"38.63",
+        "who":"Cornelius Kierstede",
+        "what":[
+         "Metal",
+         "Silver",
+         "Bowls"
+        ],
+        "description":"Derived from Dutch, Scandinavian, and English sources, brandywine bowls were used on festive occasions such as the kindermaal, when women gathered to welcome a newborn child. Following Dutch custom, a bowl would be filled with raisins and brandy and passed from guest to guest. Here, boldly chased tulips create a sumptuous effect. The bowl belonged to Theunis Jacobsen Quick, a wealthy baker, and his wife, Vroutje 4516 Janse Haring.",
+        "provenance":[
+         "Theunis Jacobsen Quick and Vroutje Janse Haring",
+         "with Robert Ensko, New York",
+         "sold to The Metropolitan Museum of Art, 1938."
+        ]
+    },
+    {
+        "id":10003596,
+        "image":"http://images.metmuseum.org/CRDImages/ad/web-large/DP108633.jpg",
+        "relatedArtworks":[
+         10001626,
+         10001715,
+         10001696,
+         10020094,
+         10007087
+        ],
+        "date":"1758",
+        "geography":"New England, Newport, Rhode Island, United States",
+        "medium":"Walnut, maple",
+        "dimensions":"46 3/8 x 32 3/8 x 25 7/8 in. (117.8 x 82.2 x 65.7 cm)",
+        "classification":"Furniture",
+        "creditLine":"Gift of Mrs. J. Insley Blair, 1950",
+        "accessionNumber":"50.228.3",
+        "who":"Caleb Gardner",
+        "what":[
+         "Wood",
+         "Furniture",
+         "Seating furniture",
+         "Chairs",
+         "Walnut",
+         "Maple",
+         "Easy chairs"
+        ],
+        "description":"Eighteenth-century easy chairs heavily padded, with thick down-filled cushions, and with wings to rest one's head against and keep drafts away—were often reserved for the elderly or the infirm. This New England example is remarkable for its elaborate upholstery and intact condition. The front is covered with Irish stitch needlework and the back with a needlework landscape scene. The seams are covered with silk tape. The frame is inscribed by \"Gardner Junr,\" presumably the upholsterer, and dated \"Newport, May 1758.\"",
+        "provenance":[
+         "The Keech or Keach family, Newport, Rhode Island, by 1850-1926",
+         "with Ginsburg and Levy Inc., New York, 1926",
+         "Mrs. J. Insley Blair, Tuxedo Park, New York, 1926-1950"
+        ]
+    }
+]

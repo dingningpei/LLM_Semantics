@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E35_Title1"/>
+        <rdf:predicate rdf:resource="rdfs:label"/>
+        <rdf:object>objectTitle</rdf:object>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E55_Type1"/>
+        <rdf:predicate rdf:resource="rdfs:label"/>
+        <rdf:object>objectWorkType</rdf:object>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E82_Actor_Appellation1"/>
+        <rdf:predicate rdf:resource="rdfs:label"/>
+        <rdf:object>artistName</rdf:object>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E74_Group1"/>
+        <rdf:predicate rdf:resource="rdfs:label"/>
+        <rdf:object>artistNationality</rdf:object>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E52_Time-Span1"/>
+        <rdf:predicate rdf:resource="crm:P82_at_some_time_within"/>
+        <rdf:object>artistBirthDate</rdf:object>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E52_Time-Span2"/>
+        <rdf:predicate rdf:resource="crm:P82_at_some_time_within"/>
+        <rdf:object>artistDeathDate</rdf:object>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E52_Time-Span3"/>
+        <rdf:predicate rdf:resource="crm:P82a_begin_of_the_begin"/>
+        <rdf:object>objectEarliestDate</rdf:object>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E52_Time-Span3"/>
+        <rdf:predicate rdf:resource="crm:P82b_end_of_the_end"/>
+        <rdf:object>objectLatestDate</rdf:object>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E30_Right1"/>
+        <rdf:predicate rdf:resource="crm:P3_has_note"/>
+        <rdf:object>objectRights</rdf:object>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E55_Type2"/>
+        <rdf:predicate rdf:resource="rdfs:label"/>
+        <rdf:object>objectFacetValue</rdf:object>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E40_Legal_Body1"/>
+        <rdf:predicate rdf:resource="rdfs:label"/>
+        <rdf:object>objectLinkSource</rdf:object>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E54_Dimension1"/>
+        <rdf:predicate rdf:resource="crm:P3_has_note"/>
+        <rdf:object>dimensions</rdf:object>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E22_Man-Made_Object1"/>
+        <rdf:predicate rdf:resource="crm:P108i_was_produced_by"/>
+        <rdf:object rdf:resource="crm:E12_Production1"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E22_Man-Made_Object1"/>
+        <rdf:predicate rdf:resource="crm:P102_has_title"/>
+        <rdf:object rdf:resource="crm:E35_Title1"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E22_Man-Made_Object1"/>
+        <rdf:predicate rdf:resource="crm:P104_is_subject_to"/>
+        <rdf:object rdf:resource="crm:E30_Right1"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E22_Man-Made_Object1"/>
+        <rdf:predicate rdf:resource="crm:P2_has_type"/>
+        <rdf:object rdf:resource="crm:E55_Type1"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E22_Man-Made_Object1"/>
+        <rdf:predicate rdf:resource="crm:P43_has_dimension"/>
+        <rdf:object rdf:resource="crm:E54_Dimension1"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E22_Man-Made_Object1"/>
+        <rdf:predicate rdf:resource="crm:P51_has_former_or_current_owner"/>
+        <rdf:object rdf:resource="crm:E40_Legal_Body1"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E12_Production1"/>
+        <rdf:predicate rdf:resource="crm:P14_carried_out_by"/>
+        <rdf:object rdf:resource="crm:E21_Person1"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E12_Production1"/>
+        <rdf:predicate rdf:resource="crm:P32_used_general_technique"/>
+        <rdf:object rdf:resource="crm:E55_Type2"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E12_Production1"/>
+        <rdf:predicate rdf:resource="crm:P4_has_time-span"/>
+        <rdf:object rdf:resource="crm:E52_Time-Span3"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E21_Person1"/>
+        <rdf:predicate rdf:resource="crm:P98i_was_born"/>
+        <rdf:object rdf:resource="crm:E67_Birth1"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E21_Person1"/>
+        <rdf:predicate rdf:resource="crm:P100i_died_in"/>
+        <rdf:object rdf:resource="crm:E69_Death1"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E21_Person1"/>
+        <rdf:predicate rdf:resource="crm:P107i_is_current_or_former_member_of"/>
+        <rdf:object rdf:resource="crm:E74_Group1"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E21_Person1"/>
+        <rdf:predicate rdf:resource="crm:P131_is_identified_by"/>
+        <rdf:object rdf:resource="crm:E82_Actor_Appellation1"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E67_Birth1"/>
+        <rdf:predicate rdf:resource="crm:P4_has_time-span"/>
+        <rdf:object rdf:resource="crm:E52_Time-Span1"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E69_Death1"/>
+        <rdf:predicate rdf:resource="crm:P4_has_time-span"/>
+        <rdf:object rdf:resource="crm:E52_Time-Span2"/>
+    </rdf:Description>
+</rdf:RDF>

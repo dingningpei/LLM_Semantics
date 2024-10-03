@@ -68,7 +68,7 @@ Reasoning:
 **attribute name3**:
 - **Feature Function used**: 
 - **Map function Used or Reasoning Step**: 
-- **Semantic Type**: 
+- **Mapped to**: 
 
 Final output:
 <Step1>

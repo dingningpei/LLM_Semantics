@@ -1,0 +1,56 @@
+{
+    "semantic_triples": [
+        [
+            "edm:WebResource2",
+            "karma:classLink",
+            "video"
+        ],
+        [
+            "aac-ont:CulturalHeritageObject1",
+            "dcterms:title",
+            "title"
+        ],
+        [
+            "aac-ont:Person1",
+            "ElementsGr2:nameOfThePerson",
+            "author"
+        ],
+        [
+            "edm:WebResource1",
+            "karma:classLink",
+            "imageSRC"
+        ],
+        [
+            "aac-ont:CulturalHeritageObject1",
+            "dcterms:provenance",
+            "caption"
+        ],
+        [
+            "aac-ont:CulturalHeritageObject1",
+            "dcterms:description",
+            "description"
+        ]
+    ],
+    "internal_link_triples": [
+        [
+            "edm:EuropeanaAggregation1",
+            "edm:aggregatedCHO",
+            "aac-ont:CulturalHeritageObject1"
+        ],
+        [
+            "edm:EuropeanaAggregation1",
+            "edm:hasView",
+            "edm:WebResource1"
+        ],
+        [
+            "edm:EuropeanaAggregation1",
+            "edm:hasView",
+            "edm:WebResource2"
+        ],
+        [
+            "aac-ont:CulturalHeritageObject1",
+            "dcterms:creator",
+            "aac-ont:Person1"
+        ]
+    ]
+}

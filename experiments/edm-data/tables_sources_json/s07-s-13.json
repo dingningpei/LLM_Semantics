@@ -1,0 +1,50 @@
+[
+    {
+        "origin":"Made in Philadelphia, Pennsylvania, United States, North and Central America",
+        "creditLine":"Gift of Mrs. Thomas Eakins and Miss Mary Adeline Williams, 1929",
+        "audioURL":"http://www.philamuseum.org/audio/collections/historicAmericaFamilyTour/694.mp3",
+        "category":"American Art",
+        "dates":"1898-99",
+        "title":"Between Rounds",
+        "technique":"Oil on canvas",
+        "ac_id":"1929-184-16",
+        "imageURL":"http://www.philamuseum.org/images/cad/large/1929-184-16after-CX.jpg",
+        "dimension":"50 1/8 x 39 7/8 inches (127.3 x 101.3 cm)",
+        "name":"Thomas Eakins",
+        "nationality":"American",
+        "birthYear":"1844",
+        "deathYear":"1916"
+    },
+    {
+        "origin":"Made in United States, North and Central America",
+        "creditLine":"The Alex Simpson, Jr., Collection, 1946",
+        "audioURL":"",
+        "category":"Modern and Contemporary Art",
+        "dates":"c. 1900",
+        "title":"Baptism (Church Interior)",
+        "technique":"Oil on canvas",
+        "ac_id":"1946-5-1",
+        "imageURL":"http://www.philamuseum.org/images/cad/large/1946-5-1-nyd.jpg",
+        "dimension":"43 1/2 x 33 3/16 inches (110.5 x 84.3 cm)",
+        "name":"Julius Gari Melchers",
+        "nationality":"American",
+        "birthYear":"1860",
+        "deathYear":"1932"
+    },
+    {
+        "origin":"Made in United States, North and Central America",
+        "creditLine":"Gift of Mrs. John Wintersteen in memory of John Wintersteen, 1953",
+        "audioURL":"",
+        "category":"American Art",
+        "dates":"1878",
+        "title":"Barn Swallows",
+        "technique":"Oil on canvas",
+        "ac_id":"1953-111-1",
+        "imageURL":"http://www.philamuseum.org/images/cad/large/1953-111-1-CX.jpg",
+        "dimension":"27 3/16 x 22 3/16 inches (69.1 x 56.4 cm)",
+        "name":"Eastman Johnson",
+        "nationality":"American",
+        "birthYear":"1824",
+        "deathYear":"1906"
+    }
+]

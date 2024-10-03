@@ -1,0 +1,23 @@
+[
+    {
+        "artistName":"Hans von Aachen",
+        "nationality":"German",
+        "birthDataAndPlace":"b. 1552 Cologne, Germany, d. 1615 Prague, Czech Republic",
+        "longBiography":"Hans von Aachen's renowned cosmopolitanManneriststyle originated humbly: he first trained with a minor painter in his native Cologne, and he took his name from his father's hometown. He probably joined the Cologne painters'guildbefore leaving for Italy around 1574.After a stay in Venice, von Aachen was soon in Rome, learning from a circle of Northern European artists. He also painted portraits in Florence. Back in Germany by 1587, he began to gain fame for history pictures and psychologically sensitive portraits.In 1592 Emperor Rudolf II of Prague named Von Aachen imperial painterin absentia. Four years later he moved to Prague, serving as painter, art dealer, and diplomat while also completing commissions for clients in Munich and Augsburg. He frequently journeyed abroad on diplomatic missions and to purchase pictures for his insatiable patron. After Rudolf's death in 1612, von Aachen worked for his successor, Emperor Matthias.Von Aachen's Prague paintings reflect Rudolf's desire for sensuality, with smoothly modeled, elongated figures arranged in elegant poses, often including a nude woman seen from behind. His style combined an idealization indebted to Roman and Florentine Mannerism with brilliant Venetian color and Dutch realism. The many engravings published after his designs spread von Aachen's influence.",
+        "occupation":"Painter"
+    },
+    {
+        "artistName":"Francesco Abbiati",
+        "nationality":"Italian",
+        "birthDataAndPlace":"active: about 1750 - about 1800",
+        "longBiography":"Very little is known about Francesco Abbiati and his work. He was from Mandello, near Lake Como, and worked in Rome early in his career. A number of tables, with complexmarquetrysimilar to one in the Getty Museum, are described in the inventory of the Neapolitan court, so he must have worked for the royal family in Naples. He also worked in Madrid for a number of years. He was particularly known for his work in theNeoclassicalstyle, usingmotifscopied fromantiquity.",
+        "occupation":"Cabinetmaker"
+    },
+    {
+        "artistName":"Berenice Abbott",
+        "nationality":"American",
+        "birthDataAndPlace":"b.  1898, d.   1991",
+        "longBiography":"At age seventy-seven Berenice Abbott thus explained her approach to making images. She learned photography in the 1920s in Paris, as a studio assistant of fellow American expatriate Man Ray. She soon opened her own portrait studio, where she photographed artists and intellectuals living in Paris, including James Joyce and Eug\u00e8ne Atget. After Atget's death, Abbott was instrumental in promoting his work by preserving his prints and negatives and arranging for publications and exhibitions of his photographs. She returned to the United States and began to photograph the architectural landscape of New York City, which resulted in the publicationChanging New York. She taught at the New School for Social Research in New York from the 1930s until 1958.",
+        "occupation":"photographer"
+    }
+]

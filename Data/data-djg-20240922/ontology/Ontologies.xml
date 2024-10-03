@@ -1,0 +1,1959 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+    xmlns:karma="http://isi.edu/integration/karma/dev#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" >
+</rdf:RDF>
+
+<rdf:RDF xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/" xml:lang="en">
+<rdfs:Class rdf:about="E1_CRM_Entity">
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E2_Temporal_Entity">
+<rdfs:subClassOf rdf:resource="E1_CRM_Entity"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E3_Condition_State">
+<rdfs:subClassOf rdf:resource="E2_Temporal_Entity"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E4_Period">
+<rdfs:subClassOf rdf:resource="E2_Temporal_Entity"/>
+<rdfs:subClassOf rdf:resource="E92_Spacetime_Volume"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E5_Event">
+<rdfs:subClassOf rdf:resource="E4_Period"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E6_Destruction">
+<rdfs:subClassOf rdf:resource="E64_End_of_Existence"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E7_Activity">
+<rdfs:subClassOf rdf:resource="E5_Event"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E8_Acquisition">
+<rdfs:subClassOf rdf:resource="E7_Activity"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E9_Move">
+<rdfs:subClassOf rdf:resource="E7_Activity"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E10_Transfer_of_Custody">
+<rdfs:subClassOf rdf:resource="E7_Activity"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E11_Modification">
+<rdfs:subClassOf rdf:resource="E7_Activity"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E12_Production">
+<rdfs:subClassOf rdf:resource="E11_Modification"/>
+<rdfs:subClassOf rdf:resource="E63_Beginning_of_Existence"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E13_Attribute_Assignment">
+<rdfs:subClassOf rdf:resource="E7_Activity"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E14_Condition_Assessment">
+<rdfs:subClassOf rdf:resource="E13_Attribute_Assignment"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E15_Identifier_Assignment">
+<rdfs:subClassOf rdf:resource="E13_Attribute_Assignment"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E16_Measurement">
+<rdfs:subClassOf rdf:resource="E13_Attribute_Assignment"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E17_Type_Assignment">
+<rdfs:subClassOf rdf:resource="E13_Attribute_Assignment"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E18_Physical_Thing">
+<rdfs:subClassOf rdf:resource="E72_Legal_Object"/>
+<rdfs:subClassOf rdf:resource="E92_Spacetime_Volume"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E19_Physical_Object">
+<rdfs:subClassOf rdf:resource="E18_Physical_Thing"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E20_Biological_Object">
+<rdfs:subClassOf rdf:resource="E19_Physical_Object"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E21_Person">
+<rdfs:subClassOf rdf:resource="E20_Biological_Object"/>
+<rdfs:subClassOf rdf:resource="E39_Actor"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E22_Man-Made_Object">
+<rdfs:subClassOf rdf:resource="E19_Physical_Object"/>
+<rdfs:subClassOf rdf:resource="E24_Physical_Man-Made_Thing"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E24_Physical_Man-Made_Thing">
+<rdfs:subClassOf rdf:resource="E18_Physical_Thing"/>
+<rdfs:subClassOf rdf:resource="E71_Man-Made_Thing"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E25_Man-Made_Feature">
+<rdfs:subClassOf rdf:resource="E24_Physical_Man-Made_Thing"/>
+<rdfs:subClassOf rdf:resource="E26_Physical_Feature"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E26_Physical_Feature">
+<rdfs:subClassOf rdf:resource="E18_Physical_Thing"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E27_Site">
+<rdfs:subClassOf rdf:resource="E26_Physical_Feature"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E28_Conceptual_Object">
+<rdfs:subClassOf rdf:resource="E71_Man-Made_Thing"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E29_Design_or_Procedure">
+<rdfs:subClassOf rdf:resource="E73_Information_Object"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E30_Right">
+<rdfs:subClassOf rdf:resource="E89_Propositional_Object"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E31_Document">
+<rdfs:subClassOf rdf:resource="E73_Information_Object"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E32_Authority_Document">
+<rdfs:subClassOf rdf:resource="E31_Document"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E33_Linguistic_Object">
+<rdfs:subClassOf rdf:resource="E73_Information_Object"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E34_Inscription">
+<rdfs:subClassOf rdf:resource="E33_Linguistic_Object"/>
+<rdfs:subClassOf rdf:resource="E37_Mark"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E35_Title">
+<rdfs:subClassOf rdf:resource="E33_Linguistic_Object"/>
+<rdfs:subClassOf rdf:resource="E41_Appellation"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E36_Visual_Item">
+<rdfs:subClassOf rdf:resource="E73_Information_Object"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E37_Mark">
+<rdfs:subClassOf rdf:resource="E36_Visual_Item"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E38_Image">
+<rdfs:subClassOf rdf:resource="E36_Visual_Item"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E39_Actor">
+<rdfs:subClassOf rdf:resource="E77_Persistent_Item"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E40_Legal_Body">
+<rdfs:subClassOf rdf:resource="E74_Group"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E41_Appellation">
+<rdfs:subClassOf rdf:resource="E90_Symbolic_Object"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E42_Identifier">
+<rdfs:subClassOf rdf:resource="E41_Appellation"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E44_Place_Appellation">
+<rdfs:subClassOf rdf:resource="E41_Appellation"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E45_Address">
+<rdfs:subClassOf rdf:resource="E44_Place_Appellation"/>
+<rdfs:subClassOf rdf:resource="E51_Contact_Point"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E46_Section_Definition">
+<rdfs:subClassOf rdf:resource="E44_Place_Appellation"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E47_Spatial_Coordinates">
+<rdfs:subClassOf rdf:resource="E44_Place_Appellation"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E48_Place_Name">
+<rdfs:subClassOf rdf:resource="E44_Place_Appellation"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E49_Time_Appellation">
+<rdfs:subClassOf rdf:resource="E41_Appellation"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E50_Date">
+<rdfs:subClassOf rdf:resource="E49_Time_Appellation"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E51_Contact_Point">
+<rdfs:subClassOf rdf:resource="E41_Appellation"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E52_Time-Span">
+<rdfs:subClassOf rdf:resource="E1_CRM_Entity"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E53_Place">
+<rdfs:subClassOf rdf:resource="E1_CRM_Entity"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E54_Dimension">
+<rdfs:subClassOf rdf:resource="E1_CRM_Entity"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E55_Type">
+<rdfs:subClassOf rdf:resource="E28_Conceptual_Object"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E56_Language">
+<rdfs:subClassOf rdf:resource="E55_Type"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E57_Material">
+<rdfs:subClassOf rdf:resource="E55_Type"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E58_Measurement_Unit">
+<rdfs:subClassOf rdf:resource="E55_Type"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E63_Beginning_of_Existence">
+<rdfs:subClassOf rdf:resource="E5_Event"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E64_End_of_Existence">
+<rdfs:subClassOf rdf:resource="E5_Event"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E65_Creation">
+<rdfs:subClassOf rdf:resource="E7_Activity"/>
+<rdfs:subClassOf rdf:resource="E63_Beginning_of_Existence"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E66_Formation">
+<rdfs:subClassOf rdf:resource="E7_Activity"/>
+<rdfs:subClassOf rdf:resource="E63_Beginning_of_Existence"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E67_Birth">
+<rdfs:subClassOf rdf:resource="E63_Beginning_of_Existence"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E68_Dissolution">
+<rdfs:subClassOf rdf:resource="E64_End_of_Existence"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E69_Death">
+<rdfs:subClassOf rdf:resource="E64_End_of_Existence"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E70_Thing">
+<rdfs:subClassOf rdf:resource="E77_Persistent_Item"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E71_Man-Made_Thing">
+<rdfs:subClassOf rdf:resource="E70_Thing"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E72_Legal_Object">
+<rdfs:subClassOf rdf:resource="E70_Thing"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E73_Information_Object">
+<rdfs:subClassOf rdf:resource="E89_Propositional_Object"/>
+<rdfs:subClassOf rdf:resource="E90_Symbolic_Object"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E74_Group">
+<rdfs:subClassOf rdf:resource="E39_Actor"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E75_Conceptual_Object_Appellation">
+<rdfs:subClassOf rdf:resource="E41_Appellation"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E77_Persistent_Item">
+<rdfs:subClassOf rdf:resource="E1_CRM_Entity"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E78_Collection">
+<rdfs:subClassOf rdf:resource="E24_Physical_Man-Made_Thing"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E79_Part_Addition">
+<rdfs:subClassOf rdf:resource="E11_Modification"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E80_Part_Removal">
+<rdfs:subClassOf rdf:resource="E11_Modification"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E81_Transformation">
+<rdfs:subClassOf rdf:resource="E63_Beginning_of_Existence"/>
+<rdfs:subClassOf rdf:resource="E64_End_of_Existence"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E82_Actor_Appellation">
+<rdfs:subClassOf rdf:resource="E41_Appellation"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E83_Type_Creation">
+<rdfs:subClassOf rdf:resource="E65_Creation"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E84_Information_Carrier">
+<rdfs:subClassOf rdf:resource="E22_Man-Made_Object"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E85_Joining">
+<rdfs:subClassOf rdf:resource="E7_Activity"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E86_Leaving">
+<rdfs:subClassOf rdf:resource="E7_Activity"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E87_Curation_Activity">
+<rdfs:subClassOf rdf:resource="E7_Activity"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E89_Propositional_Object">
+<rdfs:subClassOf rdf:resource="E28_Conceptual_Object"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E90_Symbolic_Object">
+<rdfs:subClassOf rdf:resource="E28_Conceptual_Object"/>
+<rdfs:subClassOf rdf:resource="E72_Legal_Object"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E92_Spacetime_Volume">
+<rdfs:subClassOf rdf:resource="E1_CRM_Entity"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="E93_Presence">
+<rdfs:subClassOf rdf:resource="E92_Spacetime_Volume"/>
+</rdfs:Class>
+
+<rdf:Property rdf:about="P1_is_identified_by">
+<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+<rdfs:range rdf:resource="E41_Appellation"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P1i_identifies">
+<rdfs:domain rdf:resource="E41_Appellation"/>
+<rdfs:range rdf:resource="E1_CRM_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P2_has_type">
+<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+<rdfs:range rdf:resource="E55_Type"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P2i_is_type_of">
+<rdfs:domain rdf:resource="E55_Type"/>
+<rdfs:range rdf:resource="E1_CRM_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P3_has_note">
+<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+<rdfs:range rdf:resource="rdfs:Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P4_has_time-span">
+<rdfs:domain rdf:resource="E2_Temporal_Entity"/>
+<rdfs:range rdf:resource="E52_Time-Span"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P4i_is_time-span_of">
+<rdfs:domain rdf:resource="E52_Time-Span"/>
+<rdfs:range rdf:resource="E2_Temporal_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P5_consists_of">
+<rdfs:domain rdf:resource="E3_Condition_State"/>
+<rdfs:range rdf:resource="E3_Condition_State"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P5i_forms_part_of">
+<rdfs:domain rdf:resource="E3_Condition_State"/>
+<rdfs:range rdf:resource="E3_Condition_State"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P7_took_place_at">
+<rdfs:domain rdf:resource="E4_Period"/>
+<rdfs:range rdf:resource="E53_Place"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P7i_witnessed">
+<rdfs:domain rdf:resource="E53_Place"/>
+<rdfs:range rdf:resource="E4_Period"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P8_took_place_on_or_within">
+<rdfs:domain rdf:resource="E4_Period"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P8i_witnessed">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E4_Period"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P9_consists_of">
+<rdfs:domain rdf:resource="E4_Period"/>
+<rdfs:range rdf:resource="E4_Period"/>
+<rdfs:subPropertyOf rdf:resource="P10i_contains"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P9i_forms_part_of">
+<rdfs:domain rdf:resource="E4_Period"/>
+<rdfs:range rdf:resource="E4_Period"/>
+<rdfs:subPropertyOf rdf:resource="P10_falls_within"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P10_falls_within">
+<rdfs:domain rdf:resource="E92_Spacetime_Volume"/>
+<rdfs:range rdf:resource="E92_Spacetime_Volume"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P10i_contains">
+<rdfs:domain rdf:resource="E92_Spacetime_Volume"/>
+<rdfs:range rdf:resource="E92_Spacetime_Volume"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P11_had_participant">
+<rdfs:domain rdf:resource="E5_Event"/>
+<rdfs:range rdf:resource="E39_Actor"/>
+<rdfs:subPropertyOf rdf:resource="P12_occurred_in_the_presence_of"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P11i_participated_in">
+<rdfs:domain rdf:resource="E39_Actor"/>
+<rdfs:range rdf:resource="E5_Event"/>
+<rdfs:subPropertyOf rdf:resource="P12i_was_present_at"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P12_occurred_in_the_presence_of">
+<rdfs:domain rdf:resource="E5_Event"/>
+<rdfs:range rdf:resource="E77_Persistent_Item"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P12i_was_present_at">
+<rdfs:domain rdf:resource="E77_Persistent_Item"/>
+<rdfs:range rdf:resource="E5_Event"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P13_destroyed">
+<rdfs:domain rdf:resource="E6_Destruction"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+<rdfs:subPropertyOf rdf:resource="P93_took_out_of_existence"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P13i_was_destroyed_by">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E6_Destruction"/>
+<rdfs:subPropertyOf rdf:resource="P93i_was_taken_out_of_existence_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P14_carried_out_by">
+<rdfs:domain rdf:resource="E7_Activity"/>
+<rdfs:range rdf:resource="E39_Actor"/>
+<rdfs:subPropertyOf rdf:resource="P11_had_participant"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P14i_performed">
+<rdfs:domain rdf:resource="E39_Actor"/>
+<rdfs:range rdf:resource="E7_Activity"/>
+<rdfs:subPropertyOf rdf:resource="P11i_participated_in"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P15_was_influenced_by">
+<rdfs:domain rdf:resource="E7_Activity"/>
+<rdfs:range rdf:resource="E1_CRM_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P15i_influenced">
+<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+<rdfs:range rdf:resource="E7_Activity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P16_used_specific_object">
+<rdfs:domain rdf:resource="E7_Activity"/>
+<rdfs:range rdf:resource="E70_Thing"/>
+<rdfs:subPropertyOf rdf:resource="P12_occurred_in_the_presence_of"/>
+<rdfs:subPropertyOf rdf:resource="P15_was_influenced_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P16i_was_used_for">
+<rdfs:domain rdf:resource="E70_Thing"/>
+<rdfs:range rdf:resource="E7_Activity"/>
+<rdfs:subPropertyOf rdf:resource="P12i_was_present_at"/>
+<rdfs:subPropertyOf rdf:resource="P15i_influenced"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P17_was_motivated_by">
+<rdfs:domain rdf:resource="E7_Activity"/>
+<rdfs:range rdf:resource="E1_CRM_Entity"/>
+<rdfs:subPropertyOf rdf:resource="P15_was_influenced_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P17i_motivated">
+<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+<rdfs:range rdf:resource="E7_Activity"/>
+<rdfs:subPropertyOf rdf:resource="P15i_influenced"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P19_was_intended_use_of">
+<rdfs:domain rdf:resource="E7_Activity"/>
+<rdfs:range rdf:resource="E71_Man-Made_Thing"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P19i_was_made_for">
+<rdfs:domain rdf:resource="E71_Man-Made_Thing"/>
+<rdfs:range rdf:resource="E7_Activity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P20_had_specific_purpose">
+<rdfs:domain rdf:resource="E7_Activity"/>
+<rdfs:range rdf:resource="E5_Event"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P20i_was_purpose_of">
+<rdfs:domain rdf:resource="E5_Event"/>
+<rdfs:range rdf:resource="E7_Activity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P21_had_general_purpose">
+<rdfs:domain rdf:resource="E7_Activity"/>
+<rdfs:range rdf:resource="E55_Type"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P21i_was_purpose_of">
+<rdfs:domain rdf:resource="E55_Type"/>
+<rdfs:range rdf:resource="E7_Activity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P22_transferred_title_to">
+<rdfs:domain rdf:resource="E8_Acquisition"/>
+<rdfs:range rdf:resource="E39_Actor"/>
+<rdfs:subPropertyOf rdf:resource="P14_carried_out_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P22i_acquired_title_through">
+<rdfs:domain rdf:resource="E39_Actor"/>
+<rdfs:range rdf:resource="E8_Acquisition"/>
+<rdfs:subPropertyOf rdf:resource="P14i_performed"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P23_transferred_title_from">
+<rdfs:domain rdf:resource="E8_Acquisition"/>
+<rdfs:range rdf:resource="E39_Actor"/>
+<rdfs:subPropertyOf rdf:resource="P14_carried_out_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P23i_surrendered_title_through">
+<rdfs:domain rdf:resource="E39_Actor"/>
+<rdfs:range rdf:resource="E8_Acquisition"/>
+<rdfs:subPropertyOf rdf:resource="P14i_performed"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P24_transferred_title_of">
+<rdfs:domain rdf:resource="E8_Acquisition"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P24i_changed_ownership_through">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E8_Acquisition"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P25_moved">
+<rdfs:domain rdf:resource="E9_Move"/>
+<rdfs:range rdf:resource="E19_Physical_Object"/>
+<rdfs:subPropertyOf rdf:resource="P12_occurred_in_the_presence_of"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P25i_moved_by">
+<rdfs:domain rdf:resource="E19_Physical_Object"/>
+<rdfs:range rdf:resource="E9_Move"/>
+<rdfs:subPropertyOf rdf:resource="P12i_was_present_at"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P26_moved_to">
+<rdfs:domain rdf:resource="E9_Move"/>
+<rdfs:range rdf:resource="E53_Place"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P26i_was_destination_of">
+<rdfs:domain rdf:resource="E53_Place"/>
+<rdfs:range rdf:resource="E9_Move"/>
+<rdfs:subPropertyOf rdf:resource="P7i_witnessed"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P27_moved_from">
+<rdfs:domain rdf:resource="E9_Move"/>
+<rdfs:range rdf:resource="E53_Place"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P27i_was_origin_of">
+<rdfs:domain rdf:resource="E53_Place"/>
+<rdfs:range rdf:resource="E9_Move"/>
+<rdfs:subPropertyOf rdf:resource="P7i_witnessed"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P28_custody_surrendered_by">
+<rdfs:domain rdf:resource="E10_Transfer_of_Custody"/>
+<rdfs:range rdf:resource="E39_Actor"/>
+<rdfs:subPropertyOf rdf:resource="P14_carried_out_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P28i_surrendered_custody_through">
+<rdfs:domain rdf:resource="E39_Actor"/>
+<rdfs:range rdf:resource="E10_Transfer_of_Custody"/>
+<rdfs:subPropertyOf rdf:resource="P14i_performed"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P29_custody_received_by">
+<rdfs:domain rdf:resource="E10_Transfer_of_Custody"/>
+<rdfs:range rdf:resource="E39_Actor"/>
+<rdfs:subPropertyOf rdf:resource="P14_carried_out_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P29i_received_custody_through">
+<rdfs:domain rdf:resource="E39_Actor"/>
+<rdfs:range rdf:resource="E10_Transfer_of_Custody"/>
+<rdfs:subPropertyOf rdf:resource="P14i_performed"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P30_transferred_custody_of">
+<rdfs:domain rdf:resource="E10_Transfer_of_Custody"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P30i_custody_transferred_through">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E10_Transfer_of_Custody"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P31_has_modified">
+<rdfs:domain rdf:resource="E11_Modification"/>
+<rdfs:range rdf:resource="E24_Physical_Man-Made_Thing"/>
+<rdfs:subPropertyOf rdf:resource="P12_occurred_in_the_presence_of"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P31i_was_modified_by">
+<rdfs:domain rdf:resource="E24_Physical_Man-Made_Thing"/>
+<rdfs:range rdf:resource="E11_Modification"/>
+<rdfs:subPropertyOf rdf:resource="P12i_was_present_at"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P32_used_general_technique">
+<rdfs:domain rdf:resource="E7_Activity"/>
+<rdfs:range rdf:resource="E55_Type"/>
+<rdfs:subPropertyOf rdf:resource="P125_used_object_of_type"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P32i_was_technique_of">
+<rdfs:domain rdf:resource="E55_Type"/>
+<rdfs:range rdf:resource="E7_Activity"/>
+<rdfs:subPropertyOf rdf:resource="P125i_was_type_of_object_used_in"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P33_used_specific_technique">
+<rdfs:domain rdf:resource="E7_Activity"/>
+<rdfs:range rdf:resource="E29_Design_or_Procedure"/>
+<rdfs:subPropertyOf rdf:resource="P16_used_specific_object"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P33i_was_used_by">
+<rdfs:domain rdf:resource="E29_Design_or_Procedure"/>
+<rdfs:range rdf:resource="E7_Activity"/>
+<rdfs:subPropertyOf rdf:resource="P16i_was_used_for"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P34_concerned">
+<rdfs:domain rdf:resource="E14_Condition_Assessment"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+<rdfs:subPropertyOf rdf:resource="P140_assigned_attribute_to"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P34i_was_assessed_by">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E14_Condition_Assessment"/>
+<rdfs:subPropertyOf rdf:resource="P140i_was_attributed_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P35_has_identified">
+<rdfs:domain rdf:resource="E14_Condition_Assessment"/>
+<rdfs:range rdf:resource="E3_Condition_State"/>
+<rdfs:subPropertyOf rdf:resource="P141_assigned"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P35i_was_identified_by">
+<rdfs:domain rdf:resource="E3_Condition_State"/>
+<rdfs:range rdf:resource="E14_Condition_Assessment"/>
+<rdfs:subPropertyOf rdf:resource="P141i_was_assigned_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P37_assigned">
+<rdfs:domain rdf:resource="E15_Identifier_Assignment"/>
+<rdfs:range rdf:resource="E42_Identifier"/>
+<rdfs:subPropertyOf rdf:resource="P141_assigned"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P37i_was_assigned_by">
+<rdfs:domain rdf:resource="E42_Identifier"/>
+<rdfs:range rdf:resource="E15_Identifier_Assignment"/>
+<rdfs:subPropertyOf rdf:resource="P141i_was_assigned_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P38_deassigned">
+<rdfs:domain rdf:resource="E15_Identifier_Assignment"/>
+<rdfs:range rdf:resource="E42_Identifier"/>
+<rdfs:subPropertyOf rdf:resource="P141_assigned"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P38i_was_deassigned_by">
+<rdfs:domain rdf:resource="E42_Identifier"/>
+<rdfs:range rdf:resource="E15_Identifier_Assignment"/>
+<rdfs:subPropertyOf rdf:resource="P141i_was_assigned_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P39_measured">
+<rdfs:domain rdf:resource="E16_Measurement"/>
+<rdfs:range rdf:resource="E1_CRM_Entity"/>
+<rdfs:subPropertyOf rdf:resource="P140_assigned_attribute_to"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P39i_was_measured_by">
+<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+<rdfs:range rdf:resource="E16_Measurement"/>
+<rdfs:subPropertyOf rdf:resource="P140i_was_attributed_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P40_observed_dimension">
+<rdfs:domain rdf:resource="E16_Measurement"/>
+<rdfs:range rdf:resource="E54_Dimension"/>
+<rdfs:subPropertyOf rdf:resource="P141_assigned"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P40i_was_observed_in">
+<rdfs:domain rdf:resource="E54_Dimension"/>
+<rdfs:range rdf:resource="E16_Measurement"/>
+<rdfs:subPropertyOf rdf:resource="P141i_was_assigned_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P41_classified">
+<rdfs:domain rdf:resource="E17_Type_Assignment"/>
+<rdfs:range rdf:resource="E1_CRM_Entity"/>
+<rdfs:subPropertyOf rdf:resource="P140_assigned_attribute_to"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P41i_was_classified_by">
+<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+<rdfs:range rdf:resource="E17_Type_Assignment"/>
+<rdfs:subPropertyOf rdf:resource="P140i_was_attributed_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P42_assigned">
+<rdfs:domain rdf:resource="E17_Type_Assignment"/>
+<rdfs:range rdf:resource="E55_Type"/>
+<rdfs:subPropertyOf rdf:resource="P141_assigned"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P42i_was_assigned_by">
+<rdfs:domain rdf:resource="E55_Type"/>
+<rdfs:range rdf:resource="E17_Type_Assignment"/>
+<rdfs:subPropertyOf rdf:resource="P141i_was_assigned_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P43_has_dimension">
+<rdfs:domain rdf:resource="E70_Thing"/>
+<rdfs:range rdf:resource="E54_Dimension"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P43i_is_dimension_of">
+<rdfs:domain rdf:resource="E54_Dimension"/>
+<rdfs:range rdf:resource="E70_Thing"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P44_has_condition">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E3_Condition_State"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P44i_is_condition_of">
+<rdfs:domain rdf:resource="E3_Condition_State"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P45_consists_of">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E57_Material"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P45i_is_incorporated_in">
+<rdfs:domain rdf:resource="E57_Material"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P46_is_composed_of">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P46i_forms_part_of">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P48_has_preferred_identifier">
+<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+<rdfs:range rdf:resource="E42_Identifier"/>
+<rdfs:subPropertyOf rdf:resource="P1_is_identified_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P48i_is_preferred_identifier_of">
+<rdfs:domain rdf:resource="E42_Identifier"/>
+<rdfs:range rdf:resource="E1_CRM_Entity"/>
+<rdfs:subPropertyOf rdf:resource="P1i_identifies"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P49_has_former_or_current_keeper">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E39_Actor"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P49i_is_former_or_current_keeper_of">
+<rdfs:domain rdf:resource="E39_Actor"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P50_has_current_keeper">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E39_Actor"/>
+<rdfs:subPropertyOf rdf:resource="P49_has_former_or_current_keeper"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P50i_is_current_keeper_of">
+<rdfs:domain rdf:resource="E39_Actor"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+<rdfs:subPropertyOf rdf:resource="P49i_is_former_or_current_keeper_of"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P51_has_former_or_current_owner">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E39_Actor"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P51i_is_former_or_current_owner_of">
+<rdfs:domain rdf:resource="E39_Actor"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P52_has_current_owner">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E39_Actor"/>
+<rdfs:subPropertyOf rdf:resource="P51_has_former_or_current_owner"/>
+<rdfs:subPropertyOf rdf:resource="P105_right_held_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P52i_is_current_owner_of">
+<rdfs:domain rdf:resource="E39_Actor"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+<rdfs:subPropertyOf rdf:resource="P51i_is_former_or_current_owner_of"/>
+<rdfs:subPropertyOf rdf:resource="P105i_has_right_on"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P53_has_former_or_current_location">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E53_Place"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P53i_is_former_or_current_location_of">
+<rdfs:domain rdf:resource="E53_Place"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P54_has_current_permanent_location">
+<rdfs:domain rdf:resource="E19_Physical_Object"/>
+<rdfs:range rdf:resource="E53_Place"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P54i_is_current_permanent_location_of">
+<rdfs:domain rdf:resource="E53_Place"/>
+<rdfs:range rdf:resource="E19_Physical_Object"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P55_has_current_location">
+<rdfs:domain rdf:resource="E19_Physical_Object"/>
+<rdfs:range rdf:resource="E53_Place"/>
+<rdfs:subPropertyOf rdf:resource="P53_has_former_or_current_location"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P55i_currently_holds">
+<rdfs:domain rdf:resource="E53_Place"/>
+<rdfs:range rdf:resource="E19_Physical_Object"/>
+<rdfs:subPropertyOf rdf:resource="P53i_is_former_or_current_location_of"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P56_bears_feature">
+<rdfs:domain rdf:resource="E19_Physical_Object"/>
+<rdfs:range rdf:resource="E26_Physical_Feature"/>
+<rdfs:subPropertyOf rdf:resource="P46_is_composed_of"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P56i_is_found_on">
+<rdfs:domain rdf:resource="E26_Physical_Feature"/>
+<rdfs:range rdf:resource="E19_Physical_Object"/>
+<rdfs:subPropertyOf rdf:resource="P46i_forms_part_of"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P57_has_number_of_parts">
+<rdfs:domain rdf:resource="E19_Physical_Object"/>
+<rdfs:range rdf:resource="rdfs:Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P58_has_section_definition">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E46_Section_Definition"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P58i_defines_section">
+<rdfs:domain rdf:resource="E46_Section_Definition"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P59_has_section">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E53_Place"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P59i_is_located_on_or_within">
+<rdfs:domain rdf:resource="E53_Place"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P62_depicts">
+<rdfs:domain rdf:resource="E24_Physical_Man-Made_Thing"/>
+<rdfs:range rdf:resource="E1_CRM_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P62i_is_depicted_by">
+<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+<rdfs:range rdf:resource="E24_Physical_Man-Made_Thing"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P65_shows_visual_item">
+<rdfs:domain rdf:resource="E24_Physical_Man-Made_Thing"/>
+<rdfs:range rdf:resource="E36_Visual_Item"/>
+<rdfs:subPropertyOf rdf:resource="P128_carries"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P65i_is_shown_by">
+<rdfs:domain rdf:resource="E36_Visual_Item"/>
+<rdfs:range rdf:resource="E24_Physical_Man-Made_Thing"/>
+<rdfs:subPropertyOf rdf:resource="P128i_is_carried_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P67_refers_to">
+<rdfs:domain rdf:resource="E89_Propositional_Object"/>
+<rdfs:range rdf:resource="E1_CRM_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P67i_is_referred_to_by">
+<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+<rdfs:range rdf:resource="E89_Propositional_Object"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P68_foresees_use_of">
+<rdfs:domain rdf:resource="E29_Design_or_Procedure"/>
+<rdfs:range rdf:resource="E57_Material"/>
+<rdfs:subPropertyOf rdf:resource="P67_refers_to"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P68i_use_foreseen_by">
+<rdfs:domain rdf:resource="E57_Material"/>
+<rdfs:range rdf:resource="E29_Design_or_Procedure"/>
+<rdfs:subPropertyOf rdf:resource="P67i_is_referred_to_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P69_is_associated_with">
+<rdfs:domain rdf:resource="E29_Design_or_Procedure"/>
+<rdfs:range rdf:resource="E29_Design_or_Procedure"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P70_documents">
+<rdfs:domain rdf:resource="E31_Document"/>
+<rdfs:range rdf:resource="E1_CRM_Entity"/>
+<rdfs:subPropertyOf rdf:resource="P67_refers_to"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P70i_is_documented_in">
+<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+<rdfs:range rdf:resource="E31_Document"/>
+<rdfs:subPropertyOf rdf:resource="P67i_is_referred_to_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P71_lists">
+<rdfs:domain rdf:resource="E32_Authority_Document"/>
+<rdfs:range rdf:resource="E1_CRM_Entity"/>
+<rdfs:subPropertyOf rdf:resource="P67_refers_to"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P71i_is_listed_in">
+<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+<rdfs:range rdf:resource="E32_Authority_Document"/>
+<rdfs:subPropertyOf rdf:resource="P67i_is_referred_to_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P72_has_language">
+<rdfs:domain rdf:resource="E33_Linguistic_Object"/>
+<rdfs:range rdf:resource="E56_Language"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P72i_is_language_of">
+<rdfs:domain rdf:resource="E56_Language"/>
+<rdfs:range rdf:resource="E33_Linguistic_Object"/>
+</rdf:Property>
+
+
+<rdf:Property rdf:about="P73_has_translation">
+<rdfs:domain rdf:resource="E33_Linguistic_Object"/>
+<rdfs:range rdf:resource="E33_Linguistic_Object"/>
+<rdfs:subPropertyOf rdf:resource="P130_shows_features_of"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P73i_is_translation_of">
+<rdfs:domain rdf:resource="E33_Linguistic_Object"/>
+<rdfs:range rdf:resource="E33_Linguistic_Object"/>
+<rdfs:subPropertyOf rdf:resource="P130i_features_are_also_found_on"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P74_has_current_or_former_residence">
+<rdfs:domain rdf:resource="E39_Actor"/>
+<rdfs:range rdf:resource="E53_Place"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P74i_is_current_or_former_residence_of">
+<rdfs:domain rdf:resource="E53_Place"/>
+<rdfs:range rdf:resource="E39_Actor"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P75_possesses">
+<rdfs:domain rdf:resource="E39_Actor"/>
+<rdfs:range rdf:resource="E30_Right"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P75i_is_possessed_by">
+<rdfs:domain rdf:resource="E30_Right"/>
+<rdfs:range rdf:resource="E39_Actor"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P76_has_contact_point">
+<rdfs:domain rdf:resource="E39_Actor"/>
+<rdfs:range rdf:resource="E51_Contact_Point"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P76i_provides_access_to">
+<rdfs:domain rdf:resource="E51_Contact_Point"/>
+<rdfs:range rdf:resource="E39_Actor"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P78_is_identified_by">
+<rdfs:domain rdf:resource="E52_Time-Span"/>
+<rdfs:range rdf:resource="E49_Time_Appellation"/>
+<rdfs:subPropertyOf rdf:resource="P1_is_identified_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P78i_identifies">
+<rdfs:domain rdf:resource="E49_Time_Appellation"/>
+<rdfs:range rdf:resource="E52_Time-Span"/>
+<rdfs:subPropertyOf rdf:resource="P1i_identifies"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P79_beginning_is_qualified_by">
+<rdfs:domain rdf:resource="E52_Time-Span"/>
+<rdfs:range rdf:resource="rdfs:Literal"/>
+<rdfs:subPropertyOf rdf:resource="P3_has_note"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P80_end_is_qualified_by">
+<rdfs:domain rdf:resource="E52_Time-Span"/>
+<rdfs:range rdf:resource="rdfs:Literal"/>
+<rdfs:subPropertyOf rdf:resource="P3_has_note"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P81_ongoing_throughout">
+<rdfs:domain rdf:resource="E52_Time-Span"/>
+<rdfs:range rdf:resource="rdfs:Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P82_at_some_time_within">
+<rdfs:domain rdf:resource="E52_Time-Span"/>
+<rdfs:range rdf:resource="rdfs:Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P83_had_at_least_duration">
+<rdfs:domain rdf:resource="E52_Time-Span"/>
+<rdfs:range rdf:resource="E54_Dimension"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P83i_was_minimum_duration_of">
+<rdfs:domain rdf:resource="E54_Dimension"/>
+<rdfs:range rdf:resource="E52_Time-Span"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P84_had_at_most_duration">
+<rdfs:domain rdf:resource="E52_Time-Span"/>
+<rdfs:range rdf:resource="E54_Dimension"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P84i_was_maximum_duration_of">
+<rdfs:domain rdf:resource="E54_Dimension"/>
+<rdfs:range rdf:resource="E52_Time-Span"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P86_falls_within">
+<rdfs:domain rdf:resource="E52_Time-Span"/>
+<rdfs:range rdf:resource="E52_Time-Span"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P86i_contains">
+<rdfs:domain rdf:resource="E52_Time-Span"/>
+<rdfs:range rdf:resource="E52_Time-Span"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P87_is_identified_by">
+<rdfs:domain rdf:resource="E53_Place"/>
+<rdfs:range rdf:resource="E44_Place_Appellation"/>
+<rdfs:subPropertyOf rdf:resource="P1_is_identified_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P87i_identifies">
+<rdfs:domain rdf:resource="E44_Place_Appellation"/>
+<rdfs:range rdf:resource="E53_Place"/>
+<rdfs:subPropertyOf rdf:resource="P1i_identifies"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P89_falls_within">
+<rdfs:domain rdf:resource="E53_Place"/>
+<rdfs:range rdf:resource="E53_Place"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P89i_contains">
+<rdfs:domain rdf:resource="E53_Place"/>
+<rdfs:range rdf:resource="E53_Place"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P90_has_value">
+<rdfs:domain rdf:resource="E54_Dimension"/>
+<rdfs:range rdf:resource="rdfs:Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P91_has_unit">
+<rdfs:domain rdf:resource="E54_Dimension"/>
+<rdfs:range rdf:resource="E58_Measurement_Unit"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P91i_is_unit_of">
+<rdfs:domain rdf:resource="E58_Measurement_Unit"/>
+<rdfs:range rdf:resource="E54_Dimension"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P92_brought_into_existence">
+<rdfs:domain rdf:resource="E63_Beginning_of_Existence"/>
+<rdfs:range rdf:resource="E77_Persistent_Item"/>
+<rdfs:subPropertyOf rdf:resource="P12_occurred_in_the_presence_of"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P92i_was_brought_into_existence_by">
+<rdfs:domain rdf:resource="E77_Persistent_Item"/>
+<rdfs:range rdf:resource="E63_Beginning_of_Existence"/>
+<rdfs:subPropertyOf rdf:resource="P12i_was_present_at"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P93_took_out_of_existence">
+<rdfs:domain rdf:resource="E64_End_of_Existence"/>
+<rdfs:range rdf:resource="E77_Persistent_Item"/>
+<rdfs:subPropertyOf rdf:resource="P12_occurred_in_the_presence_of"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P93i_was_taken_out_of_existence_by">
+<rdfs:domain rdf:resource="E77_Persistent_Item"/>
+<rdfs:range rdf:resource="E64_End_of_Existence"/>
+<rdfs:subPropertyOf rdf:resource="P12i_was_present_at"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P94_has_created">
+<rdfs:domain rdf:resource="E65_Creation"/>
+<rdfs:range rdf:resource="E28_Conceptual_Object"/>
+<rdfs:subPropertyOf rdf:resource="P92_brought_into_existence"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P94i_was_created_by">
+<rdfs:domain rdf:resource="E28_Conceptual_Object"/>
+<rdfs:range rdf:resource="E65_Creation"/>
+<rdfs:subPropertyOf rdf:resource="P92i_was_brought_into_existence_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P95_has_formed">
+<rdfs:domain rdf:resource="E66_Formation"/>
+<rdfs:range rdf:resource="E74_Group"/>
+<rdfs:subPropertyOf rdf:resource="P92_brought_into_existence"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P95i_was_formed_by">
+<rdfs:domain rdf:resource="E74_Group"/>
+<rdfs:range rdf:resource="E66_Formation"/>
+<rdfs:subPropertyOf rdf:resource="P92i_was_brought_into_existence_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P96_by_mother">
+<rdfs:domain rdf:resource="E67_Birth"/>
+<rdfs:range rdf:resource="E21_Person"/>
+<rdfs:subPropertyOf rdf:resource="P11_had_participant"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P96i_gave_birth">
+<rdfs:domain rdf:resource="E21_Person"/>
+<rdfs:range rdf:resource="E67_Birth"/>
+<rdfs:subPropertyOf rdf:resource="P11i_participated_in"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P97_from_father">
+<rdfs:domain rdf:resource="E67_Birth"/>
+<rdfs:range rdf:resource="E21_Person"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P97i_was_father_for">
+<rdfs:domain rdf:resource="E21_Person"/>
+<rdfs:range rdf:resource="E67_Birth"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P98_brought_into_life">
+<rdfs:domain rdf:resource="E67_Birth"/>
+<rdfs:range rdf:resource="E21_Person"/>
+<rdfs:subPropertyOf rdf:resource="P92_brought_into_existence"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P98i_was_born">
+<rdfs:domain rdf:resource="E21_Person"/>
+<rdfs:range rdf:resource="E67_Birth"/>
+<rdfs:subPropertyOf rdf:resource="P92i_was_brought_into_existence_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P99_dissolved">
+<rdfs:domain rdf:resource="E68_Dissolution"/>
+<rdfs:range rdf:resource="E74_Group"/>
+<rdfs:subPropertyOf rdf:resource="P11_had_participant"/>
+<rdfs:subPropertyOf rdf:resource="P93_took_out_of_existence"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P99i_was_dissolved_by">
+<rdfs:domain rdf:resource="E74_Group"/>
+<rdfs:range rdf:resource="E68_Dissolution"/>
+<rdfs:subPropertyOf rdf:resource="P11i_participated_in"/>
+<rdfs:subPropertyOf rdf:resource="P93i_was_taken_out_of_existence_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P100_was_death_of">
+<rdfs:domain rdf:resource="E69_Death"/>
+<rdfs:range rdf:resource="E21_Person"/>
+<rdfs:subPropertyOf rdf:resource="P93_took_out_of_existence"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P100i_died_in">
+<rdfs:domain rdf:resource="E21_Person"/>
+<rdfs:range rdf:resource="E69_Death"/>
+<rdfs:subPropertyOf rdf:resource="P93i_was_taken_out_of_existence_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P101_had_as_general_use">
+<rdfs:domain rdf:resource="E70_Thing"/>
+<rdfs:range rdf:resource="E55_Type"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P101i_was_use_of">
+<rdfs:domain rdf:resource="E55_Type"/>
+<rdfs:range rdf:resource="E70_Thing"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P102_has_title">
+<rdfs:domain rdf:resource="E71_Man-Made_Thing"/>
+<rdfs:range rdf:resource="E35_Title"/>
+<rdfs:subPropertyOf rdf:resource="P1_is_identified_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P102i_is_title_of">
+<rdfs:domain rdf:resource="E35_Title"/>
+<rdfs:range rdf:resource="E71_Man-Made_Thing"/>
+<rdfs:subPropertyOf rdf:resource="P1i_identifies"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P103_was_intended_for">
+<rdfs:domain rdf:resource="E71_Man-Made_Thing"/>
+<rdfs:range rdf:resource="E55_Type"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P103i_was_intention_of">
+<rdfs:domain rdf:resource="E55_Type"/>
+<rdfs:range rdf:resource="E71_Man-Made_Thing"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P104_is_subject_to">
+<rdfs:domain rdf:resource="E72_Legal_Object"/>
+<rdfs:range rdf:resource="E30_Right"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P104i_applies_to">
+<rdfs:domain rdf:resource="E30_Right"/>
+<rdfs:range rdf:resource="E72_Legal_Object"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P105_right_held_by">
+<rdfs:domain rdf:resource="E72_Legal_Object"/>
+<rdfs:range rdf:resource="E39_Actor"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P105i_has_right_on">
+<rdfs:domain rdf:resource="E39_Actor"/>
+<rdfs:range rdf:resource="E72_Legal_Object"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P106_is_composed_of">
+<rdfs:domain rdf:resource="E90_Symbolic_Object"/>
+<rdfs:range rdf:resource="E90_Symbolic_Object"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P106i_forms_part_of">
+<rdfs:domain rdf:resource="E90_Symbolic_Object"/>
+<rdfs:range rdf:resource="E90_Symbolic_Object"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P107_has_current_or_former_member">
+<rdfs:domain rdf:resource="E74_Group"/>
+<rdfs:range rdf:resource="E39_Actor"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P107i_is_current_or_former_member_of">
+<rdfs:domain rdf:resource="E39_Actor"/>
+<rdfs:range rdf:resource="E74_Group"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P108_has_produced">
+<rdfs:domain rdf:resource="E12_Production"/>
+<rdfs:range rdf:resource="E24_Physical_Man-Made_Thing"/>
+<rdfs:subPropertyOf rdf:resource="P31_has_modified"/>
+<rdfs:subPropertyOf rdf:resource="P92_brought_into_existence"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P108i_was_produced_by">
+<rdfs:domain rdf:resource="E24_Physical_Man-Made_Thing"/>
+<rdfs:range rdf:resource="E12_Production"/>
+<rdfs:subPropertyOf rdf:resource="P31i_was_modified_by"/>
+<rdfs:subPropertyOf rdf:resource="P92i_was_brought_into_existence_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P109_has_current_or_former_curator">
+<rdfs:domain rdf:resource="E78_Collection"/>
+<rdfs:range rdf:resource="E39_Actor"/>
+<rdfs:subPropertyOf rdf:resource="P49_has_former_or_current_keeper"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P109i_is_current_or_former_curator_of">
+<rdfs:domain rdf:resource="E39_Actor"/>
+<rdfs:range rdf:resource="E78_Collection"/>
+<rdfs:subPropertyOf rdf:resource="P49i_is_former_or_current_keeper_of"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P110_augmented">
+<rdfs:domain rdf:resource="E79_Part_Addition"/>
+<rdfs:range rdf:resource="E24_Physical_Man-Made_Thing"/>
+<rdfs:subPropertyOf rdf:resource="P31_has_modified"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P110i_was_augmented_by">
+<rdfs:domain rdf:resource="E24_Physical_Man-Made_Thing"/>
+<rdfs:range rdf:resource="E79_Part_Addition"/>
+<rdfs:subPropertyOf rdf:resource="P31i_was_modified_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P111_added">
+<rdfs:domain rdf:resource="E79_Part_Addition"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+<rdfs:subPropertyOf rdf:resource="P16_used_specific_object"/>
+<rdfs:subPropertyOf rdf:resource="P12_occurred_in_the_presence_of"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P111i_was_added_by">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E79_Part_Addition"/>
+<rdfs:subPropertyOf rdf:resource="P16i_was_used_for"/>
+<rdfs:subPropertyOf rdf:resource="P12i_was_present_at"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P112_diminished">
+<rdfs:domain rdf:resource="E80_Part_Removal"/>
+<rdfs:range rdf:resource="E24_Physical_Man-Made_Thing"/>
+<rdfs:subPropertyOf rdf:resource="P31_has_modified"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P112i_was_diminished_by">
+<rdfs:domain rdf:resource="E24_Physical_Man-Made_Thing"/>
+<rdfs:range rdf:resource="E80_Part_Removal"/>
+<rdfs:subPropertyOf rdf:resource="P31i_was_modified_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P113_removed">
+<rdfs:domain rdf:resource="E80_Part_Removal"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+<rdfs:subPropertyOf rdf:resource="P12_occurred_in_the_presence_of"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P113i_was_removed_by">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E80_Part_Removal"/>
+<rdfs:subPropertyOf rdf:resource="P12i_was_present_at"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P114_is_equal_in_time_to">
+<rdfs:domain rdf:resource="E2_Temporal_Entity"/>
+<rdfs:range rdf:resource="E2_Temporal_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P115_finishes">
+<rdfs:domain rdf:resource="E2_Temporal_Entity"/>
+<rdfs:range rdf:resource="E2_Temporal_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P115i_is_finished_by">
+<rdfs:domain rdf:resource="E2_Temporal_Entity"/>
+<rdfs:range rdf:resource="E2_Temporal_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P116_starts">
+<rdfs:domain rdf:resource="E2_Temporal_Entity"/>
+<rdfs:range rdf:resource="E2_Temporal_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P116i_is_started_by">
+<rdfs:domain rdf:resource="E2_Temporal_Entity"/>
+<rdfs:range rdf:resource="E2_Temporal_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P117_occurs_during">
+<rdfs:domain rdf:resource="E2_Temporal_Entity"/>
+<rdfs:range rdf:resource="E2_Temporal_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P117i_includes">
+<rdfs:domain rdf:resource="E2_Temporal_Entity"/>
+<rdfs:range rdf:resource="E2_Temporal_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P118_overlaps_in_time_with">
+<rdfs:domain rdf:resource="E2_Temporal_Entity"/>
+<rdfs:range rdf:resource="E2_Temporal_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P118i_is_overlapped_in_time_by">
+<rdfs:domain rdf:resource="E2_Temporal_Entity"/>
+<rdfs:range rdf:resource="E2_Temporal_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P119_meets_in_time_with">
+<rdfs:domain rdf:resource="E2_Temporal_Entity"/>
+<rdfs:range rdf:resource="E2_Temporal_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P119i_is_met_in_time_by">
+<rdfs:domain rdf:resource="E2_Temporal_Entity"/>
+<rdfs:range rdf:resource="E2_Temporal_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P120_occurs_before">
+<rdfs:domain rdf:resource="E2_Temporal_Entity"/>
+<rdfs:range rdf:resource="E2_Temporal_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P120i_occurs_after">
+<rdfs:domain rdf:resource="E2_Temporal_Entity"/>
+<rdfs:range rdf:resource="E2_Temporal_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P121_overlaps_with">
+<rdfs:domain rdf:resource="E53_Place"/>
+<rdfs:range rdf:resource="E53_Place"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P122_borders_with">
+<rdfs:domain rdf:resource="E53_Place"/>
+<rdfs:range rdf:resource="E53_Place"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P123_resulted_in">
+<rdfs:domain rdf:resource="E81_Transformation"/>
+<rdfs:range rdf:resource="E77_Persistent_Item"/>
+<rdfs:subPropertyOf rdf:resource="P92_brought_into_existence"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P123i_resulted_from">
+<rdfs:domain rdf:resource="E77_Persistent_Item"/>
+<rdfs:range rdf:resource="E81_Transformation"/>
+<rdfs:subPropertyOf rdf:resource="P92i_was_brought_into_existence_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P124_transformed">
+<rdfs:domain rdf:resource="E81_Transformation"/>
+<rdfs:range rdf:resource="E77_Persistent_Item"/>
+<rdfs:subPropertyOf rdf:resource="P93_took_out_of_existence"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P124i_was_transformed_by">
+<rdfs:domain rdf:resource="E77_Persistent_Item"/>
+<rdfs:range rdf:resource="E81_Transformation"/>
+<rdfs:subPropertyOf rdf:resource="P93i_was_taken_out_of_existence_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P125_used_object_of_type">
+<rdfs:domain rdf:resource="E7_Activity"/>
+<rdfs:range rdf:resource="E55_Type"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P125i_was_type_of_object_used_in">
+<rdfs:domain rdf:resource="E55_Type"/>
+<rdfs:range rdf:resource="E7_Activity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P126_employed">
+<rdfs:domain rdf:resource="E11_Modification"/>
+<rdfs:range rdf:resource="E57_Material"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P126i_was_employed_in">
+<rdfs:domain rdf:resource="E57_Material"/>
+<rdfs:range rdf:resource="E11_Modification"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P127_has_broader_term">
+<rdfs:domain rdf:resource="E55_Type"/>
+<rdfs:range rdf:resource="E55_Type"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P127i_has_narrower_term">
+<rdfs:domain rdf:resource="E55_Type"/>
+<rdfs:range rdf:resource="E55_Type"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P128_carries">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E90_Symbolic_Object"/>
+<rdfs:subPropertyOf rdf:resource="P130_shows_features_of"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P128i_is_carried_by">
+<rdfs:domain rdf:resource="E90_Symbolic_Object"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+<rdfs:subPropertyOf rdf:resource="P130i_features_are_also_found_on"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P129_is_about">
+<rdfs:domain rdf:resource="E89_Propositional_Object"/>
+<rdfs:range rdf:resource="E1_CRM_Entity"/>
+<rdfs:subPropertyOf rdf:resource="P67_refers_to"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P129i_is_subject_of">
+<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+<rdfs:range rdf:resource="E89_Propositional_Object"/>
+<rdfs:subPropertyOf rdf:resource="P67i_is_referred_to_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P130_shows_features_of">
+<rdfs:domain rdf:resource="E70_Thing"/>
+<rdfs:range rdf:resource="E70_Thing"/>
+<rdfs:subPropertyOf rdf:resource="P73i_is_translation_of"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P130i_features_are_also_found_on">
+<rdfs:domain rdf:resource="E70_Thing"/>
+<rdfs:range rdf:resource="E70_Thing"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P131_is_identified_by">
+<rdfs:domain rdf:resource="E39_Actor"/>
+<rdfs:range rdf:resource="E82_Actor_Appellation"/>
+<rdfs:subPropertyOf rdf:resource="P1_is_identified_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P131i_identifies">
+<rdfs:domain rdf:resource="E82_Actor_Appellation"/>
+<rdfs:range rdf:resource="E39_Actor"/>
+<rdfs:subPropertyOf rdf:resource="P1i_identifies"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P132_overlaps_with">
+<rdfs:domain rdf:resource="E92_Spacetime_Volume"/>
+<rdfs:range rdf:resource="E92_Spacetime_Volume"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P133_is_separated_from">
+<rdfs:domain rdf:resource="E92_Spacetime_Volume"/>
+<rdfs:range rdf:resource="E92_Spacetime_Volume"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P134_continued">
+<rdfs:domain rdf:resource="E7_Activity"/>
+<rdfs:range rdf:resource="E7_Activity"/>
+<rdfs:subPropertyOf rdf:resource="P15_was_influenced_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P134i_was_continued_by">
+<rdfs:domain rdf:resource="E7_Activity"/>
+<rdfs:range rdf:resource="E7_Activity"/>
+<rdfs:subPropertyOf rdf:resource="P15i_influenced"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P135_created_type">
+<rdfs:domain rdf:resource="E83_Type_Creation"/>
+<rdfs:range rdf:resource="E55_Type"/>
+<rdfs:subPropertyOf rdf:resource="P94_has_created"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P135i_was_created_by">
+<rdfs:domain rdf:resource="E55_Type"/>
+<rdfs:range rdf:resource="E83_Type_Creation"/>
+<rdfs:subPropertyOf rdf:resource="P94i_was_created_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P136_was_based_on">
+<rdfs:domain rdf:resource="E83_Type_Creation"/>
+<rdfs:range rdf:resource="E1_CRM_Entity"/>
+<rdfs:subPropertyOf rdf:resource="P15_was_influenced_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P136i_supported_type_creation">
+<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+<rdfs:range rdf:resource="E83_Type_Creation"/>
+<rdfs:subPropertyOf rdf:resource="P15i_influenced"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P137_exemplifies">
+<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+<rdfs:range rdf:resource="E55_Type"/>
+<rdfs:subPropertyOf rdf:resource="P2_has_type"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P137i_is_exemplified_by">
+<rdfs:domain rdf:resource="E55_Type"/>
+<rdfs:range rdf:resource="E1_CRM_Entity"/>
+<rdfs:subPropertyOf rdf:resource="P2i_is_type_of"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P138_represents">
+<rdfs:domain rdf:resource="E36_Visual_Item"/>
+<rdfs:range rdf:resource="E1_CRM_Entity"/>
+<rdfs:subPropertyOf rdf:resource="P67_refers_to"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P138i_has_representation">
+<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+<rdfs:range rdf:resource="E36_Visual_Item"/>
+<rdfs:subPropertyOf rdf:resource="P67i_is_referred_to_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P139_has_alternative_form">
+<rdfs:domain rdf:resource="E41_Appellation"/>
+<rdfs:range rdf:resource="E41_Appellation"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P140_assigned_attribute_to">
+<rdfs:domain rdf:resource="E13_Attribute_Assignment"/>
+<rdfs:range rdf:resource="E1_CRM_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P140i_was_attributed_by">
+<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+<rdfs:range rdf:resource="E13_Attribute_Assignment"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P141_assigned">
+<rdfs:domain rdf:resource="E13_Attribute_Assignment"/>
+<rdfs:range rdf:resource="E1_CRM_Entity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P141i_was_assigned_by">
+<rdfs:domain rdf:resource="E1_CRM_Entity"/>
+<rdfs:range rdf:resource="E13_Attribute_Assignment"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P142_used_constituent">
+<rdfs:domain rdf:resource="E15_Identifier_Assignment"/>
+<rdfs:range rdf:resource="E90_Symbolic_Object"/>
+<rdfs:subPropertyOf rdf:resource="P16_used_specific_object"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P142i_was_used_in">
+<rdfs:domain rdf:resource="E90_Symbolic_Object"/>
+<rdfs:range rdf:resource="E15_Identifier_Assignment"/>
+<rdfs:subPropertyOf rdf:resource="P16i_was_used_for"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P143_joined">
+<rdfs:domain rdf:resource="E85_Joining"/>
+<rdfs:range rdf:resource="E39_Actor"/>
+<rdfs:subPropertyOf rdf:resource="P11_had_participant"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P143i_was_joined_by">
+<rdfs:domain rdf:resource="E39_Actor"/>
+<rdfs:range rdf:resource="E85_Joining"/>
+<rdfs:subPropertyOf rdf:resource="P11i_participated_in"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P144_joined_with">
+<rdfs:domain rdf:resource="E85_Joining"/>
+<rdfs:range rdf:resource="E74_Group"/>
+<rdfs:subPropertyOf rdf:resource="P11_had_participant"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P144i_gained_member_by">
+<rdfs:domain rdf:resource="E74_Group"/>
+<rdfs:range rdf:resource="E85_Joining"/>
+<rdfs:subPropertyOf rdf:resource="P11i_participated_in"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P145_separated">
+<rdfs:domain rdf:resource="E86_Leaving"/>
+<rdfs:range rdf:resource="E39_Actor"/>
+<rdfs:subPropertyOf rdf:resource="P11_had_participant"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P145i_left_by">
+<rdfs:domain rdf:resource="E39_Actor"/>
+<rdfs:range rdf:resource="E86_Leaving"/>
+<rdfs:subPropertyOf rdf:resource="P11i_participated_in"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P146_separated_from">
+<rdfs:domain rdf:resource="E86_Leaving"/>
+<rdfs:range rdf:resource="E74_Group"/>
+<rdfs:subPropertyOf rdf:resource="P11_had_participant"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P146i_lost_member_by">
+<rdfs:domain rdf:resource="E74_Group"/>
+<rdfs:range rdf:resource="E86_Leaving"/>
+<rdfs:subPropertyOf rdf:resource="P11i_participated_in"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P147_curated">
+<rdfs:domain rdf:resource="E87_Curation_Activity"/>
+<rdfs:range rdf:resource="E78_Collection"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P147i_was_curated_by">
+<rdfs:domain rdf:resource="E78_Collection"/>
+<rdfs:range rdf:resource="E87_Curation_Activity"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P148_has_component">
+<rdfs:domain rdf:resource="E89_Propositional_Object"/>
+<rdfs:range rdf:resource="E89_Propositional_Object"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P148i_is_component_of">
+<rdfs:domain rdf:resource="E89_Propositional_Object"/>
+<rdfs:range rdf:resource="E89_Propositional_Object"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P149_is_identified_by">
+<rdfs:domain rdf:resource="E28_Conceptual_Object"/>
+<rdfs:range rdf:resource="E75_Conceptual_Object_Appellation"/>
+<rdfs:subPropertyOf rdf:resource="P1_is_identified_by"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P149i_identifies">
+<rdfs:domain rdf:resource="E75_Conceptual_Object_Appellation"/>
+<rdfs:range rdf:resource="E28_Conceptual_Object"/>
+<rdfs:subPropertyOf rdf:resource="P1i_identifies"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P150_defines_typical_parts_of">
+<rdfs:domain rdf:resource="E55_Type"/>
+<rdfs:range rdf:resource="E55_Type"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P150i_defines_typical_wholes_for">
+<rdfs:domain rdf:resource="E55_Type"/>
+<rdfs:range rdf:resource="E55_Type"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P151_was_formed_from">
+<rdfs:domain rdf:resource="E66_Formation"/>
+<rdfs:range rdf:resource="E74_Group"/>
+<rdfs:subPropertyOf rdf:resource="P11_had_participant"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P151i_participated_in">
+<rdfs:domain rdf:resource="E74_Group"/>
+<rdfs:range rdf:resource="E66_Formation"/>
+<rdfs:subPropertyOf rdf:resource="P11i_participated_in"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P152_has_parent">
+<rdfs:domain rdf:resource="E21_Person"/>
+<rdfs:range rdf:resource="E21_Person"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P152i_is_parent_of">
+<rdfs:domain rdf:resource="E21_Person"/>
+<rdfs:range rdf:resource="E21_Person"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P156_occupies">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E53_Place"/>
+<rdfs:subPropertyOf rdf:resource="P161_has_spatial_projection"/>	
+</rdf:Property>
+
+<rdf:Property rdf:about="P156i_is_occupied_by">
+<rdfs:domain rdf:resource="E53_Place"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+<rdfs:subPropertyOf rdf:resource="P161i_is_spatial_projection_of"/>	
+</rdf:Property>
+
+<rdf:Property rdf:about="P157_is_at_rest_relative_to">
+<rdfs:domain rdf:resource="E53_Place"/>
+<rdfs:range rdf:resource="E18_Physical_Thing"/>
+<rdfs:subPropertyOf rdf:resource="P59i_is_located_on_or_within"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P157i_provides_reference_space_for">
+<rdfs:domain rdf:resource="E18_Physical_Thing"/>
+<rdfs:range rdf:resource="E53_Place"/>
+<rdfs:subPropertyOf rdf:resource="P59_has_section"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P160_has_temporal_projection">
+<rdfs:domain rdf:resource="E92_Spacetime_Volume"/>
+<rdfs:range rdf:resource="E52_Time-Span"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P160i_is_temporal_projection_of">
+<rdfs:domain rdf:resource="E52_Time-Span"/>
+<rdfs:range rdf:resource="E92_Spacetime_Volume"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P161_has_spatial_projection">
+<rdfs:domain rdf:resource="E92_Spacetime_Volume"/>
+<rdfs:range rdf:resource="E53_Place"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P161i_is_spatial_projection_of">
+<rdfs:domain rdf:resource="E53_Place"/>
+<rdfs:range rdf:resource="E92_Spacetime_Volume"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P164_during">
+<rdfs:domain rdf:resource="E93_Presence"/>
+<rdfs:range rdf:resource="E52_Time-Span"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P164i_was_time-span_of">
+<rdfs:domain rdf:resource="E52_Time-Span"/>
+<rdfs:range rdf:resource="E93_Presence"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P165_incorporates">
+<rdfs:domain rdf:resource="E73_Information_Object"/>
+<rdfs:range rdf:resource="E90_Symbolic_Object"/>
+<rdfs:subPropertyOf rdf:resource="P106_is_composed_of"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P165i_is_incorporated_in">
+<rdfs:domain rdf:resource="E90_Symbolic_Object"/>
+<rdfs:range rdf:resource="E73_Information_Object"/>
+<rdfs:subPropertyOf rdf:resource="P106i_forms_part_of"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P166_was_a_presence_of">
+<rdfs:domain rdf:resource="E93_Presence"/>
+<rdfs:range rdf:resource="E92_Spacetime_Volume"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P166i_had_presence">
+<rdfs:domain rdf:resource="E92_Spacetime_Volume"/>
+<rdfs:range rdf:resource="E93_Presence"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P167_was_at">
+<rdfs:domain rdf:resource="E93_Presence"/>
+<rdfs:range rdf:resource="E53_Place"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P167i_was_place_of">
+<rdfs:domain rdf:resource="E93_Presence"/>
+<rdfs:range rdf:resource="E92_Spacetime_Volume"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P168_place_is_defined_by">
+<rdfs:domain rdf:resource="E93_Place"/>
+<rdfs:range rdf:resource="rdfs:Literal"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="P81a_end_of_the_begin">
+<rdfs:domain rdf:resource="E52_Time-Span"/>
+<rdfs:range rdf:resource="xsd:dateTime"/>
+<rdfs:subPropertyOf rdf:resource="P81_ongoing_throughout"/>	
+</rdf:Property>
+
+<rdf:Property rdf:about="P81b_begin_of_the_end">
+<rdfs:domain rdf:resource="E52_Time-Span"/>
+<rdfs:range rdf:resource="xsd:dateTime"/>
+<rdfs:subPropertyOf rdf:resource="P81_ongoing_throughout"/>	
+</rdf:Property>
+
+<rdf:Property rdf:about="P82a_begin_of_the_begin">
+<rdfs:domain rdf:resource="E52_Time-Span"/>
+<rdfs:range rdf:resource="xsd:dateTime"/>
+<rdfs:subPropertyOf rdf:resource="P82_at_some_time_within"/>	
+</rdf:Property>
+
+<rdf:Property rdf:about="P82b_end_of_the_end">
+<rdfs:domain rdf:resource="E52_Time-Span"/>
+<rdfs:range rdf:resource="xsd:dateTime"/>
+<rdfs:subPropertyOf rdf:resource="P82_at_some_time_within"/>	
+</rdf:Property>
+</rdf:RDF>
+
+<rdf:RDF xmlns:karma="http://isi.edu/integration/karma/dev#" xml:lang="en">
+<rdf:Property rdf:about="classLink">
+<rdfs:range rdf:resource="rdfs:Literal"/>
+</rdf:Property>
+</rdf:RDF>

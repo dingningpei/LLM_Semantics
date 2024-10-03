@@ -1,0 +1,44 @@
+[
+    {
+        "objectTitle":"Stream in the Mountains",    
+        "objectWorkType":"Paintings",
+        "artistName":"George Inness",
+        "artistNationality":"American",
+        "artistBirthDate":"1825",
+        "artistDeathDate":"1894",
+        "objectEarliestDate":"1825",
+        "objectLatestDate":"1875",
+        "objectRights":"Dallas Museum of Art, bequest of Cecil A. Keating",
+        "objectFacetValue":"Oil on canvas",
+        "objectLinkSource":"Dallas Museum of Art",
+        "dimensions":"91.12 x 128.91 cm"
+    },
+    {
+        "objectTitle":"Art Beauty Shoppe",
+        "objectWorkType":"Paintings",
+        "artistName":"Isaac Soyer",
+        "artistNationality":"American",
+        "artistBirthDate":"1907",
+        "artistDeathDate":"1981",
+        "objectEarliestDate":"1934",
+        "objectLatestDate":"1934",
+        "objectRights":"Dallas Museum of Art, gift of the Public Works of Art Project",
+        "objectFacetValue":"Oil on canvas",
+        "objectLinkSource":"Dallas Museum of Art",
+        "dimensions":"106.68 x 125.73 cm"
+    },
+    {
+        "objectTitle":"Share Cropper,Paintings",
+        "objectWorkType":"Paintings",
+        "artistName":"Jerry Bywaters",
+        "artistNationality":"American",
+        "artistBirthDate":"1906",
+        "artistDeathDate":"1989",
+        "objectEarliestDate":"1937",
+        "objectLatestDate":"1937",
+        "objectRights":"Dallas Museum of Art, Allied Arts Civic Prize, Eighth Annual Dallas Allied Arts Exhibition, 1937",
+        "objectFacetValue":"Oil on Masonite",
+        "objectLinkSource":"Dallas Museum of Art",
+        "dimensions":"74.29 x 59.69 cm"
+    }
+]

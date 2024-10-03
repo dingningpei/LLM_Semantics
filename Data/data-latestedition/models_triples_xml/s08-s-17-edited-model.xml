@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E31_Document1"/>
+        <rdf:predicate rdf:resource="karma:classLink"/>
+        <rdf:object>video</rdf:object>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E22_Man-Made_Object1"/>
+        <rdf:predicate rdf:resource="crm:P3_has_note"/>
+        <rdf:object>description</rdf:object>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E35_Title1"/>
+        <rdf:predicate rdf:resource="rdfs:label"/>
+        <rdf:object>title</rdf:object>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E38_Image1"/>
+        <rdf:predicate rdf:resource="karma:classLink"/>
+        <rdf:object>imageSRC</rdf:object>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E82_Actor_Appellation1"/>
+        <rdf:predicate rdf:resource="rdfs:label"/>
+        <rdf:object>author</rdf:object>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E31_Document1"/>
+        <rdf:predicate rdf:resource="crm:P70_documents"/>
+        <rdf:object rdf:resource="crm:E22_Man-Made_Object1"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E22_Man-Made_Object1"/>
+        <rdf:predicate rdf:resource="crm:P108i_was_produced_by"/>
+        <rdf:object rdf:resource="crm:E12_Production1"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E22_Man-Made_Object1"/>
+        <rdf:predicate rdf:resource="crm:P102_has_title"/>
+        <rdf:object rdf:resource="crm:E35_Title1"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E22_Man-Made_Object1"/>
+        <rdf:predicate rdf:resource="crm:P138i_has_representation"/>
+        <rdf:object rdf:resource="crm:E38_Image1"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E12_Production1"/>
+        <rdf:predicate rdf:resource="crm:P14_carried_out_by"/>
+        <rdf:object rdf:resource="crm:E21_Person1"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:subject rdf:resource="crm:E21_Person1"/>
+        <rdf:predicate rdf:resource="crm:P131_is_identified_by"/>
+        <rdf:object rdf:resource="crm:E82_Actor_Appellation1"/>
+    </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,39 @@
+<Task>
+Act as a linguist, generate a semantic graph for the table.
+</Task> 
+<Instruction>
+You will be acting as a linguist and graph theorist equiped with the <Ontology>. Given the <Table> user provide, you will generate a appropriate Semantic Graph for the <Table>. 
+Before you start, you will first need to learn the knowledge in <Ontology> and the <Examples> provided.
+1. **Understand the Ontology Structure**
+   - The ontology is constructed by the following components: 1. Hierarchy Class <Class>, 2. Hierarchy Property <Property>, 3. Relation <Relation>
+   - Hierarchy Class <Class> is a list of classes which is organized in a hierarchy structure. Symbol '->' represents the 'is parent class of' relation. If class A -> class B, then class A is a parent class of class B. And class B will inherit all the properties of class A.
+   - Hierarchy Property <Property> is a list of properties which is organized in a hierarchy structure. Symbol '->' represents the 'is parent property of' relation. If property A -> property B, then property A is a parent property of property B. And property B will inherit all the properties of property A.
+   - Relation <Relation> is a list of basic relations whose domain and range are both <Class> in the ontology and property is a <Property>in the ontology. 
+   - Based on the information above, you will explore the basic relations into more specific relations by replacing the domain, range and property with their child classes or child properties. This basic relation and its complex relation will be used in the next steps.
+
+   <Ontology>
+   {$ONTOLOGY}
+   </Ontology>
+   Knowledge you must learn: <Knowledge1> Class, Property, Relation and more specific relations.<Knowledge1>
+
+2. **Understand Examples**
+   <Examples>
+   - <Examples> is constructed by <Table> and the corresponding solution steps <Step1> and <Step2> for generating semantic graph.
+   - <Table> is a list of dictionaries, where each dictionary represents a row of the table, and the key-value pairs are attributes of the table and their corresponding values. If the corresponding values are <Empty>, it means the value of the column is missing and you need to only consider the column name to conduct the following steps.
+   {$TABLE}
+
+   <Step1> is to identify the appropriate semantic type and property for each attribute in the table. 
+   - You should learn the map function of how the Examples map the attributes in the table to the Class and Property in <Knowledge1>.
+   - <Rule1> All the attributes in the table must be mapped to the <Ontology>. </Rule1>
+   {$STEP1}
+
+   Knowledge you must learn: <Knowledge2> map function in <Examples> and <Rule1> <Knowledge2>
+
+   <Step2> is to build a internal link for all the semantic types in Step1
+   - You should learn the search function of how the Examples search in the <Knowledge1> to find appropriate relations to build the internal link among semantic types in <Step1>.
+   - <Rule2> All the semantic types must be linked to each other. You can not build isolated semantic types in the semantic graph.</Rule3>
+   {$STEP2}
+
+   </Examples>
+   Knowledge you must learn: <Knowledge3> search function in <Examples> and <Rule2><Knowledge3>
+</Instruction>

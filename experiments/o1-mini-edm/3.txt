@@ -1,0 +1,73 @@
+<Step1>
+[
+    ['aac-ont:CulturalHeritageObject1', 'dcterms:title', 'title'],
+    ['edm:WebResource1', 'karma:classLink', 'imageURL'],
+    ['edm:WebResource2', 'karma:classLink', 'sourceURL'],
+    ['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'artist'],
+    ['aac-ont:Person1', 'ElementsGr2:countryAssociatedWithThePerson', 'nationality'],
+    ['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birthDate'],
+    ['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'deathDate'],
+    ['aac-ont:CulturalHeritageObject1', 'dcterms:created', 'creationDate'],
+    ['aac-ont:CulturalHeritageObject1', 'dcterms:medium', 'materials'],
+    ['aac-ont:CulturalHeritageObject1', 'dcterms:extent', 'dimensions'],
+    ['aac-ont:CulturalHeritageObject1', 'dcterms:provenance', 'creditLine'],
+    ['aac-ont:CulturalHeritageObject1', 'aac-ont:accessionNumber', 'accessionNumber'],
+    ['aac-ont:CulturalHeritageObject1', 'dcterms:description', 'galleryLabel'],
+    ['aac-ont:CulturalHeritageObject1', 'dcterms:provenance', 'provenance'],
+    ['edm:WebResource3', 'karma:classLink', 'relatedArtworksURL'],
+    ['aac-ont:CulturalHeritageObject2', 'dcterms:title', 'relatedArtworksTitle'],
+    ['skos:Concept1', 'skos:prefLabel', 'keywords']
+]
+</Step1><Step2>
+[
+    ['ore:Aggregation1', 'edm:aggregatedCHO', 'aac-ont:CulturalHeritageObject1'],
+    ['ore:Aggregation1', 'edm:hasView', 'edm:WebResource1'],
+    ['ore:Aggregation1', 'edm:hasView', 'edm:WebResource2'],
+    ['ore:Aggregation1', 'edm:hasView', 'edm:WebResource3'],
+    ['aac-ont:CulturalHeritageObject1', 'dcterms:creator', 'aac-ont:Person1'],
+    ['aac-ont:CulturalHeritageObject1', 'edm:hasType', 'skos:Concept1'],
+    ['aac-ont:CulturalHeritageObject1', 'edm:isRelatedTo', 'aac-ont:CulturalHeritageObject2'],
+    ['aac-ont:CulturalHeritageObject2', 'dcterms:title', 'relatedArtworksTitle'],
+    ['skos:Concept1', 'skos:prefLabel', 'keywords']
+]
+</Step2><Step1>
+[['aac-ont:CulturalHeritageObject1', 'aac-ont:accessionNumber', 'ID'],
+ ['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'artistName'],
+ ['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birthDate'],
+ ['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'deathDate'],
+ ['aac-ont:CulturalHeritageObject1', 'dcterms:title', 'title'],
+ ['aac-ont:CulturalHeritageObject1', 'dcterms:created', 'artworkDate'],
+ ['aac-ont:CulturalHeritageObject1', 'dcterms:description', 'artworkDetails'],
+ ['aac-ont:CulturalHeritageObject1', 'dcterms:provenance', 'origin'],
+ ['edm:WebResource1', 'karma:classLink', 'imageURL']]
+</Step1><Step2>
+[['ore:Aggregation1', 'edm:aggregatedCHO', 'aac-ont:CulturalHeritageObject1'],
+ ['ore:Aggregation1', 'edm:hasView', 'edm:WebResource1'],
+ ['aac-ont:CulturalHeritageObject1', 'dcterms:creator', 'aac-ont:Person1']]
+</Step2><Step1>
+[['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'artistName'],
+ ['aac-ont:Person1', 'ElementsGr2:countryAssociatedWithThePerson', 'nationality'],
+ ['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birthDate'],
+ ['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'deathDate'],
+ ['aac-ont:Person1', 'ElementsGr2:biographicalInformation', 'longBiography'],
+ ['skos:Concept1', 'skos:prefLabel', 'occupation']]
+</Step1><Step2>
+[['aac-ont:Person1', 'edm:hasType', 'skos:Concept1']]
+</Step2>```xml
+<Step1>
+[['aac-ont:CulturalHeritageObject1', 'aac-ont:objectId', 'objectID'],
+ ['aac-ont:CulturalHeritageObject1', 'dcterms:identifier', 'objectNumber'],
+ ['skos:Concept1', 'skos:prefLabel', 'classification'],
+ ['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'alphaSort'],
+ ['aac-ont:CulturalHeritageObject1', 'dcterms:title', 'title'],
+ ['aac-ont:CulturalHeritageObject1', 'dcterms:created', 'dated'],
+ ['aac-ont:CulturalHeritageObject1', 'dcterms:medium', 'medium'],
+ ['aac-ont:CulturalHeritageObject1', 'dcterms:extent', 'dimensions'],
+ ['aac-ont:CulturalHeritageObject1', 'dcterms:description', 'description']]
+</Step1>
+``````xml
+<Step2>
+[['aac-ont:CulturalHeritageObject1', 'dcterms:creator', 'aac-ont:Person1'],
+ ['aac-ont:CulturalHeritageObject1', 'edm:hasType', 'skos:Concept1']]
+</Step2>
+```

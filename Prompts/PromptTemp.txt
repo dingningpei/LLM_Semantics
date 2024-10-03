@@ -12,10 +12,8 @@ You are a linguist and a graph generator. You are tasked with generating semanti
 2. **Examine the Table Data:**
    - Each table is a list of dictionaries, where each dictionary represents a row of the table.
    - The key-value pairs in each dictionary are the column names and their corresponding values.
-
-   <Table>
+   
    {$TABLE}
-   </Table>
 
 3. **Review the Examples:**
    - Examples are provided to illustrate how to map the table data to the ontology and generate the semantic graph.

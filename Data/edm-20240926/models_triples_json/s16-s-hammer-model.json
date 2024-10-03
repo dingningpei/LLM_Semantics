@@ -1,0 +1,46 @@
+{
+    "semantic_triples": [
+        [
+            "aac-ont:Person1",
+            "ElementsGr2:nameOfThePerson",
+            "artist"
+        ],
+        [
+            "aac-ont:CulturalHeritageObject1",
+            "dcterms:title",
+            "title"
+        ],
+        [
+            "aac-ont:CulturalHeritageObject1",
+            "dcterms:created",
+            "year"
+        ],
+        [
+            "aac-ont:CulturalHeritageObject1",
+            "dcterms:description",
+            "description"
+        ],
+        [
+            "edm:WebResource1",
+            "karma:classLink",
+            "image"
+        ]        
+    ],
+    "internal_link_triples": [
+        [
+            "edm:EuropeanaAggregation1",
+            "edm:aggregatedCHO",
+            "aac-ont:CulturalHeritageObject1"
+        ],
+        [
+            "edm:EuropeanaAggregation1",
+            "edm:hasView",
+            "edm:WebResource1"
+        ],
+        [
+            "aac-ont:CulturalHeritageObject1",
+            "dcterms:creator",
+            "aac-ont:Person1"
+        ]
+    ]
+}

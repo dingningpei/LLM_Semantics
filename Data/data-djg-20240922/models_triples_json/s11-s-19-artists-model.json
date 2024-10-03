@@ -1,0 +1,51 @@
+{
+    "semantic_triples": [
+        [
+            "crm:E82_Actor_Appellation1",
+            "rdfs:label",
+            "artistName"
+        ],
+        [
+            "crm:E74_Group1",
+            "rdfs:label",
+            "nationality"
+        ],
+        [
+            "crm:E33_Linguistic_Object1",
+            "crm:P3_has_note",
+            "birthDataAndPlace"
+        ],
+        [
+            "crm:E33_Linguistic_Object1",
+            "crm:P3_has_note",
+            "longBiography"
+        ],
+        [
+            "crm:E33_Linguistic_Object2",
+            "crm:P3_has_note",
+            "occupation"
+        ]
+    ],
+    "internal_link_triples": [
+        [
+            "crm:E33_Linguistic_Object1",
+            "crm:P129_is_about",
+            "crm:E21_Person1"
+        ],
+        [
+            "crm:E33_Linguistic_Object2",
+            "crm:P129_is_about",
+            "crm:E21_Person1"
+        ],
+        [
+            "crm:E21_Person1",
+            "crm:P107i_is_current_or_former_member_of",
+            "crm:E74_Group1"
+        ],
+        [
+            "crm:E21_Person1",
+            "crm:P131_is_identified_by",
+            "crm:E82_Actor_Appellation1"
+        ]
+    ]
+}
