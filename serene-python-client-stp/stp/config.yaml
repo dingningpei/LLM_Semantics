@@ -1,0 +1,24 @@
+#=====================
+#
+# Serene Python Client configuration for constraint programming (CP) solver
+#
+#=====================
+
+# This is the path to the chuffed CP solver; do not add / at the end
+chuffed-path: $SERENE_PYTHON/stp/minizinc/chuffed_20170525
+
+# This is the path to the model.mzn
+model-path: $SERENE_PYTHON/stp/minizinc/model.mzn
+
+# This is the path to MiniZinc where mzn2fzn is located
+mzn2fzn-exec: /Users/dingningpei/Downloads/MiniZincIDE.app/contents/Resources/minizinc
+
+# This is the path to MiniZinc where solnsout is located
+solns2out-exec: /Users/dingningpei/Downloads/MiniZincIDE.app/contents/Resources/minizinc
+
+# Timeout for the solver
+timeout: 3000
+
+# Location for serene storage
+#embeds-path: /home/serene/stp/resources/storage/
+embeds-path: /Users/dingningpei/Desktop/Prompt_Semantic/serene-python-client-stp/stp/resources/storage

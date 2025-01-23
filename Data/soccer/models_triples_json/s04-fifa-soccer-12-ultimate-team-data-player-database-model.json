@@ -1,0 +1,25 @@
+{
+    "semantic_triples": [
+        [
+            "schema:Player1",
+            "schema:name",
+            "name"
+        ],
+        [
+            "schema:Player1",
+            "schema:strongFoot",
+            "foot"
+        ],
+        [
+            "schema:Player1",
+            "schema:playPosition",
+            "position"
+        ],
+        [
+            "schema:Player1",
+            "schema:height",
+            "height"
+        ]
+    ],
+    "internal_link_triples": []
+}

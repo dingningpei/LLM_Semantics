@@ -1,0 +1,96 @@
+predicate dreachable(array[int] of var bool: vs, array[int] of var bool: es,
+               int: from,
+               array[int,int] of bool: inc, 
+               array[int,int] of bool: out, 
+               array[1..2,int] of int: endnodes);
+
+predicate dreachable_reif(array[int] of var bool: vs, array[int] of var bool: es,
+               int: from,
+               array[int,int] of bool: inc, 
+               array[int,int] of bool: out, 
+               array[1..2,int] of int: endnodes,
+               var bool: b);
+
+predicate path(array[int] of var bool: vs, array[int] of var bool: es,
+               int: from, int: to,
+               array[int,int] of bool: inc, 
+               array[int,int] of bool: out, 
+               array[1..2,int] of int: endnodes);
+
+predicate pathsucc(array[int] of var bool: vs, array[int] of var bool: es,
+               int: from, int: to,
+	       array[int] of var int: succ,
+               array[int,int] of bool: inc, 
+               array[int,int] of bool: out, 
+               array[1..2,int] of int: endnodes);
+
+predicate bounded_path(array[int] of var bool: vs, array[int] of var bool: es,
+               	       int: from, int: to,
+                       array[int,int] of bool: inc, 
+                       array[int,int] of bool: out, 
+                       array[1..2,int] of int: endnodes,
+		       array[int] of int: ws,
+		       var int: w);
+predicate td_bounded_path_basic(array[int] of var bool: vs, array[int] of var bool: es,
+              	          int: from, int: to,
+                          array[int,int] of bool: inc, 
+                          array[int,int] of bool: out, 
+                          array[1..2,int] of int: endnodes,
+                          array[int,int] of int: ws,
+                          array[int] of int: durations,
+                          var int: w);
+predicate td_bounded_path(array[int] of var bool: vs, array[int] of var bool: es,
+                          array[int,int] of var bool: before,
+                          array[int,int] of var bool: maybe_before,
+                          array[int] of var int: position,
+                  	      int: from, int: to,
+                          array[int,int] of bool: inc, 
+                          array[int,int] of bool: out, 
+                          array[1..2,int] of int: endnodes,
+		                      array[int,int] of int: ws,
+                          array[int] of int: durations,
+		                      var int: w);
+predicate td_bounded_path(array[int] of var bool: vs, array[int] of var bool: es,
+                          array[int,int] of var bool: before,
+                          array[int,int] of var bool: maybe_before,
+                          array[int] of var int: position,
+                  	      int: from, int: to,
+                          array[int,int] of bool: inc, 
+                          array[int,int] of bool: out, 
+                          array[1..2,int] of int: endnodes,
+		                      array[int,int] of int: ws,
+                          array[int] of int: durations,
+		                      var int: w,
+                          array[int] of var int: lowers,
+                          array[int] of var int: uppers);
+predicate td_bounded_path(array[int] of var bool: vs, array[int] of var bool: es,
+                          array[int,int] of var bool: before,
+                          array[int] of var int: position,
+                  	      int: from, int: to,
+                          array[int,int] of bool: inc, 
+                          array[int,int] of bool: out, 
+                          array[1..2,int] of int: endnodes,
+		                      array[int,int] of int: ws,
+                          array[int] of int: durations,
+		                      var int: w) =
+    td_bounded_path(vs,es,before,array2d(1..length(vs),1..length(vs),[true | n in 1..length(vs)*length(vs)]), position, from, to, inc, out, endnodes, ws, durations, w);
+predicate td_bounded_path(array[int] of var bool: vs, array[int] of var bool: es,
+                          array[int,int] of var bool: before,
+                          array[int] of var int: position,
+                  	      int: from, int: to,
+                          array[int,int] of bool: inc, 
+                          array[int,int] of bool: out, 
+                          array[1..2,int] of int: endnodes,
+		                      array[int,int] of int: ws,
+                          array[int] of int: durations,
+		                      var int: w,
+                          array[int] of var int: lowers,
+                          array[int] of var int: uppers) =
+    td_bounded_path(vs,es,before,array2d(1..length(vs),1..length(vs),[true | n in 1..length(vs)*length(vs)]), position, from, to, inc, out, endnodes, ws, durations, w,lowers,uppers);
+
+
+
+predicate subcircuit(array[int] of var int: succ);
+
+predicate subpath_kf(array[int] of var int: succ, var int: start, var int: end) =
+	subcircuit([start]++succ) /\ start <= length(succ) /\ succ[end] = 0;

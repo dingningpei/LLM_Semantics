@@ -1,0 +1,47 @@
+{
+    "Nodes": [
+        "schema:Person",
+        "schema:Player -> schema:Person",
+        "schema:League",
+        "schema:SportsClub",
+        "schema:SportsTeam",
+        "schema:QuantitativeValue",
+        "schema:Text",
+        "schema:Date",
+        "schema:Place"
+    ],
+    "Properties": [
+        "schema:tag",
+        "schema:name -> schema:rdfs:label",
+        "schema:playPosition",
+        "schema:birthDate",
+        "schema:birthPlace",
+        "schema:age",
+        "schema:numberOfPlayedGames",
+        "schema:ranking",
+        "schema:inClub",
+        "schema:inLeague",
+        "schema:inNationalTeam",
+        "schema:goalScored",
+        "schema:givenName",
+        "schema:familyName",
+        "schema:alternateName",
+        "schema:height",
+        "schema:weight",
+        "schema:strongFoot",
+        "schema:isCaptain"
+    ],
+    "Potential triples": [
+        "<schema:Person,schema:weight,schema:QuantitativeValue>",
+        "<schema:Person,schema:height,schema:QuantitativeValue>",
+        "<schema:Person,schema:alternateName,schema:Text>",
+        "<schema:Person,schema:familyName,schema:Text>",
+        "<schema:Person,schema:name,schema:Text>",
+        "<schema:Person,schema:givenName,schema:Text>",
+        "<schema:Person,schema:birthDate,schema:Date>",
+        "<schema:Person,schema:birthPlace,schema:Place>",
+        "<schema:Player,schema:inClub,schema:SportsClub>",
+        "<schema:Player,schema:inNationalTeam,schema:SportsTeam>",
+        "<schema:SportsClub,schema:inLeague,schema:League>"
+    ]
+}

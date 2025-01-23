@@ -1,0 +1,29 @@
+[
+    {
+        "FullName":"Cristiano Ronaldo",
+        "Team":"Portugal",
+        "Position":"FW",
+        "Number":"17",
+        "DateOfBirth":"2/5/1985",
+        "IsCaptain":"FALSE",
+        "Club":"Manchester United F.C."
+    },
+    {
+        "FullName":"Neymar",
+        "Team":"Brazil",
+        "Position":"FW",
+        "Number":"10",
+        "DateOfBirth":"2/5/1992",
+        "IsCaptain":"FALSE",
+        "Club":"FC Barcelona"
+    },
+    {
+        "FullName":"Lionel Messi",
+        "Team":"Argentina",
+        "Position":"FW",
+        "Number":"19",
+        "DateOfBirth":"6/24/1987",
+        "IsCaptain":"FALSE",
+        "Club":"FC Barcelona"
+    }
+]

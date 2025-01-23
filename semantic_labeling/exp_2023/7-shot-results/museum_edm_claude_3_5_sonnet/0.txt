@@ -1,0 +1,18 @@
+Based on the given table and the knowledge from the examples, I will map the attributes to the appropriate semantic types and properties from the ontology. Here's the <Step1> for the given table:
+
+<Step1>
+[['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'name'],
+['aac-ont:Person1', 'ElementsGr2:countryAssociatedWithThePerson', 'nationality'],
+['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birthDate'],
+['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'deathDate']]
+</Step1>Based on the semantic types identified in <Step1> and the knowledge from <Knowledge3>, I will generate the internal links for the semantic graph. In this case, we only have one semantic type (aac-ont:Person1) repeated for each person in the table. Since there are no direct relationships between these individuals mentioned in the table, we don't need to create internal links between them. However, to satisfy <Rule2> which states that all semantic types must be linked, we can introduce a common aggregator to link all the Person instances.
+
+Here's the <Step2> output:
+
+<Step2>
+[['edm:EuropeanaAggregation1', 'edm:aggregatedCHO', 'aac-ont:Person1'],
+['edm:EuropeanaAggregation1', 'edm:aggregatedCHO', 'aac-ont:Person2'],
+['edm:EuropeanaAggregation1', 'edm:aggregatedCHO', 'aac-ont:Person3']]
+</Step2>
+
+In this step, we've introduced an edm:EuropeanaAggregation1 instance to aggregate all the Person instances. This ensures that all semantic types are linked in the graph, satisfying <Rule2>. Each Person instance (representing Frishmuth, Archipenko, and Benton) is linked to the EuropeanaAggregation using the edm:aggregatedCHO relation.

@@ -1,0 +1,71 @@
+{
+    "semantic_triples": [
+        [
+            "schema:Player1",
+            "schema:tag",
+            "No."
+        ],
+        [
+            "schema:Player1",
+            "schema:name",
+            "Joueur"
+        ],
+        [
+            "schema:Player1",
+            "schema:playPosition",
+            "Position"
+        ],
+        [
+            "schema:Player1",
+            "schema:birthDate",
+            "Date de naissance"
+        ],
+        [
+            "schema:Player1",
+            "schema:age",
+            "Age"
+        ],
+        [
+            "schema:Player1",
+            "schema:numberOfPlayedGames",
+            "Selections"
+        ],
+        [
+            "schema:League1",
+            "schema:name",
+            "Championnat"
+        ],
+        [
+            "schema:SportsClub1",
+            "schema:name",
+            "Club"
+        ],
+        [
+            "schema:SportsTeam1",
+            "schema:name",
+            "Equipe"
+        ],
+        [
+            "schema:SportsTeam1",
+            "schema:ranking",
+            "Classement FIFA"
+        ]
+    ],
+    "internal_link_triples": [
+        [
+            "schema:Player1",
+            "schema:inClub",
+            "schema:SportsClub1"
+        ],
+        [
+            "schema:Player1",
+            "schema:inNationalTeam",
+            "schema:SportsTeam1"
+        ],
+        [
+            "schema:SportsClub1",
+            "schema:inLeague",
+            "schema:League1"
+        ]
+    ]
+}

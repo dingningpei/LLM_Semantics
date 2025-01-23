@@ -1,0 +1,35 @@
+[
+    {
+        "artist":"Gustave Caillebotte",
+        "nationality":"French",    
+        "birthDate":"1848",
+        "deathDate":"1894",
+        "title":"The Yellow Boat,",
+        "made":"1891",
+        "prov":"The Norton Simon Foundation",   
+        "dim":"28-3/4 x 36-3/8 in. (73.0 x 92.5 cm)",
+        "imageURL":"http://images.nortonsimon.org/viewer/index.php?id=F.1985.2.1.P"
+    },
+    {
+        "artist":"Wynn Bullock",
+        "nationality":"American",   
+        "birthDate":"1902",
+        "deathDate":"1975",
+        "title":"The Limpet #2",
+        "made":"1969",
+        "prov":"Norton Simon Museum, Gift of the Artist",   
+        "dim":"Image: 6-5/8 x 9-5/16 in. (16.8 x 23.7 cm)",
+        "imageURL":""
+    },
+    {
+        "artist":"Wynn Bullock",
+        "nationality":"American",   
+        "birthDate":"1902",
+        "deathDate":"1975",
+        "title":"Nude Behind Cobwebbed Window,",
+        "made":"1955",
+        "prov":"Norton Simon Museum, Gift of the Artist",   
+        "dim":"Image: 9-3/8 x 7-3/8 in. (23.8 x 18.7 cm)",
+        "imageURL":""
+    }
+]

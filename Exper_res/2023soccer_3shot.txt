@@ -1,0 +1,47 @@
+<Step1>
+[['schema:Player1', 'schema:age', 'Age'], 
+ ['schema:Player1', 'schema:tag', 'Number'], 
+ ['schema:Player1', 'schema:playPosition', 'Position'], 
+ ['schema:Player1', 'schema:name', 'Player'], 
+ ['schema:Place1', 'schema:name', 'Country']]
+</Step1><Step2>
+[['schema:Player1', 'schema:birthPlace', 'schema:Place1']]
+</Step2><Step1>
+[['schema:Player1', 'schema:alternateName', 'Shirt Name'], ['schema:Player1', 'schema:birthDate', 'Date of Birth'], ['schema:Player1', 'schema:familyName', 'Last Name'], ['schema:Player1', 'schema:givenName', 'First Name'], ['schema:Player1', 'schema:name', 'FIFA Display Name'], ['schema:Player1', 'schema:birthPlace', 'Country'], ['schema:Player1', 'schema:height', 'Height'], ['schema:Player1', 'schema:tag', 'No.'], ['schema:Player1', 'schema:playPosition', 'Position'], ['schema:SportsClub1', 'schema:name', 'Club'], ['schema:SportsClub1', 'schema:birthPlace', 'Club (Country)']]
+</Step1><Step2>
+[['schema:Player1', 'schema:inClub', 'schema:SportsClub1']]
+</Step2><Step1>
+[['schema:Player1', 'schema:name', 'displayName'], 
+ ['schema:Player1', 'schema:givenName', 'firstName'], 
+ ['schema:Player1', 'schema:familyName', 'lastName'], 
+ ['schema:Player1', 'schema:name', 'fullName'], 
+ ['schema:Player1', 'schema:alternateName', 'shortName'], 
+ ['schema:League1', 'schema:name', 'leagueName'], 
+ ['schema:League1', 'schema:alternateName', 'leagueShortname']]
+</Step1><Step2>
+[['schema:Player1', 'schema:inLeague', 'schema:League1']]
+</Step2><Step1>
+[['schema:Player1', 'schema:tag', 'Number'], ['schema:SportsTeam1', 'schema:name', 'Team'], ['schema:Player1', 'schema:name', 'FullName'], ['schema:Player1', 'schema:playPosition', 'Position'], ['schema:Player1', 'schema:birthDate', 'DateOfBirth'], ['schema:Player1', 'schema:isCaptain', 'IsCaptain'], ['schema:SportsClub1', 'schema:name', 'Club']]
+</Step1><Step2>
+[['schema:Player1', 'schema:inNationalTeam', 'schema:SportsTeam1'], ['schema:Player1', 'schema:inClub', 'schema:SportsClub1']]
+</Step2><Step1>
+[['schema:Player1', 'schema:playPosition', 'Position'], ['schema:Player1', 'schema:name', 'Player'], ['schema:Player1', 'schema:birthPlace', 'Country'], ['schema:Player1', 'schema:height', 'Height'], ['schema:Player1', 'schema:age', 'Age'], ['schema:Player1', 'schema:birthDate', 'D.O.B'], ['schema:Player1', 'schema:numberOfPlayedGames', 'Caps'], ['schema:Player1', 'schema:goalScored', 'International goals'], ['schema:Player1', 'schema:tag', 'Number'], ['schema:SportsClub1', 'schema:name', 'Club']]
+</Step1><Step2>
+[['schema:Player1', 'schema:inClub', 'schema:SportsClub1']]
+</Step2><Step1>
+[['schema:Player1', 'schema:givenName', 'fn'], 
+ ['schema:Player1', 'schema:familyName', 'ln'], 
+ ['schema:SportsTeam1', 'schema:name', 'cn'], 
+ ['schema:Player1', 'schema:age', 'ag'], 
+ ['schema:Player1', 'schema:alternateName', 'sn'], 
+ ['schema:Player1', 'schema:height', 'ht'], 
+ ['schema:SportsClub1', 'schema:name', 'cb'], 
+ ['schema:Player1', 'schema:playPosition', 'ps'], 
+ ['schema:Player1', 'schema:tag', 'no'], 
+ ['schema:Player1', 'schema:birthDate', 'db'], 
+ ['schema:Player1', 'schema:goalScored', 'go/at'], 
+ ['schema:Player1', 'schema:inNationalTeam', 'nt']]
+</Step1><Step2>
+[['schema:Player1', 'schema:inClub', 'schema:SportsClub1'], 
+ ['schema:Player1', 'schema:inNationalTeam', 'schema:SportsTeam1']]
+</Step2>

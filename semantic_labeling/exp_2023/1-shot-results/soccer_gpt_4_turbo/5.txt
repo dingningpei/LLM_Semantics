@@ -1,0 +1,111 @@
+<Step1>
+[['schema:Player1', 'schema:age', 'Age'],
+['schema:Player1', 'schema:tag', 'Number'],
+['schema:Player1', 'schema:playPosition', 'Position'],
+['schema:Player1', 'schema:name', 'Player'],
+['schema:Place1', 'schema:name', 'Country']]
+</Step1><Step2>
+[['schema:Player1', 'schema:birthPlace', 'schema:Place1']]
+</Step2><Step1>
+[['schema:Player1', 'schema:alternateName', 'Shirt Name'],
+['schema:Player1', 'schema:birthDate', 'Date of Birth'],
+['schema:Player1', 'schema:familyName', 'Last Name'],
+['schema:Player1', 'schema:givenName', 'First Name'],
+['schema:Player1', 'schema:name', 'FIFA Display Name'],
+['schema:Player1', 'schema:birthPlace', 'Country'],
+['schema:Player1', 'schema:height', 'Height'],
+['schema:Player1', 'schema:tag', 'No.'],
+['schema:Player1', 'schema:playPosition', 'Position'],
+['schema:SportsClub1', 'schema:name', 'Club'],
+['schema:SportsClub1', 'schema:birthPlace', 'Club (Country)']]
+</Step1><Step2>
+[['schema:Player1', 'schema:inClub', 'schema:SportsClub1']]
+</Step2><Step1>
+[['schema:Person1', 'schema:displayName', 'displayName'],
+['schema:Person1', 'schema:givenName', 'firstName'],
+['schema:Person1', 'schema:familyName', 'lastName'],
+['schema:Person1', 'schema:name', 'fullName'],
+['schema:Person1', 'schema:alternateName', 'shortName'],
+['schema:League1', 'schema:name', 'leagueName'],
+['schema:League1', 'schema:alternateName', 'leagueShortname']]
+</Step1><Step2>
+[['schema:Person1', 'schema:inLeague', 'schema:League1']]
+</Step2><Step1>
+[['schema:Player1', 'schema:tag', 'Number'],
+['schema:Player1', 'schema:name', 'FullName'],
+['schema:Player1', 'schema:playPosition', 'Position'],
+['schema:Player1', 'schema:birthDate', 'DateOfBirth'],
+['schema:SportsClub1', 'schema:name', 'Club'],
+['schema:SportsClub1', 'schema:alternateName', 'ClubCountry'],
+['schema:Player1', 'schema:isCaptain', 'IsCaptain']]
+</Step1><Step2>
+[['schema:Player1', 'schema:inClub', 'schema:SportsClub1']]
+</Step2><Step1>
+[['schema:Player1', 'schema:playPosition', 'Position'],
+['schema:Player1', 'schema:name', 'Player'],
+['schema:Player1', 'schema:birthPlace', 'Country'],
+['schema:Player1', 'schema:height', 'Height'],
+['schema:Player1', 'schema:age', 'Age'],
+['schema:Player1', 'schema:birthDate', 'D.O.B'],
+['schema:Player1', 'schema:numberOfPlayedGames', 'Caps'],
+['schema:Player1', 'schema:goalScored', 'International goals'],
+['schema:SportsClub1', 'schema:name', 'Club'],
+['schema:Player1', 'schema:tag', 'Number']]
+</Step1><Step2>
+[['schema:Player1', 'schema:inClub', 'schema:SportsClub1']]
+</Step2>
+
+- Each column in the table needs to be mapped to the most appropriate semantic type and property based on the given ontology. Given the absence of a direct mapping rule from the given examples, a reasoning step will be applied consider the most likely semantic relationship:
+1. 'fn' ("First Name"): 
+  - <Class>: 'schema:Player', <Property>: 'schema:givenName' (Assumption made since the 'fn' represents the first name of a player).
+2. 'ln' ("Last Name"):
+  - <Class>: 'schema:Player', <Property>: 'schema:familyName' (Assumption made as 'ln' relates to the surname or last name).
+3. 'cn' (Country - country code):
+  - <Class>: 'schema:Player', <Property>: 'schema:nationality', a child of 'schema:birthPlace'. (Reasoning: Typically country details are related to nationality or place of origin).
+4. 'ag' (Age):
+  - <Class>: 'schema:Player', <Property>: 'schema:age' (Matches directly to the 'age' property).
+5. 'sn' (Soccer Nickname):
+  - <Class>: 'schema:Player', <Property>: 'schema:alternateName' (Assumption that 'sn' is an alternative name or nickname).
+6. 'ht' (Height in cm):
+  - <Class>: 'schema:Player', <Property>: 'schema:height' (Direct match to the height property expecting a quantitative value).
+7. 'cb' (Club):
+  - <Class>: 'schema:SportsClub', <Property>: 'schema:name' (Club names are elements of 'SportsClub').
+8. 'ps' (Position Code):
+  - <Class>: 'schema:Player', <Property>: 'schema:playPosition' (Assumption made since 'ps' refers to the player's playing position).
+9. 'no' (Jersey Number):
+  - <Class>: 'schema:Player', <Property>: 'schema:number' (Assumption that 'no' is the player's jersey number).
+10. 'db' (Date of Birth):
+  - <Class>: 'schema:Player', <Property>: 'schema:birthDate' (Direct correlation as 'db' equates to Date of Birth).
+11. 'go/at' (Goals/Attempts):
+  - <Class>: 'schema:Player', <Property>: 'schema:goalScored' (Assumption based on 'go/at' likely indicating goals scored).
+12. 'nt' (National Team):
+  - <Class>: 'schema:SportsTeam', <Property>: 'schema:alternateName' (Assumption; could also be the direct name of the national team instead).
+- The connections based on these mappings:
+
+<Step1>
+[['schema:Player1', 'schema:givenName', 'fn'],
+['schema:Player1', 'schema:familyName', 'ln'],
+['schema:Player1', 'schema:nationality', 'cn'],
+['schema:Player1', 'schema:age', 'ag'],
+['schema:Player1', 'schema:alternateName', 'sn'],
+['schema:Player1', 'schema:height', 'ht'],
+['schema:SportsClub1', 'schema:name', 'cb'],
+['schema:Player1', 'schema:playPosition', 'ps'],
+['schema:Player1', 'schema:number', 'no'],
+['schema:Player1', 'schema:birthDate', 'db'],
+['schema:Player1', 'schema:goalScored', 'go/at'],
+['schema:SportsTeam1', 'schema:alternateName', 'nt']]
+</Step1>
+
+- From the mappings in Step1 and using the knowledge of existing relations in the ontology, here are the internal links between semantic types:
+1. Link 'schema:Player' with 'schema:SportsClub' (i.e., a player being part of a club):
+   - Relation: ['schema:Player', 'schema:inClub', 'schema:SportsClub']
+2. Link 'schema:Player' with 'schema:SportsTeam' (i.e., a player being part of a national team):
+   - Relation: ['schema:Player', 'schema:inNationalTeam', 'schema:SportsTeam']
+These are the primary reasonable internal links that can be derived from the semantic mappings provided in Step1. The relations are educated guesses based on the given ontology and the context (e.g., a player belonging to both a club and a national team).
+- Constructed relations:
+
+<Step2>
+[['schema:Player1', 'schema:inClub', 'schema:SportsClub1'],
+['schema:Player1', 'schema:inNationalTeam', 'schema:SportsTeam1']]
+</Step2>

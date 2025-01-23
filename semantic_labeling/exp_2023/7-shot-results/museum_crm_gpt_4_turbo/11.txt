@@ -1,0 +1,269 @@
+<Step1>
+[['crm:E35_Title1', 'rdfs:label', 'title'], ['crm:E82_Actor_Appellation1', 'rdfs:label', 'name'], ['crm:E74_Group1', 'rdfs:label', 'nationality'], ['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'birthDate'], ['crm:E52_Time-Span2', 'crm:P82_at_some_time_within', 'deathDate']]
+</Step1><Step2>
+[['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'], ['crm:E12_Production1', 'crm:P14_carried_out_by', 'crm:E21_Person1'], ['crm:E21_Person1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'], ['crm:E21_Person1', 'crm:P98i_was_born', 'crm:E67_Birth1'], ['crm:E21_Person1', 'crm:P100i_died_in', 'crm:E69_Death1'], ['crm:E21_Person1', 'crm:P107i_is_current_or_former_member_of', 'crm:E74_Group1'], ['crm:E67_Birth1', 'crm:P4_has_time-span', 'crm:E52_Time-Span1'], ['crm:E69_Death1', 'crm:P4_has_time-span', 'crm:E52_Time-Span2']]
+</Step2><Step1>
+[['crm:E35_Title1', 'rdfs:label', 'title'], ['crm:E82_Actor_Appellation1', 'rdfs:label', 'name'], ['crm:E74_Group1', 'rdfs:label', 'nationality'], ['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'birthDate'], ['crm:E52_Time-Span2', 'crm:P82_at_some_time_within', 'deathDate']]
+</Step1><Step2>
+[['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'], ['crm:E12_Production1', 'crm:P14_carried_out_by', 'crm:E21_Person1'], ['crm:E21_Person1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'], ['crm:E21_Person1', 'crm:P98i_was_born', 'crm:E67_Birth1'], ['crm:E21_Person1', 'crm:P100i_died_in', 'crm:E69_Death1'], ['crm:E21_Person1', 'crm:P107i_is_current_or_former_member_of', 'crm:E74_Group1'], ['crm:E67_Birth1', 'crm:P4_has_time-span', 'crm:E52_Time-Span1'], ['crm:E69_Death1', 'crm:P4_has_time-span', 'crm:E52_Time-Span2']]
+</Step2><Step1>
+[['crm:E35_Title1', 'rdfs:label', 'title'], 
+ ['crm:E38_Image1', 'karma:classLink', 'photo'], 
+ ['crm:E54_Dimension1', 'crm:P3_has_note', 'dimensions'], 
+ ['crm:E55_Type1', 'rdfs:label', 'technique'], 
+ ['crm:E8_Acquisition1', 'crm:P3_has_note', 'credittext'], 
+ ['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'artyear'], 
+ ['crm:E22_Man-Made_Object1', 'karma:classLink', 'link'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P3_has_note', 'artdesc'], 
+ ['crm:E82_Actor_Appellation1', 'rdfs:label', 'artist'], 
+ ['crm:E74_Group1', 'rdfs:label', 'nationality'], 
+ ['crm:E52_Time-Span2', 'crm:P82_at_some_time_within', 'artistBirth'], 
+ ['crm:E52_Time-Span3', 'crm:P82_at_some_time_within', 'artistDeath']]
+</Step1><Step2>
+[['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P65_shows_visual_item', 'crm:E38_Image1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P43_has_dimension', 'crm:E54_Dimension1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P2_has_type', 'crm:E55_Type1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P24i_changed_ownership_through', 'crm:E8_Acquisition1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P3_has_note', 'crm:E22_Man-Made_Object2'], 
+ ['crm:E12_Production1', 'crm:P108i_was_produced_by', 'crm:E22_Man-Made_Object1'], 
+ ['crm:E12_Production1', 'crm:P14_carried_out_by', 'crm:E21_Person1'], 
+ ['crm:E21_Person1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'], 
+ ['crm:E21_Person1', 'crm:P107i_is_current_or_former_member_of', 'crm:E74_Group1'],
+ ['crm:E21_Person1', 'crm:P98i_was_born', 'crm:E67_Birth1'], 
+ ['crm:E21_Person1', 'crm:P100i_died_in', 'crm:E69_Death1'], 
+ ['crm:E67_Birth1', 'crm:P4_has_time-span', 'crm:E52_Time-Span2'], 
+ ['crm:E69_Death1', 'crm:P4_has_time-span', 'crm:E52_Time-Span3']]
+</Step2><Step1>
+[['crm:E78_Collection1', 'crm:P3_has_note', 'collectionURL'],
+ ['crm:E33_Linguistic_Object1', 'crm:P3_has_note', 'inscription'],
+ ['crm:E22_Man-Made_Object1', 'crm:P3_has_note', 'description'],
+ ['crm:E35_Title1', 'rdfs:label', 'title'],
+ ['crm:E78_Collection1', 'rdfs:label', 'collectionName'],
+ ['crm:E82_Actor_Appellation1', 'rdfs:label', 'artist'],
+ ['crm:E8_Acquisition1', 'crm:P3_has_note', 'credit'],
+ ['crm:E55_Type1', 'rdfs:label', 'materials'],
+ ['crm:E38_Image1', 'karma:classLink', 'imageURL'],
+ ['crm:E53_Place1', 'crm:P3_has_note', 'placeAndDataMade'],
+ ['crm:E54_Dimension1', 'crm:P3_has_note', 'dimensions']]
+</Step1><Step2>
+[['crm:E38_Image1', 'crm:P138_represents', 'crm:E22_Man-Made_Object1'],
+ ['crm:E22_Man-Made_Object1', 'crm:P108i_was_produced_by', 'crm:E12_Production1'],
+ ['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'],
+ ['crm:E22_Man-Made_Object1', 'crm:P24i_changed_ownership_through', 'crm:E8_Acquisition1'],
+ ['crm:E22_Man-Made_Object1', 'crm:P2_has_type', 'crm:E55_Type1'],
+ ['crm:E22_Man-Made_Object1', 'crm:P46i_forms_part_of', 'crm:E78_Collection1'],
+ ['crm:E12_Production1', 'crm:P14_carried_out_by', 'crm:E21_Person1'],
+ ['crm:E12_Production1', 'crm:P7_took_place_at', 'crm:E53_Place1'],
+ ['crm:E21_Person1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1']]
+</Step2><Step1>
+Following the guidelines outlined in <Knowledge2> and using Reasoning steps to identify appropriate semantic types and properties, I'll map each attribute in the provided <Table> to the corresponding classes and properties from <Knowledge1>:
+
+1. 'category' - This could be mapped to 'crm:E55_Type' as a general conceptual classification of the object type (painting, sculpture etc.).
+2. 'title' - Mapped to 'crm:E35_Title', representing the title of the artwork.
+3. 'maker' - Mapped to 'crm:E82_Actor_Appellation', as it refers to the name of the person who created the artwork.
+4. 'makerBioCountry' - Mapped to 'crm:E74_Group', using national association as grouping characteristic.
+5. 'birthDate' and 'deathDate' - Both can be mapped to 'crm:E52_Time-Span', representing specific time spans of birth and death respectively.
+6. 'collector', 'owner' - These refer to individuals or entities who hold or have held the item, hence mapped to 'crm:E39_Actor'.
+7. 'placeMade' - This is mapped to 'crm:E53_Place' as it represents the geographical location of creation.
+8. 'materials' - Mapped to 'crm:E57_Material' reflecting the physical composition.
+9. 'measurements' - Mapped to 'crm:E54_Dimension', capturing the dimensions of the object.
+10. 'description' - Mapped to 'crm:P3_has_note' property of 'crm:E22_Man-Made_Object' to capture additional textual information about the object.
+11. 'creditLine' - This could detail acquisition circumstances, making it suitable to map under 'crm:E8_Acquisition' with 'crm:P3_has_note' to narrate the specifics of the acquisition.
+12. 'howAcquired' - This being empty, we can still map it to 'crm:E8_Acquisition' but without specifying any property as there's no associated value.
+
+Final mapping:
+[['crm:E55_Type', 'rdfs:label', 'category'], 
+['crm:E35_Title', 'rdfs:label', 'title'],
+['crm:E82_Actor_Appellation', 'rdfs:label', 'maker'], 
+['crm:E74_Group', 'rdfs:label', 'makerBioCountry'], 
+['crm:E52_Time-Span', 'crm:P82_at_some_time_within', 'birthDate'],
+['crm:E52_Time-Span', 'crm:P82_at_some_time_within', 'deathDate'],
+['crm:E39_Actor', 'rdfs:label', 'collector'],
+['crm:E39_Actor', 'rdfs:label', 'owner'], 
+['crm:E53_Place', 'rdfs:label', 'placeMade'], 
+['crm:E57_Material', 'rdfs:label', 'materials'], 
+['crm:E54_Dimension', 'crm:P3_has_note', 'measurements'], 
+['crm:E22_Man-Made_Object', 'crm:P3_has_note', 'description'], 
+['crm:E8_Acquisition', 'crm:P3_has_note', 'creditLine'], 
+['crm:E8_Acquisition', 'karma:classLink', 'howAcquired']]
+</Step1><Step2>
+To establish the internal linkages between the mapped semantic types from <Step1>, we'll identify the appropriate relations between these semantic types based on <Knowledge3> and reasoning:
+
+1. Both 'collector' and 'owner' semantic types representing the 'E39_Actor' class can be linked to the 'E22_Man-Made_Object'. This linkage can be articulated through the properties 'crm:P49i_is_former_or_current_keeper_of' for collector and 'crm:P51i_is_former_or_current_owner_of' for the owner, indicating the roles these actors have in relation to the artwork.
+   
+2. The 'maker' field, pointing to 'E82_Actor_Appellation', can be linked through a created instance 'E21_Person' (representing the artist as a person), which can then be linked to the 'E12_Production' entity describing the production of the object (which can be a painting or sculpture). This connection can be setup using 'crm:P14_carried_out_by' (indicating the person who carried out the production).
+
+3. The 'placeMade', as 'E53_Place', can be linked to the 'E12_Production' (representing the creation of the artwork) using the property 'crm:P7_took_place_at'.
+
+4. 'materials', which is an 'E57_Material', can be connected to 'E22_Man-Made_Object' using 'crm:P45_consists_of'.
+
+5. 'birthDate' and 'deathDate' linked to 'E52_Time-Span' can connect to the 'E21_Person' through properties 'crm:P98_brought_into_life' and 'crm:P100_was_death_of' to denote the life span details of the artist.
+
+6. 'measurements' mapped to 'crm:E54_Dimension' can link to the 'E22_Man-Made_Object' via 'crm:P43_has_dimension'.
+
+7. For 'title', mapped to 'crm:E35_Title', link it to 'E22_Man-Made_Object' through 'crm:P102_has_title'.
+
+8. 'description' as 'crm:P3_has_note' under 'E22_Man-Made_Object' provides additional descriptive text about the object.
+
+9. 'howAcquired', although empty, belongs to the 'E8_Acquisition' entity which can link to 'E22_Man-Made_Object' expressing how the object was transferred between actors using 'crm:P24i_changed_ownership_through'.
+
+Final internal links:
+[['crm:E39_Actor', 'crm:P49i_is_former_or_current_keeper_of', 'crm:E22_Man-Made_Object'],
+['crm:E39_Actor', 'crm:P51i_is_former_or_current_owner_of', 'crm:E22_Man-Made_Object'],
+['crm:E82_Actor_Appellation', 'crm:P131i_identifies', 'crm:E21_Person'],
+['crm:E21_Person', 'crm:P14_carried_out_by', 'crm:E12_Production'],
+['crm:E12_Production', 'crm:P7_took_place_at', 'crm:E53_Place'],
+['crm:E22_Man-Made_Object', 'crm:P45_consists_of', 'crm:E57_Material'],
+['crm:E21_Person', 'crm:P98_brought_into_life', 'crm:E52_Time-Span'],
+['crm:E21_Person', 'crm:P100_was_death_of', 'crm:E52_Time-Span'],
+['crm:E22_Man-Made_Object', 'crm:P43_has_dimension', 'crm:E54_Dimension'],
+['crm:E22_Man-Made_Object', 'crm:P102_has_title', 'crm:E35_Title'],
+['crm:E22_Man-Made_Object', 'crm:P24i_changed_ownership_through', 'crm:E8_Acquisition']]
+
+These connections effectively illustrate the lifecycle and associations between the artist, artwork, and related actors and objects.
+</Step2>Based on the given ontology and property mappings from the examples in <Knowledge2>, here is the <Step1> mapping for the attributes in the provided <Table>:
+
+<Step1>:
+- [['crm:E38_Image1', 'karma:classLink', 'imageURL']
+- [['crm:E22_Man-Made_Object1', 'karma:classLink', 'sourceURL']
+- [['crm:E35_Title1', 'rdfs:label', 'title']
+- [['crm:E82_Actor_Appellation1', 'rdfs:label', 'artist']
+- [['crm:E74_Group1', 'rdfs:label', 'nationality']
+- [['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'birthDate']
+- [['crm:E52_Time-Span2', 'crm:P82_at_some_time_within', 'deathDate']
+- [['crm:E55_Type1', 'rdfs:label', 'materials']
+- [['crm:E54_Dimension1', 'crm:P3_has_note', 'dimensions']
+- [['crm:E8_Acquisition1', 'crm:P3_has_note', 'creditLine']
+- [['crm:E33_Linguistic_Object1', 'crm:P3_has_note', 'galleryLabel']
+- [['crm:E8_Acquisition1', 'crm:P3_has_note', 'provenance']
+
+The given attributes are analyzed as follows:
+- The 'imageURL' and 'sourceURL' are straightforward links that serve as identifiers or connections in the context of the CRM ontology so they are mapped to a karma:classLink with appropriate class.
+- 'title', 'artist', 'nationality', 'materials' are directly descriptive of the artifact, therefore suitable to be mapped to 'rdfs:label' paired with the proper classes.
+- Time-based attributes such as 'birthDate' and 'deathDate' should relate to the 'Time-Span' class with properties that are part of a temporal dimension.
+- The 'dimensions' attribute corresponds to the 'Dimension' class.
+- 'creditLine', 'galleryLabel', and 'provenance' involve textual description and provenance information, so they are housed under properties that record literal details (note or descriptive properties). 
+
+These mappings adhere to the usage of properties and classes indicated in previous examples from <Knowledge2>, applied consistently with the ontology structure.To generate <Step2> from the <Step1> output using the provided ontology and relevant knowledge:
+
+<Step2>:
+- [['crm:E22_Man-Made_Object1', 'crm:P138_represents', 'crm:E38_Image1'], ['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'], ['crm:E22_Man-Made_Object1', 'crm:P108i_was_produced_by', 'crm:E12_Production1']]
+- [['crm:E12_Production1', 'crm:P14_carried_out_by', 'crm:E21_Person1']]
+- [['crm:E21_Person1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1']]
+- [['crm:E21_Person1', 'crm:P98i_was_born', 'crm:E67_Birth1'], ['crm:E21_Person1', 'crm:P100i_died_in', 'crm:E69_Death1']]
+- [['crm:E67_Birth1', 'crm:P4_has_time-span', 'crm:E52_Time-Span1'], ['crm:E69_Death1', 'crm:P4_has_time-span', 'crm:E52_Time-Span2']]
+- [['crm:E21_Person1', 'crm:P107i_is_current_or_former_member_of', 'crm:E74_Group1']]
+- [['crm:E22_Man-Made_Object1', 'crm:P2_has_type', 'crm:E55_Type1']]
+- [['crm:E22_Man-Made_Object1', 'crm:P43_has_dimension', 'crm:E54_Dimension1']]
+- [['crm:E8_Acquisition1', 'crm:P14_carried_out_by', 'crm:E39_Actor1']]
+- [['crm:E8_Acquisition1', 'crm:P8_took_place_on_or_within', 'crm:E33_Linguistic_Object1']]
+- [['crm:E33_Linguistic_Object1', 'crm:P129_is_about', 'crm:E22_Man-Made_Object1']]
+
+Explanation of the internal linkages:
+- The 'E22_Man-Made_Object1' (artifact) is the primary entity in the context. It "represents" the image (using 'P138_represents') and has a title (using 'P102_has_title').
+- The production information links back to 'E12_Production1', conducted by 'E21_Person1' (the artist).
+- The artist 'E21_Person1' is identified by an appellation, involves in birth and death events, and can be a member of a 'national' group.
+- The lifespan events for the person are respectively linked to 'birthDate' and 'deathDate' time spans.
+- Material type and dimensions of the artifact are expressed via type (using 'P2_has_type') and dimension properties (using 'P43_has_dimension').
+- Acquisition details involve the person/entity acquiring the item (using 'P14_carried_out_by') and often link to a credit line or acquisition event.
+- Gallery labels and provenance, which provides textual content about the item, are involved with or describe the object or acquisition (using 'P129_is_about').
+
+These linkages are based on understanding the relationships between different classes and properties in the context of cultural heritage objects and the events or attributes describing or surrounding them, as provided in the ontology structure.<Step1>
+[['crm:E38_Image1', 'karma:classLink', 'picURL'], 
+['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'birthDate'], 
+['crm:E52_Time-Span2', 'crm:P82_at_some_time_within', 'deathDate'], 
+['crm:E55_Type1', 'rdfs:label', 'subtypeOfArt'], 
+['crm:E55_Type2', 'rdfs:label', 'typeOfArt'], 
+['crm:E35_Title1', 'rdfs:label', 'title'], 
+['crm:E52_Time-Span3', 'crm:P82_at_some_time_within', 'dateMade'], 
+['crm:E8_Acquisition1', 'crm:P3_has_note', 'credit'], 
+['crm:E33_Linguistic_Object1', 'crm:P3_has_note', 'inscription'], 
+['crm:E54_Dimension1', 'crm:P3_has_note', 'dimensions'], 
+['crm:E82_Actor_Appellation1', 'rdfs:label', 'artistName']]
+</Step1><Step2>
+[['crm:E38_Image1', 'crm:P138_represents', 'crm:E22_Man-Made_Object1'],
+ ['crm:E22_Man-Made_Object1', 'crm:P108i_was_produced_by', 'crm:E12_Production1'],
+ ['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'],
+ ['crm:E22_Man-Made_Object1', 'crm:P2_has_type', 'crm:E55_Type2'],
+ ['crm:E22_Man-Made_Object1', 'crm:P43_has_dimension', 'crm:E54_Dimension1'],
+ ['crm:E12_Production1', 'crm:P32_used_general_technique', 'crm:E55_Type1'],
+ ['crm:E12_Production1', 'crm:P4_has_time-span', 'crm:E52_Time-Span3'],
+ ['crm:E12_Production1', 'crm:P24i_changed_ownership_through', 'crm:E8_Acquisition1'],
+ ['crm:E12_Production1', 'crm:P70_documents', 'crm:E33_Linguistic_Object1'],
+ ['crm:E12_Production1', 'crm:P14_carried_out_by', 'crm:E21_Person1'],
+ ['crm:E21_Person1', 'crm:P98i_was_born', 'crm:E67_Birth1'],
+ ['crm:E21_Person1', 'crm:P100i_died_in', 'crm:E69_Death1'],
+ ['crm:E21_Person1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'],
+ ['crm:E67_Birth1', 'crm:P4_has_time-span', 'crm:E52_Time-Span1'],
+ ['crm:E69_Death1', 'crm:P4_has_time-span', 'crm:E52_Time-Span2']]
+</Step2><Step1>
+[['crm:E35_Title1', 'rdfs:label', 'title'], ['crm:E22_Man-Made_Object1', 'karma:classLink', 'sourceURL'], ['crm:E38_Image1', 'karma:classLink', 'imageURL'], ['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'creationDate'], ['crm:E55_Type1', 'rdfs:label', 'materials'], ['crm:E54_Dimension1', 'crm:P3_has_note', 'dimensions'], ['crm:E8_Acquisition1', 'crm:P3_has_note', 'creditLine'], ['crm:E22_Man-Made_Object1', 'crm:P3_has_note', 'galleryLabel'], ['crm:E8_Acquisition1', 'crm:P3_has_note', 'provenance'], ['crm:E82_Actor_Appellation1', 'rdfs:label', 'artist'], ['crm:E74_Group1', 'rdfs:label', 'nationality'], ['crm:E52_Time-Span2', 'crm:P82_at_some_time_within', 'birthDate'], ['crm:E52_Time-Span3', 'crm:P82_at_some_time_within', 'deathDate']]
+</Step1><Step2>
+[['crm:E38_Image1', 'crm:P138_represents', 'crm:E22_Man-Made_Object1'],
+ ['crm:E22_Man-Made_Object1', 'crm:P108i_was_produced_by', 'crm:E12_Production1'],
+ ['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'],
+ ['crm:E22_Man-Made_Object1', 'crm:P43_has_dimension', 'crm:E54_Dimension1'],
+ ['crm:E22_Man-Made_Object1', 'crm:P2_has_type', 'crm:E55_Type1'],
+ ['crm:E22_Man-Made_Object1', 'crm:P24i_changed_ownership_through', 'crm:E8_Acquisition1'],
+ ['crm:E8_Acquisition1', 'crm:P14_carried_out_by', 'crm:E21_Person1'],
+ ['crm:E12_Production1', 'crm:P4_has_time-span', 'crm:E52_Time-Span1'],
+ ['crm:E21_Person1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'],
+ ['crm:E21_Person1', 'crm:P98i_was_born', 'crm:E67_Birth1'],
+ ['crm:E21_Person1', 'crm:P100i_died_in', 'crm:E69_Death1'],
+ ['crm:E21_Person1', 'crm:P107i_is_current_or_former_member_of', 'crm:E74_Group1'],
+ ['crm:E67_Birth1', 'crm:P4_has_time-span', 'crm:E52_Time-Span2'],
+ ['crm:E69_Death1', 'crm:P4_has_time-span', 'crm:E52_Time-Span3'],
+ ['crm:E82_Actor_Appellation1', 'crm:P1_is_identified_by', 'crm:E41_Appellation1']]
+</Step2><Step1>
+[['crm:E82_Actor_Appellation1', 'rdfs:label', 'artistName'], ['crm:E53_Place', 'crm:P87_is_identified_by', 'residence'], ['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'birthDate'], ['crm:E52_Time-Span2', 'crm:P82_at_some_time_within', 'deathDate'], ['crm:E35_Title1', 'rdfs:label', 'title'], ['crm:E52_Time-Span3', 'crm:P82_at_some_time_within', 'artworkDate'], ['crm:E33_Linguistic_Object1', 'crm:P3_has_note', 'artworkDetails'], ['crm:E33_Linguistic_Object2', 'crm:P3_has_note', 'artworkInFocus'], ['crm:E38_Image1', 'karma:classLink', 'imageURL']]
+</Step1><Step2>
+[['crm:E38_Image1', 'crm:P138_represents', 'crm:E22_Man-Made_Object1'], ['crm:E22_Man-Made_Object1', 'crm:P108i_was_produced_by', 'crm:E12_Production1'], ['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'], ['crm:E12_Production1', 'crm:P14_carried_out_by', 'crm:E21_Person1'], ['crm:E12_Production1', 'crm:P4_has_time-span', 'crm:E52_Time-Span3'], ['crm:E21_Person1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'], ['crm:E21_Person1', 'crm:P98i_was_born', 'crm:E67_Birth1'], ['crm:E21_Person1', 'crm:P100i_died_in', 'crm:E69_Death1'], ['crm:E21_Person1', 'crm:P74_has_current_or_former_residence', 'crm:E53_Place'], ['crm:E67_Birth1', 'crm:P4_has_time-span', 'crm:E52_Time-Span1'], ['crm:E69_Death1', 'crm:P4_has_time-span', 'crm:E52_Time-Span2'], ['crm:E12_Production1', 'crm:P7_took_place_at', 'crm:E53_Place1'], ['crm:E33_Linguistic_Object1', 'crm:P129_is_about', 'crm:E22_Man-Made_Object1'], ['crm:E33_Linguistic_Object2', 'crm:P129_is_about', 'crm:E22_Man-Made_Object1']]
+</Step2><Step1>
+[['crm:E82_Actor_Appellation1', 'rdfs:label', 'artistName'], ['crm:E74_Group1', 'rdfs:label', 'nationality'], ['crm:E33_Linguistic_Object1', 'crm:P3_has_note', 'birthDataAndPlace'], ['crm:E39_Actor1', 'crm:P3_has_note', 'longBiography'], ['crm:E55_Type1', 'rdfs:label', 'occupation']]
+</Step1><Step2>
+[['crm:E39_Actor1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'], 
+ ['crm:E39_Actor1', 'crm:P2_has_type', 'crm:E55_Type1'], 
+ ['crm:E39_Actor1', 'crm:P107i_is_current_or_former_member_of', 'crm:E74_Group1'],
+ ['crm:E39_Actor1', 'crm:P3_has_note', 'crm:E33_Linguistic_Object1']]
+</Step2><Step1>
+[['crm:E55_Type1', 'rdfs:label', 'culture'], ['crm:E82_Actor_Appellation1', 'rdfs:label', 'attribution'], ['crm:E55_Type2', 'rdfs:label', 'objectName'], ['crm:E35_Title1', 'rdfs:label', 'title'], ['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'dated'], ['crm:E55_Type3', 'rdfs:label', 'medium'], ['crm:E54_Dimension1', 'crm:P3_has_note', 'dimensions'], ['crm:E22_Man-Made_Object1', 'crm:P3_has_note', 'description']]
+</Step1><Step2>
+[['crm:E22_Man-Made_Object1', 'crm:P2_has_type', 'crm:E55_Type2'],  # Oil Painting is a type of crm:E22_Man-Made_Object
+ ['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'],  # Object has a title
+ ['crm:E22_Man-Made_Object1', 'crm:P43_has_dimension', 'crm:E54_Dimension1'],  # Object has dimensions
+ ['crm:E22_Man-Made_Object1', 'crm:P108i_was_produced_by', 'crm:E12_Production1'],  # The painting was produced
+ ['crm:E12_Production1', 'crm:P14_carried_out_by', 'crm:E82_Actor_Appellation1'],  # Produced by the attributed artist
+ ['crm:E22_Man-Made_Object1', 'crm:P2_has_type', 'crm:E55_Type3'],  # Object has medium (Oil on canvas/panel)
+ ['crm:E55_Type3', 'crm:P2_has_type', 'crm:E55_Type1'],  # Medium has a type, though culture is <Empty> these are typically tied to cultural contexts in Knowledge1
+ ['crm:E12_Production1', 'crm:P4_has_time-span', 'crm:E52_Time-Span1'],  # Production has a dated time-span
+ ['crm:E22_Man-Made_Object1', 'crm:P3_has_note', 'crm:E22_Man-Made_Object1']]  # self-referencing to capture description
+</Step2><Step1>
+[['crm:E38_Image1', 'karma:classLink', 'imageURL'], 
+ ['crm:E35_Title1', 'rdfs:label', 'title'], 
+ ['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'date'], 
+ ['crm:E55_Type1', 'rdfs:label', 'medium'], 
+ ['crm:E54_Dimension1', 'crm:P3_has_note', 'dimensions'], 
+ ['crm:E55_Type1', 'rdfs:label', 'classification'], 
+ ['crm:E8_Acquisition1', 'crm:P3_has_note', 'credit'], 
+ ['crm:E8_Acquisition1', 'crm:P3_has_note', 'provenance'], 
+ ['crm:E21_Person1', 'rdfs:label', 'name'], 
+ ['crm:E74_Group1', 'rdfs:label', 'nationality'], 
+ ['crm:E52_Time-Span2', 'crm:P82_at_some_time_within', 'birth'], 
+ ['crm:E52_Time-Span3', 'crm:P82_at_some_time_within', 'death']]
+</Step1><Step2>
+[['crm:E38_Image1', 'crm:P138_represents', 'crm:E22_Man-Made_Object1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P108i_was_produced_by', 'crm:E12_Production1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P2_has_type', 'crm:E55_Type1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P24i_changed_ownership_through', 'crm:E8_Acquisition1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P43_has_dimension', 'crm:E54_Dimension1'], 
+ ['crm:E12_Production1', 'crm:P14_carried_out_by', 'crm:E21_Person1'], 
+ ['crm:E12_Production1', 'crm:P4_has_time-span', 'crm:E52_Time-Span1'], 
+ ['crm:E21_Person1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'], 
+ ['crm:E21_Person1', 'crm:P98i_was_born', 'crm:E67_Birth1'], 
+ ['crm:E21_Person1', 'crm:P100i_died_in', 'crm:E69_Death1'], 
+ ['crm:E21_Person1', 'crm:P107i_is_current_or_former_member_of', 'crm:E74_Group1'], 
+ ['crm:E67_Birth1', 'crm:P4_has_time-span', 'crm:E52_Time-Span2'], 
+ ['crm:E69_Death1', 'crm:P4_has_time-span', 'crm:E52_Time-Span3']]
+</Step2>

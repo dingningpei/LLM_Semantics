@@ -1,0 +1,38 @@
+[
+    {
+        "artistName":"Gaston Lachaise",
+        "nationality":"American",
+        "birthYear":"1882",
+        "deathYear":"1935",
+        "titleofartwork":"'Acrobat' Upside Down Figure, 1926",
+        "typeofartwork":"Bronze",
+        "dimensions":"27 x 16.5 x 7 cm (10 5/8 x 6 1/2 x 2 3/4 in.)",
+        "credit":"Bequest of Katharine Kuh",
+        "accessionID":"1994.548",
+        "imageURL":"http://www.artic.edu/aic/collections/citi/images/standard/WebMedium/WebImg_000004/50626_356716.jpg"
+    },
+    {
+        "artistName":"Alexander Jackson Davis",
+        "nationality":"American",
+        "birthYear":"1803",
+        "deathYear":"1892",
+        "titleofartwork":"'Belmead' Center table, c. 1846",
+        "typeofartwork":"Rosewood oak walnut marble",
+        "dimensions":"72.4 x 104.1 x 90.2 cm (28 1/2 x 41 x 35 1/2 in.)",
+        "credit":"Gift of The Antiquarian Society",
+        "accessionID":"2000.340",
+        "imageURL":"http://www.artic.edu/aic/collections/citi/images/standard/WebMedium/WebImg_000005/6676_357883.jpg"
+    },
+    {
+        "artistName":"Mount Washington Glass Company",
+        "nationality":"American",
+        "birthYear":"1837",
+        "deathYear":"1958",
+        "titleofartwork":"'Royal Flemish' Vase, 1889/95",
+        "typeofartwork":"Partially gilded and painted blown mold glass",
+        "dimensions":"39.1 cm (15 3/8 in.)",
+        "credit":"Through prior acquisitions of Rowena Marsh Abbott Kate L. Brewster Mr. and Mrs. Frederick Castle Emma B. Hodge Mrs. Potter Palmer II Edward Kendall Rogers Jerome and Irene Schultz and Mr. and Mrs. William Swartchild Jr.",
+        "accessionID":"2002.20",
+        "imageURL":"http://www.artic.edu/aic/collections/citi/images/standard/WebMedium/WebImg_000005/7092_358786.jpg"
+    }
+]

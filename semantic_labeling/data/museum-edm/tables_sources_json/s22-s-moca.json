@@ -1,0 +1,32 @@
+[
+    {
+        "artistName":"Vito Acconci",
+        "title":"Under-History Lessons",
+        "creationDate":"1976",
+        "process":"Cinderblocks, stools, planks, light, audio",
+        "dimensions":"18 x 120 x 192 in. (45.7 x 304.8 x 487.7 cm)",
+        "provenance":"The Museum of Contemporary Art, Los Angeles. Purchased with funds provided by the National Endowment for the Arts, a Federal agency, and The Broad Art Foundation",
+        "assensionNumber":"88.1",
+        "image":"http://www.moca.org/museum/pc_media_viewer.php?acsnum=88.1&#38;dim=300px"
+    },
+    {
+        "artistName":"Robert Arneson",
+        "title":"Hear (Self-Portrait)",
+        "creationDate":"1973",
+        "process":"Ceramic",
+        "dimensions":"16 x 16 x 13 in. (40.6 x 40.6 x 33 cm)",
+        "provenance":"The Museum of Contemporary Art, Los Angeles. Gift of the Lasky Charitable Lead Trust, Marshall P. Levine and Harlan B. Levine, Trustees, in honor of Morelle I. Levine and Norman D. Levine",
+        "assensionNumber":"2006.40",
+        "image":"http://www.moca.org/museum/pc_media_viewer.php?acsnum=2006.40&#38;dim=300px"
+    },
+    {
+        "artistName":"Richard Misrach",
+        "title":"Barracks, Wendover Air Force Base, Utah",
+        "creationDate":"1991",
+        "process":"Dye coupler photograph, edition 1/25",
+        "dimensions":"20 x 24 in. (50.8 x 61 cm)",
+        "provenance":"The Museum of Contemporary Art, Los Angeles. Purchased with funds provided by William Chase and Tom Levine",
+        "assensionNumber":"98.6",
+        "image":"http://www.moca.org/museum/pc_media_viewer.php?acsnum=98.6&#38;dim=300px"
+    }
+]

@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cstdlib>
+#include <cmath>
+#include <algorithm>
+#include <vector>
+#include "circuit/FDNNF.h"
+#include "mdd/MDD.h"
+#include "circuit/CFG.h"
+#include "circuit/CYK.h"
+#include "globals/mddglobals.h"
+#include "globals/circglobals.h"
+#include "circuit/nnfprop.h"
+#include "circuit/circ_fns.h"
+#include "mdd/mdd_to_lgraph.h"
+#include "mdd/wmdd_prop.h"
+
+int main(int argc, char** argv)
+{
+
+    int foxes = atoi(argv[1]);
+    int geese = atoi(argv[2]);
+    int corns = atoi(argv[3]);
+
+
+
+
+
+  return 0;
+}

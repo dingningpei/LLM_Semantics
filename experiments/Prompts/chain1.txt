@@ -1,0 +1,27 @@
+<Input>
+<Table>
+{$INPUT}
+</Table>
+</Input>
+
+Give the <Table> in<Input>, generate <Step1> of the <Table> using <Knowledge2>:
+IMPORTANT: 1.If you can not find the appropriate map function in <Knowledge2>, you can use reasoning step to map the attribute to the <Knowledge1> and ensure the consistency.
+           2. MAKE SURE The number of semantic types is the same of the number of attributes.
+
+Output your solution as the format below:
+Reasoning:
+**attribute name1**:
+- **map function Used or Reasoning Step**: 
+- **Semantic Type1**(ONLY ONE semantic type):
+
+**attribute name2**:
+- **map function Used or Reasoning Step**: 
+- **Semantic Type2**: 
+
+**attribute name3**:
+- **map function Used or Reasoning Step**: 
+- **Semantic Type3**: 
+
+Final output:
+<Step1>
+</Step1>

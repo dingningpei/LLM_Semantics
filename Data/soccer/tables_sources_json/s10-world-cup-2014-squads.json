@@ -1,0 +1,32 @@
+[
+    {
+        "IsCaptain":"FALSE",
+        "ClubCountry":"ESP",
+        "DateOfBirth":"5/6/1983",
+        "Team":"Brazil",
+        "Club":"FC Barcelona",
+        "FullName":"Dani Alves",
+        "Position":"DF",
+        "Number":"2"
+    },
+    {
+        "IsCaptain":"FALSE",
+        "ClubCountry":"ENG",
+        "DateOfBirth":"4/22/1987",
+        "Team":"Brazil",
+        "Club":"Chelsea F.C.",
+        "FullName":"David Luiz",
+        "Position":"DF",
+        "Number":"4"
+    },
+    {
+        "IsCaptain":"TRUE",
+        "ClubCountry":"FRA",
+        "DateOfBirth":"9/22/1984",
+        "Team":"Brazil",
+        "Club":"Paris Saint-Germain F.C.",
+        "FullName":"Thiago Silva",
+        "Position":"DF",
+        "Number":"3"
+    }
+]

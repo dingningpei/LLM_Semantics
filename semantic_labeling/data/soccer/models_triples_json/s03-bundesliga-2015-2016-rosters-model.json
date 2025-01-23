@@ -1,0 +1,46 @@
+{
+    "semantic_triples": [
+        [
+            "schema:Player1",
+            "schema:name",
+            "Name"
+        ],
+        [
+            "schema:SportsClub1",
+            "schema:name",
+            "Club"
+        ],
+        [
+            "schema:SportsTeam1",
+            "schema:name",
+            "Country"
+        ],
+        [
+            "schema:Player1",
+            "schema:tag",
+            "Tag"
+        ],
+        [
+            "schema:Player1",
+            "schema:birthDate",
+            "Birthdate"
+        ],
+        [
+            "schema:Player1",
+            "schema:playPosition",
+            "Position"
+        ]
+    ],
+    "internal_link_triples": [
+        [
+            "schema:Player1",
+            "schema:inNationalTeam",
+            "schema:SportsTeam1"
+        ],
+        [
+            "schema:Player1",
+            "schema:inClub",
+            "schema:SportsClub1"
+        ]
+    ]
+}

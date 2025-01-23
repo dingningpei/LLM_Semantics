@@ -1,0 +1,99 @@
+Based on the provided <Table> and using <Knowledge2> from the previous examples for guidance, here is how each attribute can be mapped to the appropriate Class and Property:
+
+1. **title**: This refers to the name given to an object, which maps to the 'E35_Title' class.
+2. **name**: This is typically used to identify a person, hence it maps to the 'E82_Actor_Appellation' class.
+3. **nationality**: It describes the origin of the actor, which could be related to a group or cultural origin, hence 'E74_Group' seems appropriate.
+4. **birthDate**: Indicates the time span of birth which maps to the 'E67_Birth' class and more specifically to the property 'P82_at_some_time_within' associated with a Time-Span entity.
+5. **deathDate**: Indicates the time span of death which maps to the 'E69_Death' class and also uses 'P82_at_some_time_within' for Time-Span.
+
+Therefore, the semantic types and properties for these attributes would look like this:
+
+<Step1>
+[['crm:E35_Title1', 'rdfs:label', 'title'],
+ ['crm:E82_Actor_Appellation1', 'rdfs:label', 'name'],
+ ['crm:E74_Group1', 'rdfs:label', 'nationality'],
+ ['crm:E67_Birth1', 'crm:P82_at_some_time_within', 'birthDate'],
+ ['crm:E69_Death1', 'crm:P82_at_some_time_within', 'deathDate']]
+</Step1>To create internal links among semantic types from <Step1> using <Knowledge3> and the ontology class and property relations, we start by ensuring that all entities are interconnected appropriately without isolated nodes in the semantic graph.
+
+Overview of <Step1> Semantic Types:
+1. **crm:E35_Title1** - Title of the work
+2. **crm:E82_Actor_Appellation1** - Name of the artist/actor
+3. **crm:E74_Group1** - Nationality (or cultural group)
+4. **crm:E67_Birth1** - Birth event with Time-Span
+5. **crm:E69_Death1** - Death event with Time-Span
+
+**Reasoning and Connecting Semantic Types**: 
+
+1. **Birth and Death Linked to the Person by Time-Span**:
+   - **Birth**: A person (crm:E21_Person1) is identified at the time of their birth by the birth Time-Span.
+   - **Death**: A person's life ends at the reported death Time-Span.
+   - crm:E67_Birth1 -> crm:P98_brought_into_life -> crm:E21_Person1
+   - crm:E69_Death1 -> crm:P100_was_death_of -> crm:E21_Person1
+
+2. **Connecting Actor Appellation to the Person**:
+   - The actor's name (Appellation) identifies the person.
+   - crm:E21_Person1 -> crm:P131_is_identified_by -> crm:E82_Actor_Appellation1
+
+3. **Linking Nationality Group to Person**:
+   - The person was a member of a cultural or national group.
+   - crm:E21_Person1 -> crm:P107i_is_current_or_former_member_of -> crm:E74_Group1
+
+4. **Connecting Titles to the Creator/Person**:
+   - The title represents a Man-Made Object (like a sculpture or artwork), which in turn has a connection to its creator.
+   - crm:E22_Man-Made_Object1 -> crm:P102_has_title -> crm:E35_Title1
+   - crm:E21_Person1 -> crm:P108_has_produced -> crm:E22_Man-Made_Object1
+
+**Creating Interconnections**:
+
+<Step2>
+[['crm:E67_Birth1', 'crm:P98_brought_into_life', 'crm:E21_Person1'],
+ ['crm:E69_Death1', 'crm:P100_was_death_of', 'crm:E21_Person1'],
+ ['crm:E21_Person1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'],
+ ['crm:E21_Person1', 'crm:P107i_is_current_or_former_member_of', 'crm:E74_Group1'],
+ ['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'],
+ ['crm:E21_Person1', 'crm:P108_has_produced', 'crm:E22_Man-Made_Object1']]
+</Step2>
+
+This configuration ensures all semantic nodes are interconnected reflecting the relationships inferred from the data table and existing ontology knowledge.<Step1>
+[['crm:E35_Title1', 'rdfs:label', 'title'], ['crm:E82_Actor_Appellation1', 'rdfs:label', 'name'], ['crm:E74_Group1', 'rdfs:label', 'nationality'], ['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'birthDate'], ['crm:E52_Time-Span2', 'crm:P82_at_some_time_within', 'deathDate']]
+</Step1><Step2>
+[['crm:E82_Actor_Appellation1', 'crm:P131_is_identified_by', 'crm:E21_Person1'], ['crm:E21_Person1', 'crm:P107i_is_current_or_former_member_of', 'crm:E74_Group1'], ['crm:E21_Person1', 'crm:P98i_was_born', 'crm:E67_Birth1'], ['crm:E21_Person1', 'crm:P100i_died_in', 'crm:E69_Death1'], ['crm:E67_Birth1', 'crm:P4_has_time-span', 'crm:E52_Time-Span1'], ['crm:E69_Death1', 'crm:P4_has_time-span', 'crm:E52_Time-Span2'], ['crm:E21_Person1', 'crm:P14_carried_out_by', 'crm:E12_Production1'], ['crm:E12_Production1', 'crm:P2_has_type', 'crm:E35_Title1']]
+</Step2><Step1>
+[['crm:E22_Man-Made_Object1', 'karma:classLink', 'photo'], ['crm:E35_Title1', 'rdfs:label', 'title'], ['crm:E54_Dimension1', 'crm:P3_has_note', 'dimensions'], ['crm:E29_Design_or_Procedure1', 'rdfs:label', 'technique'], ['crm:E8_Acquisition1', 'crm:P3_has_note', 'credittext'], ['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'artyear'], ['crm:E22_Man-Made_Object2', 'karma:classLink', 'link'], ['crm:E73_Information_Object1', 'rdfs:label', 'artdesc'], ['crm:E82_Actor_Appellation1', 'rdfs:label', 'artist'], ['crm:E74_Group1', 'rdfs:label', 'nationality'], ['crm:E52_Time-Span2', 'crm:P82_at_some_time_within', 'artistBirth'], ['crm:E52_Time-Span3', 'crm:P82_at_some_time_within', 'artistDeath']]
+</Step1>
+
+Explanation:
+- 'photo' links to an image URL and is represented as an instance of 'crm:E22_Man-Made_Object'.
+- 'title' is a title for an object or record, represented through an 'crm:E35_Title'.
+- 'dimensions' are typical properties described as notes in the CRM ontology, so it goes with 'crm:E54_Dimension' linked by 'crm:P3_has_note'.
+- 'technique' is represented as 'crm:E29_Design_or_Procedure' as it deals with how the artwork is made.
+- 'credittext' detailing acquisition details or recognition can be associated with CRT as a note.
+- 'artyear' is a temporal information, thus it is a type of 'crm:E52_Time-Span' and linked through 'crm:P82_at_some_time_within'.
+- 'link' to the artwork page is represented also as 'crm:E22_Man-Made_Object', since it refers directly to the object itself.
+- 'artdesc' is a description about the art, which is information, so mapped to 'crm:E73_Information_Object'.
+- 'artist' is specifically considered as 'crm:E82_Actor_Appellation' for the name of the artist.
+- 'nationality' relates to 'crm:E74_Group' to indicate the artist's cultural or national grouping.
+- 'artistBirth' and 'artistDeath' are specific temporal events, linked to 'crm:E52_Time-Span' also by 'crm:P82_at_some_time_within' for their respective years.<Step2>
+[['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P2_has_type', 'crm:E29_Design_or_Procedure1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P24i_changed_ownership_through', 'crm:E8_Acquisition1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P43_has_dimension', 'crm:E54_Dimension1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P138_represents', 'crm:E73_Information_Object1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P4_has_time-span', 'crm:E52_Time-Span1'], 
+ ['crm:E22_Man-Made_Object1', 'karma:classLink', 'crm:E22_Man-Made_Object2'],
+ ['crm:E35_Title1', 'karma:classLink', 'crm:E82_Actor_Appellation1'], 
+ ['crm:E35_Title1', 'karma:classLink', 'crm:E74_Group1'], 
+ ['crm:E82_Actor_Appellation1', 'crm:P131_is_identified_by', 'crm:E21_Person1'], 
+ ['crm:E21_Person1', 'crm:P98i_was_born', 'crm:E52_Time-Span2'], 
+ ['crm:E21_Person1', 'crm:P100i_died_in', 'crm:E52_Time-Span3'],
+ ['crm:E21_Person1', 'crm:P142_used_constituent', 'crm:E22_Man-Made_Object1']]
+</Step2>
+
+Explanation:
+- Connect the 'photo' (as 'E22_Man-Made_Object1') to various attributes it is related to, such as 'title', 'technique', 'acquisition information', 'dimensions', and 'art description', using relationships defined in CRM, such as has title ('P102_has_title'), has type ('P2_has_type'), changed ownership through ('P24i_changed_ownership_through'), has dimension ('P43_has_dimension'), and represents ('P138_represents').
+- Link the artwork object ('E22_Man-Made_Object1') to its temporal description when the artwork was created ('E52_Time-Span1') using the relationship 'P4_has_time-span'.
+- Link 'E22_Man-Made_Object1' with 'E22_Man-Made_Object2' considering both are representations of the artwork's different aspects.
+- The title ('E35_Title1') is linked to the appellation of the artist ('E82_Actor_Appellation1') and also connected to the nationality ('E74_Group1').
+- The artist's name ('E82_Actor_Appellation1') is identified as being linked to a person entity ('E21_Person1') using 'crm:P131_is_identified_by'. This entity is connected to the birth and death years of the artist by birth and death events using 'P98i_was_born' and 'P100i_died_in'.
+- To demonstrate the artist's influence in the creation, link the artist person ('E21_Person1') directly to the artwork object ('E22_Man-Made_Object1’) using a relationship like 'P142_used_constituent' to represent the artist's role in creating the piece.

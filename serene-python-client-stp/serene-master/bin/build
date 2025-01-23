@@ -1,0 +1,35 @@
+#!/bin/bash
+
+VERSION=0.1.0
+
+SERENE_LIBS=core/target/webapp/WEB-INF/lib
+
+SERENE_JAR=target/scala-2.11/serene_2.11-$VERSION.jar
+
+LOG4J_PATH=core/src/main/resources/log4j.properties
+
+command_exists () {
+    type "$1" > /dev/null 2>&1;
+}
+
+if ! command_exists sbt; then
+   echo "ERROR: Requires sbt v0.13 to be installed. Download from http://www.scala-sbt.org"
+   exit 1
+fi
+
+pushd "$(dirname "$0")" > /dev/null
+cd ..
+sbt -J-Xmx4G clean package
+
+if [ ! -d jars ]; then
+   mkdir jars
+fi
+
+if [ ! -d conf ]; then
+   mkdir conf
+fi
+
+cp $SERENE_JAR jars/
+cp -r $SERENE_LIBS/* jars/
+cp $LOG4J_PATH conf/
+popd > /dev/null

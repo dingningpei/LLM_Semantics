@@ -1,0 +1,50 @@
+[
+    {
+        "accession-id":"2004.274",
+        "imageURL":"http://www.sfmoma.org/images/artwork/medium/PS04.37%2001_b02.jpg",
+        "copyright":"",
+        "type":"print",
+        "url":"http://www.sfmoma.org/explore/collection/artwork/116978",
+        "title":"Schopfungsgeschichte (Tale of Creation)",
+        "dimensions":"23.5 cm x 19.69 cm",   
+        "credit":"Bequest of Dr. Gertrude Ticho",   
+        "artistName":"Franz Marc",
+        "nationality":"German",
+        "birthYear":"1880",
+        "deathYear":"1916",
+        "birthPlace":"Germany-Munich",
+        "deathPlace":"France"
+    },
+    {
+        "accession-id":"78.78",
+        "imageURL":"http://www.sfmoma.org/images/artwork/medium/78.78_01_e02.jpg",
+        "copyright":"",
+        "type":"photograph",   
+        "url":"http://www.sfmoma.org/explore/collection/artwork/12772",
+        "title":"Lady in White",
+        "dimensions":"23.65 cm x 18.73 cm",
+        "credit":"Gift of Nikki Arai and Simon Lowinsky in honor of John Humphrey",
+        "artistName":"Margrethe Mather", 
+        "nationality":"American",
+        "birthYear":"1885",
+        "deathYear":"1952",
+        "birthPlace":"Utah-Salt Lake City",
+        "deathPlace":"California"
+    },
+    {
+        "accession-id":"59.2106",
+        "imageURL":"http://www.sfmoma.org/images/artwork/medium/59.2106_01_b02.jpg",
+        "copyright":"",
+        "type":"photograph",  
+        "url":"http://www.sfmoma.org/explore/collection/artwork/12773",
+        "title":"Untitled",
+        "dimensions":"23.81 cm x 17.46 cm",
+        "credit":"Gift of Mrs. Drew Chidester",
+        "artistName":"Margrethe Mather",
+        "nationality":"American",
+        "birthYear":"1885",
+        "deathYear":"1952",
+        "birthPlace":"Utah-Salt Lake City",
+        "deathPlace":"California"
+    }
+]

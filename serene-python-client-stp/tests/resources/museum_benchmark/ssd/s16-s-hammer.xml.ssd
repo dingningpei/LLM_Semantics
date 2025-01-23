@@ -1,0 +1,229 @@
+{
+    "attributes": [
+        {
+            "columnIds": [
+                392835814
+            ],
+            "id": 392835814,
+            "label": "identity",
+            "name": "collections.collection.item.title",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                877484735
+            ],
+            "id": 877484735,
+            "label": "identity",
+            "name": "collections.collection.item.description",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                624438606
+            ],
+            "id": 624438606,
+            "label": "identity",
+            "name": "collections.collection.item.image",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                479554100
+            ],
+            "id": 479554100,
+            "label": "identity",
+            "name": "collections.collection.item.artist",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                726522593
+            ],
+            "id": 726522593,
+            "label": "identity",
+            "name": "collections.collection.item.year",
+            "sql": "not implemented"
+        }
+    ],
+    "dateCreated": "2017-03-21T18:29:30.762",
+    "dateModified": "2017-03-21T18:29:30.762",
+    "id": 1696983858,
+    "mappings": [
+        {
+            "attribute": 392835814,
+            "node": 4
+        },
+        {
+            "attribute": 877484735,
+            "node": 5
+        },
+        {
+            "attribute": 624438606,
+            "node": 6
+        },
+        {
+            "attribute": 726522593,
+            "node": 8
+        },
+        {
+            "attribute": 479554100,
+            "node": 7
+        }
+    ],
+    "name": "s16-s-hammer.xml",
+    "ontologies": [
+        0,
+        5,
+        10,
+        1,
+        6,
+        9,
+        2,
+        7,
+        3,
+        8,
+        4
+    ],
+    "semanticModel": {
+        "links": [
+            {
+                "id": 7,
+                "label": "created",
+                "prefix": "http://purl.org/dc/terms/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 8,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 1,
+                "label": "aggregatedCHO",
+                "prefix": "http://www.europeana.eu/schemas/edm/",
+                "source": 2,
+                "status": "ForcedByUser",
+                "target": 0,
+                "type": "ObjectPropertyLink"
+            },
+            {
+                "id": 0,
+                "label": "creator",
+                "prefix": "http://purl.org/dc/terms/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 1,
+                "type": "ObjectPropertyLink"
+            },
+            {
+                "id": 5,
+                "label": "classLink",
+                "prefix": "http://isi.edu/integration/karma/dev#",
+                "source": 3,
+                "status": "ForcedByUser",
+                "target": 6,
+                "type": "ClassInstanceLink"
+            },
+            {
+                "id": 4,
+                "label": "description",
+                "prefix": "http://purl.org/dc/terms/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 5,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 2,
+                "label": "hasView",
+                "prefix": "http://www.europeana.eu/schemas/edm/",
+                "source": 2,
+                "status": "ForcedByUser",
+                "target": 3,
+                "type": "ObjectPropertyLink"
+            },
+            {
+                "id": 3,
+                "label": "title",
+                "prefix": "http://purl.org/dc/terms/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 4,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 6,
+                "label": "nameOfThePerson",
+                "prefix": "http://rdvocab.info/ElementsGr2/",
+                "source": 1,
+                "status": "ForcedByUser",
+                "target": 7,
+                "type": "DataPropertyLink"
+            }
+        ],
+        "nodes": [
+            {
+                "id": 8,
+                "label": "CulturalHeritageObject.created",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 4,
+                "label": "CulturalHeritageObject.title",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 3,
+                "label": "WebResource",
+                "prefix": "http://www.europeana.eu/schemas/edm/",
+                "status": "Normal",
+                "type": "ClassNode"
+            },
+            {
+                "id": 7,
+                "label": "Person.nameOfThePerson",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 0,
+                "label": "CulturalHeritageObject",
+                "prefix": "http://www.americanartcollaborative.org/ontology/",
+                "status": "Normal",
+                "type": "ClassNode"
+            },
+            {
+                "id": 1,
+                "label": "Person",
+                "prefix": "http://www.americanartcollaborative.org/ontology/",
+                "status": "Normal",
+                "type": "ClassNode"
+            },
+            {
+                "id": 6,
+                "label": "WebResource.classLink",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 5,
+                "label": "CulturalHeritageObject.description",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 2,
+                "label": "EuropeanaAggregation",
+                "prefix": "http://www.europeana.eu/schemas/edm/",
+                "status": "Normal",
+                "type": "ClassNode"
+            }
+        ]
+    }
+}

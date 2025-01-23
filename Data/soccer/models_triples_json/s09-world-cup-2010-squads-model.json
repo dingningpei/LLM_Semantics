@@ -1,0 +1,76 @@
+{
+    "semantic_triples": [
+        [
+            "schema:Player1",
+            "schema:alternateName",
+            "Shirt Name"
+        ],
+        [
+            "schema:Player1",
+            "schema:birthDate",
+            "Date of Birth"
+        ],
+        [
+            "schema:Player1",
+            "schema:familyName",
+            "Last Name"
+        ],
+        [
+            "schema:Player1",
+            "schema:givenName",
+            "First Name"
+        ],
+        [
+            "schema:Player1",
+            "schema:name",
+            "FIFA Display Name"
+        ],
+        [
+            "schema:SportsTeam1",
+            "schema:name",
+            "Country"
+        ],
+        [
+            "schema:Player1",
+            "schema:height",
+            "Height"
+        ],
+        [
+            "schema:Player1",
+            "schema:tag",
+            "No."
+        ],
+        [
+            "schema:Player1",
+            "schema:playPosition",
+            "Position"
+        ],
+        [
+            "schema:SportsClub1",
+            "schema:name",
+            "Club"
+        ],
+        [
+            "schema:League1",
+            "schema:name",
+            "Club (Country)"
+        ]
+    ],
+    "internal_link_triples": [
+        [
+            "schema:Player1",
+            "schema:inClub",
+            "schema:SportsClub1"
+        ],
+        [
+            "schema:Player1",
+            "schema:inNationalTeam",
+            "schema:SportsTeam1"
+        ],
+        [
+            "schema:SportsClub1",
+            "schema:inLeague",
+            "schema:League1"
+        ]
+    ]
+}

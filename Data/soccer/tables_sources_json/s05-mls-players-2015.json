@@ -1,0 +1,32 @@
+[
+    {
+        "playerNum":"11",
+        "position":"F",
+        "playerName":"David Accam",
+        "club":"Chicago Fire",
+        "age":"24",
+        "height":"5' 9''",
+        "weight":"154",
+        "birthplace":"Ghana"
+    },
+    {
+        "playerNum":"23",
+        "position":"D/M",
+        "playerName":"Kellyn Acosta",
+        "club":"FC Dallas",
+        "age":"19",
+        "height":"5' 10''",
+        "weight":"150",
+        "birthplace":"USA"
+    },
+    {
+        "playerNum":"3",
+        "position":"D",
+        "playerName":"Sam Adekugbe",
+        "club":"Vancouver Whitecaps FC",
+        "age":"19",
+        "height":"5' 9''",
+        "weight":"165",
+        "birthplace":"England"
+    }
+]

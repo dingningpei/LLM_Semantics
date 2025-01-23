@@ -1,0 +1,44 @@
+[
+    {
+        "imageURL":"http://www.dia.org/user_area/comping/01.2-S1.jpg",
+        "title":"Indian Telegraph",   
+        "date":"1860",
+        "medium":"Oil on canvas",
+        "dimensions":"20 x 15 1/2 in. (50.8 x 39.37 cm)Framed: 27 3/8 x 23 3/8 x 2 7/8 in.",
+        "classification":"Paintings",
+        "credit":"Detroit Museum of Art Purchase, Popular Subscription Fund",
+        "provenance":"Formerly in the collection of:The artist's student, Mrs. M. Noble Brainard, 1868-1901.Acquired in 1901.",
+        "name":"John Mix Stanley",
+        "nationality":"American",
+        "birth":"1814",
+        "death":"1872"
+    },
+    {
+        "imageURL":"http://www.dia.org/user_area/comping/05.411-S1.jpg",
+        "title":"Winter Landscape",      
+        "date":"1878",
+        "medium":"Oil on canvas",
+        "dimensions":"30 x 50 1/4 in. (76.2 x 127.6 cm)Framed: 45 1/8 x 65 1/8 x 6 1/4 in.",
+        "classification":"Paintings",
+        "credit":"Gift of James L. Edison",
+        "provenance":"",
+        "name":"Mortimer L. Smith",
+        "nationality":"American",
+        "birth":"1840",
+        "death":"1896"
+    },
+    {
+        "imageURL":"http://www.dia.org/user_area/comping/06.1-D1.jpg",
+        "title":"The River Seine",
+        "date":"c. 1905",
+        "medium":"Oil on canvas",
+        "dimensions":"25 x 30 in.63.5 x 76.2 cm",
+        "classification":"Paintings",
+        "credit":"Gift of the artist",
+        "provenance":"Theodore Scott DaboDIA in 1906",
+        "name":"Theodore Scott Dabo",
+        "nationality":"American",
+        "birth":"1866",
+        "death":"1928"
+    }
+]

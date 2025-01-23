@@ -1,0 +1,41 @@
+[
+    {
+        "Shirt Name":"GAOUAOUI",
+        "Date of Birth":"28 Sep 1977",
+        "Last Name":"GAOUAOUI",
+        "First Name":"Lounes",
+        "FIFA Display Name":"Lounes GAOUAOUI",
+        "Country":"Algeria",
+        "Height":"188",
+        "No.":"1",
+        "Position":"Goalkeeper",
+        "Club":"Chlef",
+        "Club (Country)":"ALG"
+    },
+    {
+        "Shirt Name":"BOUGHERRA",
+        "Date of Birth":"07 Oct 1982",
+        "Last Name":"BOUGHERRA",
+        "First Name":"Madjid",
+        "FIFA Display Name":"Madjid BOUGHERRA",
+        "Country":"Algeria",
+        "Height":"190",
+        "No.":"2",
+        "Position":"Defender",
+        "Club":"Rangers",
+        "Club (Country)":"SCO"
+    },
+    {
+        "Shirt Name":"BELHADJ",
+        "Date of Birth":"18 Jun 1982",
+        "Last Name":"BELHADJ",
+        "First Name":"Nadir",
+        "FIFA Display Name":"Nadir BELHADJ",
+        "Country":"Algeria",
+        "Height":"180",
+        "No.":"3",
+        "Position":"Defender",
+        "Club":"Portsmouth",
+        "Club (Country)":"ENG"
+    }
+]

@@ -1,0 +1,58 @@
+Based on the provided <Table> and using <Knowledge2> from the previous examples for guidance, here is how each attribute can be mapped to the appropriate Class and Property:
+
+1. **title**: This refers to the name given to an object, which maps to the 'E35_Title' class.
+2. **name**: This is typically used to identify a person, hence it maps to the 'E82_Actor_Appellation' class.
+3. **nationality**: It describes the origin of the actor, which could be related to a group or cultural origin, hence 'E74_Group' seems appropriate.
+4. **birthDate**: Indicates the time span of birth which maps to the 'E67_Birth' class and more specifically to the property 'P82_at_some_time_within' associated with a Time-Span entity.
+5. **deathDate**: Indicates the time span of death which maps to the 'E69_Death' class and also uses 'P82_at_some_time_within' for Time-Span.
+
+Therefore, the semantic types and properties for these attributes would look like this:
+
+<Step1>
+[['crm:E35_Title1', 'rdfs:label', 'title'],
+ ['crm:E82_Actor_Appellation1', 'rdfs:label', 'name'],
+ ['crm:E74_Group1', 'rdfs:label', 'nationality'],
+ ['crm:E67_Birth1', 'crm:P82_at_some_time_within', 'birthDate'],
+ ['crm:E69_Death1', 'crm:P82_at_some_time_within', 'deathDate']]
+</Step1>To create internal links among semantic types from <Step1> using <Knowledge3> and the ontology class and property relations, we start by ensuring that all entities are interconnected appropriately without isolated nodes in the semantic graph.
+
+Overview of <Step1> Semantic Types:
+1. **crm:E35_Title1** - Title of the work
+2. **crm:E82_Actor_Appellation1** - Name of the artist/actor
+3. **crm:E74_Group1** - Nationality (or cultural group)
+4. **crm:E67_Birth1** - Birth event with Time-Span
+5. **crm:E69_Death1** - Death event with Time-Span
+
+**Reasoning and Connecting Semantic Types**: 
+
+1. **Birth and Death Linked to the Person by Time-Span**:
+   - **Birth**: A person (crm:E21_Person1) is identified at the time of their birth by the birth Time-Span.
+   - **Death**: A person's life ends at the reported death Time-Span.
+   - crm:E67_Birth1 -> crm:P98_brought_into_life -> crm:E21_Person1
+   - crm:E69_Death1 -> crm:P100_was_death_of -> crm:E21_Person1
+
+2. **Connecting Actor Appellation to the Person**:
+   - The actor's name (Appellation) identifies the person.
+   - crm:E21_Person1 -> crm:P131_is_identified_by -> crm:E82_Actor_Appellation1
+
+3. **Linking Nationality Group to Person**:
+   - The person was a member of a cultural or national group.
+   - crm:E21_Person1 -> crm:P107i_is_current_or_former_member_of -> crm:E74_Group1
+
+4. **Connecting Titles to the Creator/Person**:
+   - The title represents a Man-Made Object (like a sculpture or artwork), which in turn has a connection to its creator.
+   - crm:E22_Man-Made_Object1 -> crm:P102_has_title -> crm:E35_Title1
+   - crm:E21_Person1 -> crm:P108_has_produced -> crm:E22_Man-Made_Object1
+
+**Creating Interconnections**:
+
+<Step2>
+[['crm:E67_Birth1', 'crm:P98_brought_into_life', 'crm:E21_Person1'],
+ ['crm:E69_Death1', 'crm:P100_was_death_of', 'crm:E21_Person1'],
+ ['crm:E21_Person1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'],
+ ['crm:E21_Person1', 'crm:P107i_is_current_or_former_member_of', 'crm:E74_Group1'],
+ ['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'],
+ ['crm:E21_Person1', 'crm:P108_has_produced', 'crm:E22_Man-Made_Object1']]
+</Step2>
+
+This configuration ensures all semantic nodes are interconnected reflecting the relationships inferred from the data table and existing ontology knowledge.

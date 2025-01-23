@@ -1,0 +1,50 @@
+.DS_Store
+*.class
+*.log
+
+# sbt specific
+.cache
+.history
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+
+# Intellij
+.idea*
+
+# local storage
+/storage
+
+# local executable dir
+jars
+
+# docker tmp files
+docker/serene-*
+
+# 
+metastore_db
+
+# files created by matcher...
+matcher/dirstruct/semantic_type_classifier/repo/eval/results-averaged-over-classes.csv
+matcher/dirstruct/semantic_type_classifier/repo/eval/results-averaged-over-reps.csv
+matcher/dirstruct/semantic_type_classifier/repo/eval/results-detailed.csv
+matcher/dirstruct/semantic_type_classifier/repo/eval/results-for-trainsize-0.20-testsize-0.40-rep-1
+matcher/dirstruct/semantic_type_classifier/repo/eval/results-for-trainsize-0.40-testsize-0.40-rep-1
+matcher/dirstruct/semantic_type_classifier/repo/eval/results-for-trainsize-0.60-testsize-0.40-rep-1
+
+core/src/test/resources/soccer/
+
+matcher/copy_build.sbt
+matcher/src/main/resources/log4j.properties
+project/project/
+project/Build.scala
+docker/conf/
+

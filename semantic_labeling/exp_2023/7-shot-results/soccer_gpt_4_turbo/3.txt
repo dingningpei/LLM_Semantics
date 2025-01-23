@@ -1,0 +1,36 @@
+<Step1>
+[['schema:Player1', 'schema:age', 'Age'], 
+ ['schema:Player1', 'schema:tag', 'Number'], 
+ ['schema:Player1', 'schema:playPosition', 'Position'], 
+ ['schema:Player1', 'schema:name', 'Player'], 
+ ['schema:SportsTeam1', 'schema:name', 'Country']]
+</Step1><Step2>
+[['schema:Player1', 'schema:inNationalTeam', 'schema:SportsTeam1']]
+</Step2><Step1>
+[['schema:Player1', 'schema:name', 'FIFA Display Name'], ['schema:Player1', 'schema:familyName', 'Last Name'], ['schema:Player1', 'schema:givenName', 'First Name'], ['schema:Player1', 'schema:tag', 'No.'], ['schema:Player1', 'schema:height', 'Height'], ['schema:Player1', 'schema:birthDate', 'Date of Birth'], ['schema:Player1', 'schema:alternateName', 'Shirt Name'], ['schema:SportsTeam1', 'schema:name', 'Country'], ['schema:Player1', 'schema:playPosition', 'Position'], ['schema:SportsClub1', 'schema:name', 'Club'], ['schema:League1', 'schema:name', 'Club (Country)']]
+</Step1><Step2>
+[['schema:Player1', 'schema:inNationalTeam', 'schema:SportsTeam1'], ['schema:Player1', 'schema:inClub', 'schema:SportsClub1']]
+</Step2><Step1>
+[['schema:Player', 'schema:givenName', 'firstName'],
+ ['schema:Player', 'schema:familyName', 'lastName'],
+ ['schema:Player', 'schema:name', 'fullName'],
+ ['schema:Player', 'schema:alternateName', 'shortName'],
+ ['schema:Player', 'schema:alternateName', 'displayName'],
+ ['schema:League', 'schema:name', 'leagueName'],
+ ['schema:League', 'schema:alternateName', 'leagueShortname']]
+</Step1><Step2>
+[['schema:Player', 'schema:inLeague', 'schema:League']]
+</Step2><Step1>
+[['schema:Player1', 'schema:tag', 'Number'],
+ ['schema:SportsTeam1', 'schema:name', 'Team'],
+ ['schema:Player1', 'schema:name', 'FullName'],
+ ['schema:Player1', 'schema:playPosition', 'Position'],
+ ['schema:League1', 'schema:name', 'ClubCountry'],
+ ['schema:SportsClub1', 'schema:name', 'Club'],
+ ['schema:Player1', 'schema:isCaptain', 'IsCaptain'],
+ ['schema:Player1', 'schema:birthDate', 'DateOfBirth']]
+</Step1><Step2>
+[['schema:Player1', 'schema:inClub', 'schema:SportsClub1'],
+ ['schema:Player1', 'schema:inNationalTeam', 'schema:SportsTeam1'],
+ ['schema:SportsClub1', 'schema:inLeague', 'schema:League1']]
+</Step2>

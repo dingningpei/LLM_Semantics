@@ -1,0 +1,41 @@
+[
+    {    
+        "artistName":"Gayil Nalls",
+        "nationality":"American",
+        "birthDate":"1953",
+        "deathDate":"MetDoesntKnow",
+        "artworkTitle":"Truth Will Not Always Give You Art",
+        "dateOfStartOfCreation":"1982",
+        "dateOfEndOfCreation":"1982",
+        "medium":"Oil on handmade paper",
+        "dimensions":"H. 14, W. 17 inches (35.6 x 43.2 cm.)",
+        "classification":"Drawings",
+        "creditLine":"Kathryn E. Hurd Fund, 1983"
+    },
+    {
+        "artistName":"Willem de Kooning",
+        "nationality":"MetDoesntKnow",
+        "birthDate":"1904",
+        "deathDate":"1997",
+        "artworkTitle":"Attic",
+        "dateOfStartOfCreation":"1949",
+        "dateOfEndOfCreation":"1949",
+        "medium":"Oil, enamel, and newspaper transfer on canvas",
+        "dimensions":"61 7/8 x 81in. (157.2 x 205.7cm) 62 5/8 x 81 3/4 x 2 1/2 in. (159.1 x 207.6 x 6.4 cm) (Frame)",
+        "classification":"Paintings",
+        "creditLine":"The Muriel Kallis Steinberg Newman Collection, Gift of Muriel Kallis Newman, in honor of her son, Glenn David Steinberg, 1982"
+    },
+    {
+        "artistName":"Noah Jemison",
+        "nationality":"American",
+        "birthDate":"1943",
+        "deathDate":"MetDoesntKnow",
+        "artworkTitle":"Black Valhalla",
+        "dateOfStartOfCreation":"1976",
+        "dateOfEndOfCreation":"1976",
+        "medium":"Encaustic on canvas",
+        "dimensions":"H. 52-1/8, W. 76-1/4 inches (132.4 x 193.4 cm.)",
+        "classification":"Paintings",
+        "creditLine":"George A. Hearn Fund, 1977"
+    }
+]

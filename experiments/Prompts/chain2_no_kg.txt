@@ -1,0 +1,4 @@
+Give the <Table> and <Step1> output, generate <Step2> of the <Table>.
+Final output:
+<Step2>
+</Step2>

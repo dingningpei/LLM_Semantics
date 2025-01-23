@@ -1,0 +1,12 @@
+<Input>
+<Table>
+{$INPUT}
+</Table>
+</Input>
+
+Give the <Table> in<Input>, generate <Step1> of the <Table> using <Knowledge2>:
+IMPORTANT: If you can not find the appropriate map function in <Knowledge2>, you can use reasoning step to map the attribute to the <Knowledge1> and ensure the consistency.
+
+Final output:
+<Step1>
+</Step1>

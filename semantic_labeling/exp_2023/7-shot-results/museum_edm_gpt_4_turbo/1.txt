@@ -1,0 +1,14 @@
+<Step1>
+[['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'name'], ['aac-ont:Person1', 'ElementsGr2:countryAssociatedWithThePerson', 'nationality'], ['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birthDate'], ['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'deathDate']]
+</Step1><Step2>
+[]
+</Step2><Step1>
+[['aac-ont:CulturalHeritageObject1', 'dcterms:title', 'title'], 
+ ['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'name'], 
+ ['aac-ont:Person1', 'ElementsGr2:countryAssociatedWithThePerson', 'nationality'], 
+ ['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birthDate'], 
+ ['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'deathDate']]
+</Step1><Step2>
+[['edm:EuropeanaAggregation1', 'edm:aggregatedCHO', 'aac-ont:CulturalHeritageObject1'], 
+ ['aac-ont:CulturalHeritageObject1', 'dcterms:creator', 'aac-ont:Person1']]
+</Step2>

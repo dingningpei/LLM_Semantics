@@ -1,0 +1,26 @@
+[
+    {
+        "name":"Armand Hammer Collection",
+        "artist":"Paul Cézanne",
+        "title":"Boy Resting",
+        "year":"c. 1887",
+        "description":"The Armand Hammer Collection. Gift of the Armand Hammer Foundation.",
+        "image":"http://hammer.ucla.edu/image/935/600/450.JPG"
+    },
+    {
+        "name":"Hammer Contemporary Collection",
+        "artist":"John Baldessari",
+        "title":"Person with Guitar (Red)",
+        "year":"2005",
+        "description":"Five-color screen print construction. Hammer Museum, Los Angeles. Purchased with funds provided by Brenda Potter and Michael Sandler.",
+        "image":"http://hammer.ucla.edu/image/560/600/450.JPG"
+    },
+    {
+        "name":"Hammer Daumier Collection",
+        "artist":"Honoré Daumier",
+        "title":"Le passe. Le present. L’avenir.",
+        "year":"January 9, 1834",
+        "description":"Lithograph. The Armand Hammer Daumier and Contemporaries Collection. Gift of the Armand Hammer Foundation.",
+        "image":"http://hammer.ucla.edu/image/998/600/450.JPG"
+    }
+]

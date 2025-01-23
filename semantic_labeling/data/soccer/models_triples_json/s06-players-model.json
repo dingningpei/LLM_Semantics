@@ -1,0 +1,51 @@
+{
+    "semantic_triples": [
+        [
+            "schema:Player1",
+            "schema:name",
+            "displayName"
+        ],
+        [
+            "schema:Player1",
+            "schema:givenName",
+            "firstName"
+        ],
+        [
+            "schema:Player1",
+            "schema:familyName",
+            "lastName"
+        ],
+        [
+            "schema:Player1",
+            "schema:name",
+            "fullName"
+        ],
+        [
+            "schema:Player1",
+            "schema:alternateName",
+            "shortName"
+        ],
+        [
+            "schema:League1",
+            "schema:name",
+            "leagueName"
+        ],
+        [
+            "schema:League1",
+            "schema:name",
+            "leagueShortname"
+        ]
+    ],
+    "internal_link_triples": [
+        [
+            "schema:Player1",
+            "schema:inClub",
+            "schema:SportsClub1"
+        ],
+        [
+            "schema:SportsClub1",
+            "schema:inLeague",
+            "schema:League1"
+        ]
+    ]
+}

@@ -1,0 +1,45 @@
+Based on the given <Table> and using the knowledge from <Knowledge2>, I will map the attributes to the appropriate semantic types and properties. Here's the <Step1> for the given <Table>:
+
+<Step1>
+[['crm:E35_Title1', 'rdfs:label', 'title'], 
+['crm:E82_Actor_Appellation1', 'rdfs:label', 'name'], 
+['crm:E74_Group1', 'rdfs:label', 'nationality'], 
+['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'birthDate'], 
+['crm:E52_Time-Span2', 'crm:P82_at_some_time_within', 'deathDate']]
+</Step1>
+
+Reasoning for the mappings:
+
+1. 'title': Mapped to 'crm:E35_Title1' as it represents the title of an artwork, similar to the example.
+2. 'name': Mapped to 'crm:E82_Actor_Appellation1' as it represents the name of the artist, similar to 'artistName' in the example.
+3. 'nationality': Mapped to 'crm:E74_Group1' as it represents the nationality of the artist, same as in the example.
+4. 'birthDate': Mapped to 'crm:E52_Time-Span1' with 'crm:P82_at_some_time_within' property, similar to 'birthYear' in the example.
+5. 'deathDate': Mapped to 'crm:E52_Time-Span2' with 'crm:P82_at_some_time_within' property, similar to 'deathYear' in the example.
+
+These mappings follow the pattern established in the example and adhere to <Rule1> by mapping all attributes to the <Ontology>.Based on the given <Table>, <Step1> output, and using the knowledge from <Knowledge3>, I will build internal links for all the semantic types identified in <Step1>. Here's the <Step2> for the given <Table>:
+
+<Step2>
+[['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'],
+['crm:E22_Man-Made_Object1', 'crm:P108i_was_produced_by', 'crm:E12_Production1'],
+['crm:E12_Production1', 'crm:P14_carried_out_by', 'crm:E21_Person1'],
+['crm:E21_Person1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'],
+['crm:E21_Person1', 'crm:P107i_is_current_or_former_member_of', 'crm:E74_Group1'],
+['crm:E21_Person1', 'crm:P98i_was_born', 'crm:E67_Birth1'],
+['crm:E21_Person1', 'crm:P100i_died_in', 'crm:E69_Death1'],
+['crm:E67_Birth1', 'crm:P4_has_time-span', 'crm:E52_Time-Span1'],
+['crm:E69_Death1', 'crm:P4_has_time-span', 'crm:E52_Time-Span2']]
+</Step2>
+
+Reasoning for the internal links:
+
+1. We introduce 'crm:E22_Man-Made_Object1' to represent the artwork, which is linked to its title using 'crm:P102_has_title'.
+2. The artwork is linked to its production event using 'crm:P108i_was_produced_by'.
+3. The production event is linked to the artist (person) using 'crm:P14_carried_out_by'.
+4. The artist is linked to their name using 'crm:P131_is_identified_by'.
+5. The artist is linked to their nationality using 'crm:P107i_is_current_or_former_member_of'.
+6. The artist is linked to their birth event using 'crm:P98i_was_born'.
+7. The artist is linked to their death event using 'crm:P100i_died_in'.
+8. The birth event is linked to the birth date using 'crm:P4_has_time-span'.
+9. The death event is linked to the death date using 'crm:P4_has_time-span'.
+
+These internal links follow the pattern established in the example and adhere to <Rule2> by ensuring that all semantic types are linked to each other, creating a connected semantic graph without isolated types.

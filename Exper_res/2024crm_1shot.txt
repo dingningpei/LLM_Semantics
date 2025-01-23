@@ -1,0 +1,283 @@
+<Step1>
+[['crm:E82_Actor_Appellation1', 'rdfs:label', 'artistName'], 
+ ['crm:E74_Group1', 'rdfs:label', 'nationality'], 
+ ['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'birthDate'], 
+ ['crm:E52_Time-Span2', 'crm:P82_at_some_time_within', 'deathDate'], 
+ ['crm:E35_Title1', 'rdfs:label', 'artworkTitle'], 
+ ['crm:E52_Time-Span3', 'crm:P82_at_some_time_within', 'dateOfStartOfCreation'], 
+ ['crm:E52_Time-Span4', 'crm:P82_at_some_time_within', 'dateOfEndOfCreation'], 
+ ['crm:E55_Type1', 'rdfs:label', 'medium'], 
+ ['crm:E54_Dimension1', 'crm:P3_has_note', 'dimensions'], 
+ ['crm:E55_Type2', 'rdfs:label', 'classification'], 
+ ['crm:E33_Linguistic_Object1', 'crm:P3_has_note', 'creditLine']]
+</Step1><Step2>
+[['crm:E39_Actor1', 'crm:P107i_is_current_or_former_member_of', 'crm:E74_Group1'], 
+ ['crm:E39_Actor1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'], 
+ ['crm:E39_Actor1', 'crm:P92i_was_brought_into_existence_by', 'crm:E52_Time-Span1'], 
+ ['crm:E39_Actor1', 'crm:P100i_died_in', 'crm:E52_Time-Span2'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P108i_was_produced_by', 'crm:E12_Production1'], 
+ ['crm:E12_Production1', 'crm:P4_has_time-span', 'crm:E52_Time-Span3'], 
+ ['crm:E12_Production1', 'crm:P4_has_time-span', 'crm:E52_Time-Span4'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P45_consists_of', 'crm:E55_Type1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P43_has_dimension', 'crm:E54_Dimension1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P2_has_type', 'crm:E55_Type2'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P3_has_note', 'crm:E33_Linguistic_Object1'], 
+ ['crm:E12_Production1', 'crm:P14_carried_out_by', 'crm:E39_Actor1']]
+</Step2><Step1>
+[['crm:E82_Actor_Appellation1', 'rdfs:label', 'name'], 
+ ['crm:E35_Title1', 'rdfs:label', 'artworkName'], 
+ ['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'artworkYear'], 
+ ['crm:E55_Type1', 'rdfs:label', 'process'], 
+ ['crm:E54_Dimension1', 'crm:P3_has_note', 'dimensions'], 
+ ['crm:E33_Linguistic_Object1', 'crm:P3_has_note', 'provenance'], 
+ ['crm:E38_Image1', 'karma:classLink', 'image']]
+</Step1><Step2>
+[['crm:E35_Title1', 'crm:P129_is_about', 'crm:E82_Actor_Appellation1'], 
+ ['crm:E52_Time-Span1', 'crm:P4i_is_time-span_of', 'crm:E35_Title1'], 
+ ['crm:E55_Type1', 'crm:P2i_is_type_of', 'crm:E35_Title1'], 
+ ['crm:E54_Dimension1', 'crm:P43i_is_dimension_of', 'crm:E35_Title1'], 
+ ['crm:E33_Linguistic_Object1', 'crm:P129_is_about', 'crm:E35_Title1'], 
+ ['crm:E38_Image1', 'crm:P62i_is_depicted_by', 'crm:E35_Title1']]
+</Step2><Step1>
+[['crm:E35_Title1', 'rdfs:label', 'title'], 
+ ['crm:E55_Type1', 'rdfs:label', 'technique'], 
+ ['crm:E33_Linguistic_Object1', 'crm:P3_has_note', 'description'], 
+ ['crm:E52_Time-Span1', 'rdfs:label', 'dateMade'], 
+ ['crm:E54_Dimension1', 'crm:P3_has_note', 'dimensions'], 
+ ['crm:E38_Image1', 'rdfs:label', 'imgURL'], 
+ ['crm:E82_Actor_Appellation1', 'rdfs:label', 'artistName'], 
+ ['crm:E74_Group1', 'rdfs:label', 'nationality']]
+</Step1><Step2>
+[['crm:E35_Title1', 'crm:P129_is_about', 'crm:E39_Actor1'], 
+ ['crm:E55_Type1', 'crm:P129_is_about', 'crm:E39_Actor1'], 
+ ['crm:E33_Linguistic_Object1', 'crm:P129_is_about', 'crm:E39_Actor1'], 
+ ['crm:E52_Time-Span1', 'crm:P129_is_about', 'crm:E39_Actor1'], 
+ ['crm:E54_Dimension1', 'crm:P129_is_about', 'crm:E39_Actor1'], 
+ ['crm:E38_Image1', 'crm:P129_is_about', 'crm:E39_Actor1'], 
+ ['crm:E39_Actor1', 'crm:P107i_is_current_or_former_member_of', 'crm:E74_Group1'], 
+ ['crm:E39_Actor1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1']]
+</Step2><Step1>
+[['crm:E82_Actor_Appellation1', 'rdfs:label', 'attribution'], 
+ ['crm:E22_Man-Made_Object1', 'rdfs:label', 'objectName'], 
+ ['crm:E35_Title1', 'rdfs:label', 'title'], 
+ ['crm:E52_Time-Span1', 'rdfs:label', 'dated'], 
+ ['crm:E55_Type1', 'rdfs:label', 'medium'], 
+ ['crm:E54_Dimension1', 'crm:P3_has_note', 'dimensions'], 
+ ['crm:E33_Linguistic_Object1', 'crm:P3_has_note', 'description']]
+</Step1><Step2>
+[['crm:E22_Man-Made_Object1', 'crm:P108i_was_produced_by', 'crm:E39_Actor1'], 
+ ['crm:E39_Actor1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P4_has_time-span', 'crm:E52_Time-Span1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P2_has_type', 'crm:E55_Type1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P43_has_dimension', 'crm:E54_Dimension1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P3_has_note', 'crm:E33_Linguistic_Object1']]
+</Step2><Step1>
+[['crm:E31_Document1', 'crm:P1_is_identified_by', 'video'], 
+ ['crm:E35_Title1', 'rdfs:label', 'title'], 
+ ['crm:E82_Actor_Appellation1', 'rdfs:label', 'author'], 
+ ['crm:E38_Image1', 'crm:P1_is_identified_by', 'imageSRC'], 
+ ['crm:E33_Linguistic_Object1', 'crm:P3_has_note', 'description']]
+</Step1><Step2>
+[['crm:E31_Document1', 'crm:P67_refers_to', 'crm:E35_Title1'], 
+ ['crm:E31_Document1', 'crm:P67_refers_to', 'crm:E82_Actor_Appellation1'], 
+ ['crm:E31_Document1', 'crm:P67_refers_to', 'crm:E38_Image1'], 
+ ['crm:E31_Document1', 'crm:P67_refers_to', 'crm:E33_Linguistic_Object1'], 
+ ['crm:E82_Actor_Appellation1', 'crm:P131_is_identified_by', 'crm:E39_Actor1'], 
+ ['crm:E39_Actor1', 'crm:P129_is_about', 'crm:E33_Linguistic_Object1']]
+</Step2><Step1>
+[['crm:E35_Title1', 'rdfs:label', 'title'], 
+ ['crm:E82_Actor_Appellation1', 'rdfs:label', 'name'], 
+ ['crm:E74_Group1', 'rdfs:label', 'nationality'], 
+ ['crm:E52_Time-Span1', 'crm:P82a_begin_of_the_begin', 'birthDate'], 
+ ['crm:E52_Time-Span2', 'crm:P82b_end_of_the_end', 'deathDate']]
+</Step1><Step2>
+[['crm:E39_Actor1', 'crm:P107i_is_current_or_former_member_of', 'crm:E74_Group1'], 
+ ['crm:E39_Actor1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'], 
+ ['crm:E39_Actor1', 'crm:P92i_was_brought_into_existence_by', 'crm:E52_Time-Span1'], 
+ ['crm:E39_Actor1', 'crm:P93i_was_taken_out_of_existence_by', 'crm:E52_Time-Span2'], 
+ ['crm:E73_Information_Object1', 'crm:P102_has_title', 'crm:E35_Title1'], 
+ ['crm:E73_Information_Object1', 'crm:P108i_was_produced_by', 'crm:E39_Actor1']]
+</Step2><Step1>
+[['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'birthDate'], 
+ ['crm:E52_Time-Span2', 'crm:P82_at_some_time_within', 'deathDate'], 
+ ['crm:E82_Actor_Appellation1', 'rdfs:label', 'name'], 
+ ['crm:E33_Linguistic_Object1', 'crm:P3_has_note', 'biography']]
+</Step1><Step2>
+[['crm:E33_Linguistic_Object1', 'crm:P129_is_about', 'crm:E39_Actor1'], 
+ ['crm:E39_Actor1', 'crm:P92i_was_brought_into_existence_by', 'crm:E52_Time-Span1'], 
+ ['crm:E39_Actor1', 'crm:P93i_was_taken_out_of_existence_by', 'crm:E52_Time-Span2'], 
+ ['crm:E39_Actor1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1']]
+</Step2><Step1>
+[['crm:E55_Type1', 'rdfs:label', 'technique'], 
+ ['crm:E33_Linguistic_Object1', 'crm:P3_has_note', 'provenance'], 
+ ['crm:E35_Title1', 'rdfs:label', 'title'], 
+ ['crm:E38_Image1', 'rdfs:label', 'imageURL'], 
+ ['crm:E54_Dimension1', 'crm:P3_has_note', 'dimensions'], 
+ ['crm:E74_Group1', 'rdfs:label', 'enthnicity'], 
+ ['crm:E82_Actor_Appellation1', 'rdfs:label', 'artist'], 
+ ['crm:E33_Linguistic_Object2', 'crm:P3_has_note', 'additionalInfo']]
+</Step1><Step2>
+[['crm:E33_Linguistic_Object1', 'crm:P129_is_about', 'crm:E82_Actor_Appellation1'], 
+ ['crm:E33_Linguistic_Object2', 'crm:P129_is_about', 'crm:E82_Actor_Appellation1'], 
+ ['crm:E82_Actor_Appellation1', 'crm:P107i_is_current_or_former_member_of', 'crm:E74_Group1'], 
+ ['crm:E35_Title1', 'crm:P129_is_about', 'crm:E82_Actor_Appellation1'], 
+ ['crm:E38_Image1', 'crm:P129_is_about', 'crm:E82_Actor_Appellation1'], 
+ ['crm:E54_Dimension1', 'crm:P129_is_about', 'crm:E82_Actor_Appellation1'], 
+ ['crm:E55_Type1', 'crm:P129_is_about', 'crm:E82_Actor_Appellation1']]
+</Step2><Step1>
+[['crm:E53_Place1', 'rdfs:label', 'origin'], 
+ ['crm:E33_Linguistic_Object1', 'crm:P3_has_note', 'creditLine'], 
+ ['crm:E82_Actor_Appellation1', 'rdfs:label', 'name'], 
+ ['crm:E74_Group1', 'rdfs:label', 'nationality'], 
+ ['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'birthYear'], 
+ ['crm:E52_Time-Span2', 'crm:P82_at_some_time_within', 'deathYear'], 
+ ['crm:E33_Linguistic_Object2', 'crm:P3_has_note', 'labelOnPage'], 
+ ['crm:E52_Time-Span3', 'crm:P82_at_some_time_within', 'dates'], 
+ ['crm:E35_Title1', 'rdfs:label', 'title'], 
+ ['crm:E55_Type1', 'rdfs:label', 'technique'], 
+ ['crm:E38_Image1', 'rdfs:label', 'imageURL'], 
+ ['crm:E54_Dimension1', 'crm:P3_has_note', 'dimension']]
+</Step1><Step2>
+[['crm:E82_Actor_Appellation1', 'crm:P129_is_about', 'crm:E39_Actor1'], 
+ ['crm:E39_Actor1', 'crm:P107i_is_current_or_former_member_of', 'crm:E74_Group1'], 
+ ['crm:E39_Actor1', 'crm:P92i_was_brought_into_existence_by', 'crm:E52_Time-Span1'], 
+ ['crm:E39_Actor1', 'crm:P93i_was_taken_out_of_existence_by', 'crm:E52_Time-Span2'], 
+ ['crm:E39_Actor1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P108i_was_produced_by', 'crm:E12_Production1'], 
+ ['crm:E12_Production1', 'crm:P14_carried_out_by', 'crm:E39_Actor1'], 
+ ['crm:E12_Production1', 'crm:P4_has_time-span', 'crm:E52_Time-Span3'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P2_has_type', 'crm:E55_Type1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P138i_has_representation', 'crm:E38_Image1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P43_has_dimension', 'crm:E54_Dimension1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P53_has_former_or_current_location', 'crm:E53_Place1'], 
+ ['crm:E33_Linguistic_Object1', 'crm:P129_is_about', 'crm:E22_Man-Made_Object1'], 
+ ['crm:E33_Linguistic_Object2', 'crm:P129_is_about', 'crm:E22_Man-Made_Object1']]
+</Step2><Step1>
+[['crm:E31_Document1', 'karma:classLink', 'collectionURL'], 
+ ['crm:E33_Linguistic_Object1', 'crm:P3_has_note', 'inscription'], 
+ ['crm:E33_Linguistic_Object2', 'crm:P3_has_note', 'description'], 
+ ['crm:E35_Title1', 'rdfs:label', 'title'], 
+ ['crm:E31_Document2', 'rdfs:label', 'collectionName'], 
+ ['crm:E82_Actor_Appellation1', 'rdfs:label', 'artist'], 
+ ['crm:E33_Linguistic_Object3', 'crm:P3_has_note', 'credit'], 
+ ['crm:E55_Type1', 'rdfs:label', 'materials'], 
+ ['crm:E38_Image1', 'karma:classLink', 'imageURL'], 
+ ['crm:E53_Place1', 'rdfs:label', 'placeAndDataMade'], 
+ ['crm:E54_Dimension1', 'crm:P3_has_note', 'dimensions']]
+</Step1><Step2>
+[['crm:E31_Document1', 'crm:P129_is_about', 'crm:E31_Document2'], 
+ ['crm:E31_Document2', 'crm:P129_is_about', 'crm:E39_Actor1'], 
+ ['crm:E39_Actor1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'], 
+ ['crm:E31_Document2', 'crm:P129_is_about', 'crm:E33_Linguistic_Object1'], 
+ ['crm:E31_Document2', 'crm:P129_is_about', 'crm:E33_Linguistic_Object2'], 
+ ['crm:E31_Document2', 'crm:P129_is_about', 'crm:E33_Linguistic_Object3'], 
+ ['crm:E31_Document2', 'crm:P129_is_about', 'crm:E35_Title1'], 
+ ['crm:E31_Document2', 'crm:P129_is_about', 'crm:E38_Image1'], 
+ ['crm:E31_Document2', 'crm:P129_is_about', 'crm:E53_Place1'], 
+ ['crm:E31_Document2', 'crm:P129_is_about', 'crm:E54_Dimension1'], 
+ ['crm:E31_Document2', 'crm:P129_is_about', 'crm:E55_Type1']]
+</Step2><Step1>
+[['crm:E35_Title1', 'rdfs:label', 'title'], 
+ ['crm:E38_Image1', 'rdfs:seeAlso', 'imageURL'], 
+ ['crm:E31_Document1', 'rdfs:seeAlso', 'sourceURL'], 
+ ['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'creationDate'], 
+ ['crm:E55_Type1', 'rdfs:label', 'materials'], 
+ ['crm:E54_Dimension1', 'crm:P3_has_note', 'dimensions'], 
+ ['crm:E33_Linguistic_Object1', 'crm:P3_has_note', 'creditLine'],
+ ['crm:E33_Linguistic_Object2', 'crm:P3_has_note', 'galleryLabel'], 
+ ['crm:E33_Linguistic_Object3', 'crm:P3_has_note', 'provenance'], 
+ ['crm:E82_Actor_Appellation1', 'rdfs:label', 'artist'], 
+ ['crm:E74_Group1', 'rdfs:label', 'nationality'], 
+ ['crm:E52_Time-Span2', 'crm:P82_at_some_time_within', 'birthDate'], 
+ ['crm:E52_Time-Span3', 'crm:P82_at_some_time_within', 'deathDate']]
+</Step1><Step2>
+[['crm:E35_Title1', 'crm:P129_is_about', 'crm:E39_Actor1'], 
+ ['crm:E38_Image1', 'crm:P129_is_about', 'crm:E39_Actor1'], 
+ ['crm:E31_Document1', 'crm:P129_is_about', 'crm:E39_Actor1'], 
+ ['crm:E52_Time-Span1', 'crm:P4_has_time-span', 'crm:E12_Production1'], 
+ ['crm:E12_Production1', 'crm:P14_carried_out_by', 'crm:E39_Actor1'], 
+ ['crm:E55_Type1', 'crm:P125_used_object_of_type', 'crm:E12_Production1'], 
+ ['crm:E54_Dimension1', 'crm:P43_has_dimension', 'crm:E22_Man-Made_Object1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P108i_was_produced_by', 'crm:E12_Production1'], 
+ ['crm:E33_Linguistic_Object1', 'crm:P129_is_about', 'crm:E22_Man-Made_Object1'], 
+ ['crm:E33_Linguistic_Object2', 'crm:P129_is_about', 'crm:E22_Man-Made_Object1'], 
+ ['crm:E33_Linguistic_Object3', 'crm:P129_is_about', 'crm:E22_Man-Made_Object1'], 
+ ['crm:E39_Actor1', 'crm:P107i_is_current_or_former_member_of', 'crm:E74_Group1'], 
+ ['crm:E39_Actor1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'], 
+ ['crm:E52_Time-Span2', 'crm:P4_has_time-span', 'crm:E67_Birth1'], 
+ ['crm:E67_Birth1', 'crm:P98_brought_into_life', 'crm:E39_Actor1'], 
+ ['crm:E52_Time-Span3', 'crm:P4_has_time-span', 'crm:E69_Death1'], 
+ ['crm:E69_Death1', 'crm:P100_was_death_of', 'crm:E39_Actor1']]
+</Step2><Step1>
+[['crm:E82_Actor_Appellation1', 'rdfs:label', 'artistName'], 
+ ['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'birthDate'], 
+ ['crm:E52_Time-Span2', 'crm:P82_at_some_time_within', 'deathDate'], 
+ ['crm:E55_Type1', 'rdfs:label', 'subtypeOfArt'], 
+ ['crm:E55_Type2', 'rdfs:label', 'typeOfArt'], 
+ ['crm:E35_Title1', 'rdfs:label', 'title'], 
+ ['crm:E33_Linguistic_Object1', 'crm:P3_has_note', 'credit'], 
+ ['crm:E34_Inscription1', 'crm:P3_has_note', 'inscription'], 
+ ['crm:E38_Image1', 'rdfs:label', 'picURL'], 
+ ['crm:E54_Dimension1', 'crm:P3_has_note', 'dimensions']]
+</Step1><Step2>
+[['crm:E39_Actor1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'], 
+ ['crm:E39_Actor1', 'crm:P92i_was_brought_into_existence_by', 'crm:E52_Time-Span1'], 
+ ['crm:E39_Actor1', 'crm:P93i_was_taken_out_of_existence_by', 'crm:E52_Time-Span2'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P108i_was_produced_by', 'crm:E39_Actor1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P45i_is_incorporated_in', 'crm:E55_Type1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P2i_is_type_of', 'crm:E55_Type2'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P141i_was_assigned_by', 'crm:E33_Linguistic_Object1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P128i_is_carried_by', 'crm:E38_Image1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P46i_forms_part_of', 'crm:E54_Dimension1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P141i_was_assigned_by', 'crm:E34_Inscription1']]
+</Step2><Step1>
+[['crm:E35_Title1', 'rdfs:label', 'title'], 
+ ['crm:E55_Type1', 'rdfs:label', 'classification'], 
+ ['crm:E57_Material1', 'rdfs:label', 'medium'], 
+ ['crm:E54_Dimension1', 'crm:P3_has_note', 'dimension'], 
+ ['crm:E40_Legal_Body1', 'rdfs:label', 'owner'], 
+ ['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'aquisitionDate'], 
+ ['crm:E38_Image1', 'karma:classLink', 'image'], 
+ ['crm:E52_Time-Span2', 'crm:P82_at_some_time_within', 'dateOfWork'], 
+ ['crm:E33_Linguistic_Object1', 'crm:P3_has_note', 'creditLine'], 
+ ['crm:E82_Actor_Appellation1', 'rdfs:label', 'artist'], 
+ ['crm:E52_Time-Span3', 'crm:P82_at_some_time_within', 'artistBornDate'], 
+ ['crm:E52_Time-Span4', 'crm:P82_at_some_time_within', 'artistDiedDate']]
+</Step1><Step2>
+[['crm:E35_Title1', 'crm:P129_is_about', 'crm:E22_Man-Made_Object1'], 
+ ['crm:E55_Type1', 'crm:P2i_is_type_of', 'crm:E22_Man-Made_Object1'], 
+ ['crm:E57_Material1', 'crm:P45i_is_incorporated_in', 'crm:E22_Man-Made_Object1'], 
+ ['crm:E54_Dimension1', 'crm:P43i_is_dimension_of', 'crm:E22_Man-Made_Object1'], 
+ ['crm:E40_Legal_Body1', 'crm:P52i_is_current_owner_of', 'crm:E22_Man-Made_Object1'], 
+ ['crm:E52_Time-Span1', 'crm:P4i_is_time-span_of', 'crm:E8_Acquisition1'], 
+ ['crm:E38_Image1', 'crm:P62i_is_depicted_by', 'crm:E22_Man-Made_Object1'], 
+ ['crm:E52_Time-Span2', 'crm:P4i_is_time-span_of', 'crm:E22_Man-Made_Object1'], 
+ ['crm:E33_Linguistic_Object1', 'crm:P129_is_about', 'crm:E22_Man-Made_Object1'], 
+ ['crm:E82_Actor_Appellation1', 'crm:P131i_identifies', 'crm:E39_Actor1'], 
+ ['crm:E52_Time-Span3', 'crm:P4i_is_time-span_of', 'crm:E67_Birth1'], 
+ ['crm:E52_Time-Span4', 'crm:P4i_is_time-span_of', 'crm:E69_Death1'], 
+ ['crm:E39_Actor1', 'crm:P108i_was_produced_by', 'crm:E12_Production1'], 
+ ['crm:E12_Production1', 'crm:P108_has_produced', 'crm:E22_Man-Made_Object1'], 
+ ['crm:E67_Birth1', 'crm:P98_brought_into_life', 'crm:E39_Actor1'], 
+ ['crm:E69_Death1', 'crm:P100_was_death_of', 'crm:E39_Actor1'], 
+ ['crm:E8_Acquisition1', 'crm:P24_transferred_title_of', 'crm:E22_Man-Made_Object1']]
+</Step2><Step1>
+[['crm:E78_Collection1', 'rdfs:label', 'name'], 
+ ['crm:E82_Actor_Appellation1', 'rdfs:label', 'artist'], 
+ ['crm:E35_Title1', 'rdfs:label', 'title'], 
+ ['crm:E52_Time-Span1', 'rdfs:label', 'year'], 
+ ['crm:E33_Linguistic_Object1', 'crm:P3_has_note', 'description'], 
+ ['crm:E38_Image1', 'rdfs:label', 'image']]
+</Step1><Step2>
+[['crm:E78_Collection1', 'crm:P109_has_current_or_former_curator', 'crm:E39_Actor1'], 
+ ['crm:E39_Actor1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'], 
+ ['crm:E39_Actor1', 'crm:P108_has_produced', 'crm:E22_Man-Made_Object1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P4_has_time-span', 'crm:E52_Time-Span1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P3_has_note', 'crm:E33_Linguistic_Object1'], 
+ ['crm:E22_Man-Made_Object1', 'crm:P62_depicts', 'crm:E38_Image1']]
+</Step2>

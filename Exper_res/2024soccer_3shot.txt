@@ -1,0 +1,27 @@
+<Step1>
+[['schema:Player1', 'schema:name', 'displayName'], ['schema:Player1', 'schema:givenName', 'firstName'], ['schema:Player1', 'schema:familyName', 'lastName'], ['schema:Player1', 'schema:name', 'fullName'], ['schema:Player1', 'schema:alternateName', 'shortName'], ['schema:League1', 'schema:name', 'leagueName'], ['schema:League1', 'schema:alternateName', 'leagueShortname']]
+</Step1><Step2>
+[['schema:Player1', 'schema:inLeague', 'schema:League1']]
+</Step2><Step1>
+[['schema:Player1', 'schema:name', 'name'], ['schema:Player1', 'schema:strongFoot', 'foot'], ['schema:Player1', 'schema:playPosition', 'position'], ['schema:Player1', 'schema:height', 'height']]
+</Step1><Step2>
+[]
+</Step2>
+
+Since there are no additional semantic types like `schema:SportsClub`, `schema:SportsTeam`, or `schema:League` in the provided table, there are no internal links to be established among the semantic types. The only semantic types identified are `schema:Player1`, and the properties related to them. Therefore, no relations are needed to build internal links among the semantic types.<Step1>
+[['schema:Player1', 'schema:tag', 'playerNum'], ['schema:Player1', 'schema:playPosition', 'position'], ['schema:Player1', 'schema:name', 'playerName'], ['schema:Player1', 'schema:inClub', 'schema:SportsClub1'], ['schema:Player1', 'schema:age', 'age'], ['schema:Player1', 'schema:height', 'height'], ['schema:Player1', 'schema:weight', 'weight'], ['schema:Player1', 'schema:birthPlace', 'birthplace']]
+</Step1><Step2>
+[['schema:Player1', 'schema:inClub', 'schema:SportsClub1']]
+</Step2><Step1>
+[['schema:Player1', 'schema:isCaptain', 'IsCaptain'], ['schema:League1', 'schema:name', 'ClubCountry'], ['schema:Player1', 'schema:birthDate', 'DateOfBirth'], ['schema:SportsTeam1', 'schema:name', 'Team'], ['schema:SportsClub1', 'schema:name', 'Club'], ['schema:Player1', 'schema:name', 'FullName'], ['schema:Player1', 'schema:playPosition', 'Position'], ['schema:Player1', 'schema:tag', 'Number']]
+</Step1><Step2>
+[['schema:Player1', 'schema:inClub', 'schema:SportsClub1'], ['schema:Player1', 'schema:inNationalTeam', 'schema:SportsTeam1'], ['schema:SportsClub1', 'schema:inLeague', 'schema:League1']]
+</Step2><Step1>
+[['schema:Player1', 'schema:name', 'Name'], ['schema:SportsClub1', 'schema:name', 'Club'], ['schema:SportsTeam1', 'schema:name', 'Country'], ['schema:Player1', 'schema:tag', 'Tag'], ['schema:Player1', 'schema:birthDate', 'Birthdate'], ['schema:Player1', 'schema:playPosition', 'Position']]
+</Step1><Step2>
+[['schema:Player1', 'schema:inClub', 'schema:SportsClub1'], ['schema:Player1', 'schema:inNationalTeam', 'schema:SportsTeam1']]
+</Step2><Step1>
+[['schema:Player1', 'schema:playPosition', 'Position'], ['schema:Player1', 'schema:name', 'Player'], ['schema:SportsTeam1', 'schema:name', 'Country'], ['schema:Player1', 'schema:height', 'Height'], ['schema:Player1', 'schema:age', 'Age'], ['schema:Player1', 'schema:birthDate', 'D.O.B'], ['schema:Player1', 'schema:numberOfPlayedGames', 'Caps'], ['schema:Player1', 'schema:goalScored', 'International goals'], ['schema:League1', 'schema:name', 'Club (country)'], ['schema:SportsClub1', 'schema:name', 'Club'], ['schema:Player1', 'schema:tag', 'Number']]
+</Step1><Step2>
+[['schema:Player1', 'schema:inClub', 'schema:SportsClub1'], ['schema:Player1', 'schema:inNationalTeam', 'schema:SportsTeam1'], ['schema:SportsClub1', 'schema:inLeague', 'schema:League1']]
+</Step2>

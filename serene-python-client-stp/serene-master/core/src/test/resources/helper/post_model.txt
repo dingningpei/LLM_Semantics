@@ -1,0 +1,41 @@
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{
+    "description": "test model for homeseekers",
+    "modelType": "randomForest",
+    "classes": ["year_built","address","bathrooms","bedrooms","email","fireplace","firm_name","garage","heating","house_description","levels","mls","phone","price","size","type"],
+    "features": { "activeFeatures" : [ "num-unique-vals", "prop-unique-vals", "prop-missing-vals" ],
+        "activeFeatureGroups" : [ "stats-of-text-length", "prop-instances-per-class-in-knearestneighbours"],
+        "featureExtractorParams" : [{"name" : "prop-instances-per-class-in-knearestneighbours","num-neighbours" : 5}]
+        },
+    "costMatrix": [[1,0,0], [0,1,0], [0,0,1]],
+    "labelData" : {"1822903429" : "bathrooms",
+                   "736101249" : "phone",
+                   "1616954619" : "phone",
+                   "974543972" : "year_built",
+                   "550285093" : "bedrooms",
+                   "337015562" : "house_description",
+                   "142809359" : "price",
+                   "1335050640" : "firm_name",
+                   "500928181" : "mls",
+                   "1368672405" : "phone",
+                   "245966772" : "type",
+                   "546643413" : "size",
+                   "1214913142" : "address",
+                   "647012025" : "heating",
+                   "1581299167" : "email",
+                   "551289596" : "levels",
+                   "1094377790" : "garage",
+                   "294479103" : "fireplace"},
+    "resamplingStrategy": "ResampleToMean"
+    }' \
+  localhost:8080/v1.0/model
+
+
+
+
+
+    ./train_semtype_classifier.sh repo/schema-matcher/59722533.csv repo/schema-matcher/class_list.csv\
+            repo/schema-matcher/labels.csv repo/schema-matcher/demo.rf ResampleToMean repo/schema-matcher/features_config.json
+
+    ./predict_semtypes.sh repo/schema-matcher/demo.rf repo/schema-matcher/59722533.csv repo/schema-matcher/pred1.csv

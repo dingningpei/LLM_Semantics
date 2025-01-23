@@ -1,0 +1,8 @@
+<Step1>
+[['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'name'], 
+ ['aac-ont:Person1', 'ElementsGr2:countryAssociatedWithThePerson', 'nationality'], 
+ ['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birthDate'], 
+ ['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'deathDate']]
+</Step1><Step2>
+[]  # Since all identified semantic types in Step1 represent the class 'aac-ont:Person' and the properties directly relate to attributes of an individual (name, nationality, birth date, and death date), there are no internal links between entities required beyond the linkage of these attributes to a single individual entity.
+</Step2>

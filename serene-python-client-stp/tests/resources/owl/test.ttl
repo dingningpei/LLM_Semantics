@@ -1,0 +1,71 @@
+@prefix : <http://www.semanticweb.org/serene/report_example_ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology .
+
+:birthDate a owl:DatatypeProperty ;
+    rdfs:domain :Person ;
+    rdfs:range xsd:dateTime .
+
+:bornIn a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Place .
+
+:ceo a owl:ObjectProperty ;
+    rdfs:domain :Organization ;
+    rdfs:range :Person .
+
+:email a owl:DatatypeProperty ;
+    rdfs:domain :Organization ;
+    rdfs:range rdfs:Literal .
+
+:isPartOf a owl:ObjectProperty ;
+    rdfs:domain :City ;
+    rdfs:range :Place .
+
+:livesIn a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Place .
+
+:name a owl:DatatypeProperty ;
+    rdfs:domain :Organization,
+        :Person,
+        :Place ;
+    rdfs:range rdfs:Literal .
+
+:operatesIn a owl:ObjectProperty ;
+    rdfs:domain :Organization ;
+    rdfs:range :Place .
+
+:phone a owl:DatatypeProperty ;
+    rdfs:domain :Organization ;
+    rdfs:range xsd:integer .
+
+:postalCode a owl:DatatypeProperty ;
+    rdfs:domain :Place ;
+    rdfs:range rdfs:Literal .
+
+:state a owl:ObjectProperty ;
+    rdfs:domain :City ;
+    rdfs:range :State .
+
+:worksFor a owl:ObjectProperty ;
+    rdfs:domain :Person ;
+    rdfs:range :Organization .
+
+:State a owl:Class ;
+    rdfs:subClassOf :Place .
+
+:City a owl:Class ;
+    rdfs:subClassOf :Place .
+
+:Organization a owl:Class .
+
+:Person a owl:Class .
+
+:Place a owl:Class .
+

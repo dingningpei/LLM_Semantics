@@ -1,0 +1,10 @@
+<Input>
+<Table>
+{$INPUT}
+</Table>
+</Input>
+
+Give the <Table> in<Input>, generate <Step1> of the <Table>.
+Final output:
+<Step1>
+</Step1>

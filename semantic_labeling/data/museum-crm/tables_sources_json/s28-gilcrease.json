@@ -1,0 +1,32 @@
+[
+    {
+        "culture":"",
+        "attribution":"William Keith",
+        "objectName":"Oil Painting",
+        "title":"Sierra Nevada Mountains",
+        "dated":"1876",
+        "medium":"Oil on Canvas",
+        "dimensions":"Overall: 40 x 71 3/4 x 3 1/4 in. (101.6 x 182.2 x 8.3 cm)",
+        "description":"Keith, William - Sierra Nevada Mountains - oil on canvas."
+    },
+    {
+        "culture":"",
+        "attribution":"Alfred Jacob Miller",
+        "objectName":"Oil Painting",
+        "title":"Fort Laramie",
+        "dated":"1851",
+        "medium":"Oil on canvas",
+        "dimensions":"Overall: 24 1/8 x 33 x 3 1/2 in. (61.3 x 83.8 x 8.9 cm)",
+        "description":"Miller, Alfred Jacob - Fort Laramie - oil on canvas."
+    },
+    {
+        "culture":"",
+        "attribution":"George de Forrest Brush",
+        "objectName":"Oil Painting",
+        "title":"Mourning Her Brave",
+        "dated":"1883",
+        "medium":"Oil on Panel",
+        "dimensions":"Overall: 45 3/8 x 35 3/8 x 3 3/4 in. (115.3 x 89.9 x 9.5 cm)",
+        "description":"Brush, George de Forrest - Mourning Her Brave - oil on panel.  Image of an American Indian woman standing on a snowy cliff, barefoot.  Above her lies the wrapped body of her deceased mate, and birds fly in the hazy gray sky."
+    }
+]

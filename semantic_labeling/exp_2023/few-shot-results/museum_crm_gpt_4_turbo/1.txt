@@ -1,0 +1,26 @@
+<Step1>
+[['crm:E35_Title1', 'rdfs:label', 'title'], ['crm:E82_Actor_Appellation1', 'rdfs:label', 'name'], ['crm:E74_Group1', 'rdfs:label', 'nationality'], ['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'birthDate'], ['crm:E52_Time-Span2', 'crm:P82_at_some_time_within', 'deathDate']]
+</Step1><Step2>
+[['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'],   # Links an artwork object to its title
+ ['crm:E22_Man-Made_Object1', 'crm:P108i_was_produced_by', 'crm:E12_Production1'],  # Links the art object being produced by a production event
+ ['crm:E12_Production1', 'crm:P14_carried_out_by', 'crm:E21_Person1'],  # Production event carried out by a person
+ ['crm:E21_Person1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'],  # Person identified by their appellation
+ ['crm:E21_Person1', 'crm:P107i_is_current_or_former_member_of', 'crm:E74_Group1'],  # Person is a member of a nationality/group
+ ['crm:E21_Person1', 'crm:P98i_was_born', 'crm:E67_Birth1'],  # Person's birth event
+ ['crm:E21_Person1', 'crm:P100i_died_in', 'crm:E69_Death1'],  # Person's death event
+ ['crm:E67_Birth1', 'crm:P4_has_time-span', 'crm:E52_Time-Span1'],  # Birth event has a timespan (birth date)
+ ['crm:E69_Death1', 'crm:P4_has_time-span', 'crm:E52_Time-Span2']]  # Death event has a timespan (death date)
+</Step2><Step1>
+[['crm:E35_Title1', 'rdfs:label', 'title'], ['crm:E82_Actor_Appellation1', 'rdfs:label', 'name'], ['crm:E74_Group1', 'rdfs:label', 'nationality'], ['crm:E52_Time-Span1', 'crm:P82_at_some_time_within', 'birthDate'], ['crm:E52_Time-Span2', 'crm:P82_at_some_time_within', 'deathDate']]
+</Step1><Step2>
+[['crm:E22_Man-Made_Object1', 'crm:P108i_was_produced_by', 'crm:E12_Production1'], 
+['crm:E22_Man-Made_Object1', 'crm:P102_has_title', 'crm:E35_Title1'], 
+['crm:E12_Production1', 'crm:P14_carried_out_by', 'crm:E21_Person1'], 
+['crm:E12_Production1', 'crm:P4_has_time-span', 'crm:E52_Time-Span1'], 
+['crm:E21_Person1', 'crm:P131_is_identified_by', 'crm:E82_Actor_Appellation1'], 
+['crm:E21_Person1', 'crm:P98i_was_born', 'crm:E67_Birth1'], 
+['crm:E21_Person1', 'crm:P100i_died_in', 'crm:E69_Death1'], 
+['crm:E21_Person1', 'crm:P107i_is_current_or_former_member_of', 'crm:E74_Group1'], 
+['crm:E67_Birth1', 'crm:P4_has_time-span', 'crm:E52_Time-Span1'], 
+['crm:E69_Death1', 'crm:P4_has_time-span', 'crm:E52_Time-Span2']]
+</Step2>

@@ -1,0 +1,255 @@
+{
+    "attributes": [
+        {
+            "columnIds": [
+                645950171
+            ],
+            "id": 645950171,
+            "label": "identity",
+            "name": "BeginDate",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                2086957694
+            ],
+            "id": 2086957694,
+            "label": "identity",
+            "name": "EndDate",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                1251988875
+            ],
+            "id": 1251988875,
+            "label": "identity",
+            "name": "Title",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                145407015
+            ],
+            "id": 145407015,
+            "label": "identity",
+            "name": "Dated",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                2112003284
+            ],
+            "id": 2112003284,
+            "label": "identity",
+            "name": "Medium",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                1682062925
+            ],
+            "id": 1682062925,
+            "label": "identity",
+            "name": "Attribution",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                1613945125
+            ],
+            "id": 1613945125,
+            "label": "identity",
+            "name": "Dimensions",
+            "sql": "not implemented"
+        }
+    ],
+    "dateCreated": "2017-03-21T18:29:30.710",
+    "dateModified": "2017-03-21T18:29:30.710",
+    "id": 1840402288,
+    "mappings": [
+        {
+            "attribute": 1682062925,
+            "node": 7
+        },
+        {
+            "attribute": 645950171,
+            "node": 2
+        },
+        {
+            "attribute": 2086957694,
+            "node": 3
+        },
+        {
+            "attribute": 1251988875,
+            "node": 4
+        },
+        {
+            "attribute": 145407015,
+            "node": 5
+        },
+        {
+            "attribute": 2112003284,
+            "node": 6
+        },
+        {
+            "attribute": 1613945125,
+            "node": 8
+        }
+    ],
+    "name": "s01-cb.csv",
+    "ontologies": [
+        0,
+        5,
+        10,
+        1,
+        6,
+        9,
+        2,
+        7,
+        3,
+        8,
+        4
+    ],
+    "semanticModel": {
+        "links": [
+            {
+                "id": 7,
+                "label": "extent",
+                "prefix": "http://purl.org/dc/terms/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 8,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 4,
+                "label": "created",
+                "prefix": "http://purl.org/dc/terms/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 5,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 0,
+                "label": "creator",
+                "prefix": "http://purl.org/dc/terms/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 1,
+                "type": "ObjectPropertyLink"
+            },
+            {
+                "id": 2,
+                "label": "dateOfDeath",
+                "prefix": "http://rdvocab.info/ElementsGr2/",
+                "source": 1,
+                "status": "ForcedByUser",
+                "target": 3,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 5,
+                "label": "medium",
+                "prefix": "http://purl.org/dc/terms/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 6,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 1,
+                "label": "dateOfBirth",
+                "prefix": "http://rdvocab.info/ElementsGr2/",
+                "source": 1,
+                "status": "ForcedByUser",
+                "target": 2,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 3,
+                "label": "title",
+                "prefix": "http://purl.org/dc/terms/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 4,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 6,
+                "label": "nameOfThePerson",
+                "prefix": "http://rdvocab.info/ElementsGr2/",
+                "source": 1,
+                "status": "ForcedByUser",
+                "target": 7,
+                "type": "DataPropertyLink"
+            }
+        ],
+        "nodes": [
+            {
+                "id": 4,
+                "label": "CulturalHeritageObject.title",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 7,
+                "label": "Person.nameOfThePerson",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 6,
+                "label": "CulturalHeritageObject.medium",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 2,
+                "label": "Person.dateOfBirth",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 5,
+                "label": "CulturalHeritageObject.created",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 0,
+                "label": "CulturalHeritageObject",
+                "prefix": "http://www.americanartcollaborative.org/ontology/",
+                "status": "Normal",
+                "type": "ClassNode"
+            },
+            {
+                "id": 1,
+                "label": "Person",
+                "prefix": "http://www.americanartcollaborative.org/ontology/",
+                "status": "Normal",
+                "type": "ClassNode"
+            },
+            {
+                "id": 3,
+                "label": "Person.dateOfDeath",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 8,
+                "label": "CulturalHeritageObject.extent",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            }
+        ]
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "semantic_triples": [
+        [
+            "schema:Player1",
+            "schema:playPosition",
+            "Position"
+        ],
+        [
+            "schema:Player1",
+            "schema:name",
+            "Player"
+        ],
+        [
+            "schema:SportsTeam1",
+            "schema:name",
+            "Country"
+        ],
+        [
+            "schema:Player1",
+            "schema:height",
+            "Height"
+        ],
+        [
+            "schema:Player1",
+            "schema:age",
+            "Age"
+        ],
+        [
+            "schema:Player1",
+            "schema:birthDate",
+            "D.O.B"
+        ],
+        [
+            "schema:Player1",
+            "schema:numberOfPlayedGames",
+            "Caps"
+        ],
+        [
+            "schema:Player1",
+            "schema:goalScored",
+            "International goals"
+        ],
+        [
+            "schema:League1",
+            "schema:name",
+            "Club (country)"
+        ],
+        [
+            "schema:SportsClub1",
+            "schema:name",
+            "Club"
+        ],
+        [
+            "schema:Player1",
+            "schema:tag",
+            "Number"
+        ]
+    ],
+    "internal_link_triples": [
+        [
+            "schema:Player1",
+            "schema:inClub",
+            "schema:SportsClub1"
+        ],
+        [
+            "schema:Player1",
+            "schema:inNationalTeam",
+            "schema:SportsTeam1"
+        ],
+        [
+            "schema:SportsClub1",
+            "schema:inLeague",
+            "schema:League1"
+        ]
+    ]
+}

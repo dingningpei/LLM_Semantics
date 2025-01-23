@@ -1,0 +1,26 @@
+[
+    {
+        "Name":"Christensen; Andreas",
+        "Club":"Bor. Mönchengladbach",
+        "Country":"Dänemark",
+        "Tag":"3",
+        "Birthdate":"10.04.1996",
+        "Position":"DF"
+    },
+    {
+        "Name":"Hahn; André",
+        "Club":"Bor. Mönchengladbach",
+        "Country":"Deutschland",
+        "Tag":"28",
+        "Birthdate":"13.08.1990",
+        "Position":"FW"
+    },
+    {
+        "Name":"Johnson; Fabian",
+        "Club":"Bor. Mönchengladbach",
+        "Country":"USA",
+        "Tag":"19",
+        "Birthdate":"11.12.1987",
+        "Position":"MF"
+    }
+]

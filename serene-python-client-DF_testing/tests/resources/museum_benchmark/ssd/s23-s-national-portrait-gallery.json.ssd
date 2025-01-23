@@ -1,0 +1,654 @@
+{
+    "attributes": [
+        {
+            "columnIds": [
+                1261592273
+            ],
+            "id": 1261592273,
+            "label": "identity",
+            "name": "Dimension",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                10213583
+            ],
+            "id": 10213583,
+            "label": "identity",
+            "name": "DateOfWork",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                1324992844
+            ],
+            "id": 1324992844,
+            "label": "identity",
+            "name": "Medium",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                1459794159
+            ],
+            "id": 1459794159,
+            "label": "identity",
+            "name": "CreditLine",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                901641429
+            ],
+            "id": 901641429,
+            "label": "identity",
+            "name": "Keywords",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                1945239582
+            ],
+            "id": 1945239582,
+            "label": "identity",
+            "name": "SitterBornDiedDate",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                1019385434
+            ],
+            "id": 1019385434,
+            "label": "identity",
+            "name": "Description",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                63013
+            ],
+            "id": 63013,
+            "label": "identity",
+            "name": "sitterDeathDate",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                1342603914
+            ],
+            "id": 1342603914,
+            "label": "identity",
+            "name": "Image",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                397126723
+            ],
+            "id": 397126723,
+            "label": "identity",
+            "name": "Ref",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                2135787363
+            ],
+            "id": 2135787363,
+            "label": "identity",
+            "name": "Owner",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                1102549824
+            ],
+            "id": 1102549824,
+            "label": "identity",
+            "name": "Copyright",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                62652
+            ],
+            "id": 62652,
+            "label": "identity",
+            "name": "birthDate",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                1778423748
+            ],
+            "id": 1778423748,
+            "label": "identity",
+            "name": "Classification",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                63270
+            ],
+            "id": 63270,
+            "label": "identity",
+            "name": "sitterBirthDate",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                1392654314
+            ],
+            "id": 1392654314,
+            "label": "identity",
+            "name": "ArtistBornDiedDate",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                805067794
+            ],
+            "id": 805067794,
+            "label": "identity",
+            "name": "Title",
+            "sql": "not implemented"
+        },
+        {
+            "columnIds": [
+                62826
+            ],
+            "id": 62826,
+            "label": "identity",
+            "name": "deathDate",
+            "sql": "not implemented"
+        }
+    ],
+    "dateCreated": "2017-03-21T18:29:30.745",
+    "dateModified": "2017-03-21T18:29:30.745",
+    "id": 1917199867,
+    "mappings": [
+        {
+            "attribute": 805067794,
+            "node": 23
+        },
+        {
+            "attribute": 1392654314,
+            "node": 22
+        },
+        {
+            "attribute": 1102549824,
+            "node": 18
+        },
+        {
+            "attribute": 1778423748,
+            "node": 20
+        },
+        {
+            "attribute": 1324992844,
+            "node": 9
+        },
+        {
+            "attribute": 1261592273,
+            "node": 7
+        },
+        {
+            "attribute": 2135787363,
+            "node": 17
+        },
+        {
+            "attribute": 1342603914,
+            "node": 15
+        },
+        {
+            "attribute": 1019385434,
+            "node": 13
+        },
+        {
+            "attribute": 10213583,
+            "node": 8
+        },
+        {
+            "attribute": 1459794159,
+            "node": 10
+        },
+        {
+            "attribute": 397126723,
+            "node": 16
+        },
+        {
+            "attribute": 1945239582,
+            "node": 12
+        },
+        {
+            "attribute": 901641429,
+            "node": 11
+        },
+        {
+            "attribute": 62652,
+            "node": 19
+        },
+        {
+            "attribute": 62826,
+            "node": 24
+        },
+        {
+            "attribute": 63013,
+            "node": 14
+        },
+        {
+            "attribute": 63270,
+            "node": 21
+        }
+    ],
+    "name": "s23-s-national-portrait-gallery.json",
+    "ontologies": [
+        0,
+        5,
+        10,
+        1,
+        6,
+        9,
+        2,
+        7,
+        3,
+        8,
+        4
+    ],
+    "semanticModel": {
+        "links": [
+            {
+                "id": 6,
+                "label": "extent",
+                "prefix": "http://purl.org/dc/terms/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 7,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 7,
+                "label": "created",
+                "prefix": "http://purl.org/dc/terms/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 8,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 1,
+                "label": "sitter",
+                "prefix": "http://www.americanartcollaborative.org/ontology/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 2,
+                "type": "ObjectPropertyLink"
+            },
+            {
+                "id": 12,
+                "label": "description",
+                "prefix": "http://purl.org/dc/terms/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 13,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 5,
+                "label": "hasView",
+                "prefix": "http://www.europeana.eu/schemas/edm/",
+                "source": 5,
+                "status": "ForcedByUser",
+                "target": 6,
+                "type": "ObjectPropertyLink"
+            },
+            {
+                "id": 20,
+                "label": "dateOfBirth",
+                "prefix": "http://rdvocab.info/ElementsGr2/",
+                "source": 2,
+                "status": "ForcedByUser",
+                "target": 21,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 13,
+                "label": "dateOfDeath",
+                "prefix": "http://rdvocab.info/ElementsGr2/",
+                "source": 2,
+                "status": "ForcedByUser",
+                "target": 14,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 18,
+                "label": "dateOfBirth",
+                "prefix": "http://rdvocab.info/ElementsGr2/",
+                "source": 1,
+                "status": "ForcedByUser",
+                "target": 19,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 3,
+                "label": "hasType",
+                "prefix": "http://www.europeana.eu/schemas/edm/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 4,
+                "type": "ObjectPropertyLink"
+            },
+            {
+                "id": 4,
+                "label": "aggregatedCHO",
+                "prefix": "http://www.europeana.eu/schemas/edm/",
+                "source": 5,
+                "status": "ForcedByUser",
+                "target": 0,
+                "type": "ObjectPropertyLink"
+            },
+            {
+                "id": 15,
+                "label": "accessionNumber",
+                "prefix": "http://www.americanartcollaborative.org/ontology/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 16,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 0,
+                "label": "creator",
+                "prefix": "http://purl.org/dc/terms/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 1,
+                "type": "ObjectPropertyLink"
+            },
+            {
+                "id": 10,
+                "label": "prefLabel",
+                "prefix": "http://www.w3.org/2008/05/skos#",
+                "source": 3,
+                "status": "ForcedByUser",
+                "target": 11,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 23,
+                "label": "dateOfDeath",
+                "prefix": "http://rdvocab.info/ElementsGr2/",
+                "source": 1,
+                "status": "ForcedByUser",
+                "target": 24,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 21,
+                "label": "nameOfThePerson",
+                "prefix": "http://rdvocab.info/ElementsGr2/",
+                "source": 1,
+                "status": "ForcedByUser",
+                "target": 22,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 11,
+                "label": "nameOfThePerson",
+                "prefix": "http://rdvocab.info/ElementsGr2/",
+                "source": 2,
+                "status": "ForcedByUser",
+                "target": 12,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 9,
+                "label": "provenance",
+                "prefix": "http://purl.org/dc/terms/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 10,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 19,
+                "label": "prefLabel",
+                "prefix": "http://www.w3.org/2008/05/skos#",
+                "source": 4,
+                "status": "ForcedByUser",
+                "target": 20,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 22,
+                "label": "title",
+                "prefix": "http://purl.org/dc/terms/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 23,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 16,
+                "label": "rightsHolder",
+                "prefix": "http://purl.org/dc/terms/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 17,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 17,
+                "label": "rights",
+                "prefix": "http://purl.org/dc/elements/1.1/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 18,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 14,
+                "label": "classLink",
+                "prefix": "http://isi.edu/integration/karma/dev#",
+                "source": 6,
+                "status": "ForcedByUser",
+                "target": 15,
+                "type": "ClassInstanceLink"
+            },
+            {
+                "id": 8,
+                "label": "medium",
+                "prefix": "http://purl.org/dc/terms/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 9,
+                "type": "DataPropertyLink"
+            },
+            {
+                "id": 2,
+                "label": "subject",
+                "prefix": "http://purl.org/dc/terms/",
+                "source": 0,
+                "status": "ForcedByUser",
+                "target": 3,
+                "type": "ObjectPropertyLink"
+            }
+        ],
+        "nodes": [
+            {
+                "id": 8,
+                "label": "CulturalHeritageObject.created",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 13,
+                "label": "CulturalHeritageObject.description",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 22,
+                "label": "Person.nameOfThePerson",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 5,
+                "label": "EuropeanaAggregation",
+                "prefix": "http://www.europeana.eu/schemas/edm/",
+                "status": "Normal",
+                "type": "ClassNode"
+            },
+            {
+                "id": 3,
+                "label": "Concept",
+                "prefix": "http://www.w3.org/2008/05/skos#",
+                "status": "Normal",
+                "type": "ClassNode"
+            },
+            {
+                "id": 4,
+                "label": "Concept",
+                "prefix": "http://www.w3.org/2008/05/skos#",
+                "status": "Normal",
+                "type": "ClassNode"
+            },
+            {
+                "id": 2,
+                "label": "Person",
+                "prefix": "http://www.americanartcollaborative.org/ontology/",
+                "status": "Normal",
+                "type": "ClassNode"
+            },
+            {
+                "id": 24,
+                "label": "Person.dateOfDeath",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 18,
+                "label": "CulturalHeritageObject.rights",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 6,
+                "label": "WebResource",
+                "prefix": "http://www.europeana.eu/schemas/edm/",
+                "status": "Normal",
+                "type": "ClassNode"
+            },
+            {
+                "id": 11,
+                "label": "Concept.prefLabel",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 0,
+                "label": "CulturalHeritageObject",
+                "prefix": "http://www.americanartcollaborative.org/ontology/",
+                "status": "Normal",
+                "type": "ClassNode"
+            },
+            {
+                "id": 10,
+                "label": "CulturalHeritageObject.provenance",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 20,
+                "label": "Concept.prefLabel",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 12,
+                "label": "Person.nameOfThePerson",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 15,
+                "label": "WebResource.classLink",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 17,
+                "label": "CulturalHeritageObject.rightsHolder",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 1,
+                "label": "Person",
+                "prefix": "http://www.americanartcollaborative.org/ontology/",
+                "status": "Normal",
+                "type": "ClassNode"
+            },
+            {
+                "id": 16,
+                "label": "CulturalHeritageObject.accessionNumber",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 21,
+                "label": "Person.dateOfBirth",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 19,
+                "label": "Person.dateOfBirth",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 14,
+                "label": "Person.dateOfDeath",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 7,
+                "label": "CulturalHeritageObject.extent",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 23,
+                "label": "CulturalHeritageObject.title",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            },
+            {
+                "id": 9,
+                "label": "CulturalHeritageObject.medium",
+                "prefix": "",
+                "status": "ForcedByUser",
+                "type": "DataNode"
+            }
+        ]
+    }
+}

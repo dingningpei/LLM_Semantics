@@ -1,0 +1,39 @@
+<Step1>
+[['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'name'], 
+ ['aac-ont:Person1', 'ElementsGr2:countryAssociatedWithThePerson', 'nationality'], 
+ ['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birthDate'], 
+ ['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'deathDate']]
+</Step1><Step2>
+[]  # Since all identified semantic types in Step1 represent the class 'aac-ont:Person' and the properties directly relate to attributes of an individual (name, nationality, birth date, and death date), there are no internal links between entities required beyond the linkage of these attributes to a single individual entity.
+</Step2>To map each attribute from the table to the correct semantic type and property from our ontology, we need to follow the mapping rules and ontology provided in <Knowledge1> and <Knowledge2>. Here is how we map each column:
+
+- 'title': Refers to the title or name given to a specific cultural heritage object. In this scenario, it maps to `aac-ont:CulturalHeritageObject` with property `dcterms:title`.
+
+- 'name': Refers to the artist's or creator's name, so it maps to `aac-ont:Person` using the property `ElementsGr2:nameOfThePerson`.
+
+- 'nationality': Indicates the country associated with a person. Hence, associated with the `aac-ont:Person` using property `ElementsGr2:countryAssociatedWithThePerson`.
+
+- 'birthDate' and 'deathDate': These indicate the dates of birth and death of an individual, respectively. Therefore, they map to `aac-ont:Person` with properties `ElementsGr2:dateOfBirth` and `ElementsGr2:dateOfDeath`.
+
+Based on these mappings, here is the formatted <Step1>:
+
+<Step1>
+[['aac-ont:CulturalHeritageObject1', 'dcterms:title', 'title'],
+ ['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'name'],
+ ['aac-ont:Person1', 'ElementsGr2:countryAssociatedWithThePerson', 'nationality'],
+ ['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birthDate'],
+ ['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'deathDate']]
+</Step1>To create an internal link among the semantic types determined in <Step1>, we need to select appropriate relations from <Knowledge1>. Here is how we create these links:
+
+1. A cultural heritage object (`aac-ont:CulturalHeritageObject`) is typically created by a person (`aac-ont:Person`). Thus, we use the relation `dcterms:creator` to link a cultural heritage object to its creator.
+2. We can also consider cultural heritage objects to be associated with one another based on the creator or type (e.g., as similar types of art). We can link cultural heritage objects using `'edm:isSimilarTo'` relations, but since each object is distinct (indicated by the title), they won't have these relations unless specified by other metadata. 
+
+Given that <Table> lists multiple artists and their artworks, and each artist has their nationality, birth date, and death date defined, the relationships in <Step2> can be minimal unless there is a clear relation such as collaboration or artwork relating events or places.
+
+<Step2>
+[['aac-ont:CulturalHeritageObject1', 'dcterms:creator', 'aac-ont:Person1'],
+ ['aac-ont:CulturalHeritageObject2', 'dcterms:creator', 'aac-ont:Person2'],
+ ['aac-ont:CulturalHeritageObject3', 'dcterms:creator', 'aac-ont:Person3']]
+</Step2>
+
+Here, each cultural heritage object (represented by its title) is linked to its corresponding artist (represented by name). Additional links related to shared properties or external relations (like places or events associated) could be added if appropriately supported by metadata, which current <Table> content does not explicitly support.

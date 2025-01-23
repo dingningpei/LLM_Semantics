@@ -1,0 +1,38 @@
+[
+    {
+        "No.":"7",
+        "Joueur":"Cristiano Ronaldo",
+        "Position":"4. Attaquant",
+        "Date de naissance":"5 février 1985",
+        "Age":"29",
+        "Selections":"110",
+        "Championnat":"Espagne",
+        "Club":"Real Madrid",
+        "Equipe":"Portugal",
+        "Classement FIFA":"4"
+    },
+    {
+        "No.":"1",
+        "Joueur":"Jefferson",
+        "Position":"1. Gardien",
+        "Date de naissance":"2 janvier 1983",
+        "Age":"31",
+        "Selections":"9",
+        "Championnat":"Bresil",
+        "Club":"Botafogo",
+        "Equipe":"Bresil",
+        "Classement FIFA":"3"
+    },
+    {
+        "No.":"10",
+        "Joueur":"Neymar",
+        "Position":"4. Attaquant",
+        "Date de naissance":"5 février 1992",
+        "Age":"22",
+        "Selections":"49",
+        "Championnat":"Espagne",
+        "Club":"Barcelona",
+        "Equipe":"Bresil",
+        "Classement FIFA":"3"
+    }
+]

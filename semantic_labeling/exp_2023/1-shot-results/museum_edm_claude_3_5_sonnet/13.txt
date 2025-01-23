@@ -1,0 +1,288 @@
+Based on the given table and the knowledge from the examples, I will map the attributes to the appropriate semantic types and properties from the ontology. Here's the Step1 for the given table:
+
+<Step1>
+[['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'name'],
+['aac-ont:Person1', 'ElementsGr2:countryAssociatedWithThePerson', 'nationality'],
+['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birthDate'],
+['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'deathDate']]
+</Step1>
+
+Reasoning:
+1. 'name' is mapped to 'ElementsGr2:nameOfThePerson' as it represents the full name of a person.
+2. 'nationality' is mapped to 'ElementsGr2:countryAssociatedWithThePerson' as it indicates the person's nationality.
+3. 'birthDate' is mapped to 'ElementsGr2:dateOfBirth' as it represents the year of birth.
+4. 'deathDate' is mapped to 'ElementsGr2:dateOfDeath' as it represents the year of death.
+
+All attributes are mapped to properties of 'aac-ont:Person1' as the table contains information about individual artists.Based on the Step1 output and the knowledge from <Knowledge3>, I will generate Step2 by creating internal links among the semantic types. Since all attributes in this case are related to the same entity (aac-ont:Person1), we don't need to create additional links between different semantic types. However, to comply with <Rule2> that all semantic types must be linked, we'll create a connection to a more general type that can encompass these person entities.
+
+<Step2>
+[['edm:Agent1', 'edm:hasMet', 'aac-ont:Person1']]
+</Step2>
+
+Reasoning:
+1. All attributes in <Step1> are already associated with 'aac-ont:Person1', so we don't need to create links between them.
+2. To ensure that the semantic type is not isolated, we create a link to a more general type 'edm:Agent1'.
+3. We use the 'edm:hasMet' relation to connect 'edm:Agent1' to 'aac-ont:Person1'. This relation is chosen because:
+   a) 'edm:Agent' is a parent class of 'aac-ont:Person' in the class hierarchy.
+   b) 'edm:hasMet' is a general relation that can be used to associate an agent with a person.
+4. This link satisfies <Rule2> by ensuring that 'aac-ont:Person1' is not isolated in the semantic graph.
+Note: In a more complex scenario with multiple entity types, we would create more links between different semantic types. In this case, since all attributes belong to the same entity type, we've created a minimal valid semantic graph structure.
+
+<Step1>
+[['aac-ont:CulturalHeritageObject1', 'dcterms:title', 'title'],
+['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'name'],
+['aac-ont:Person1', 'ElementsGr2:countryAssociatedWithThePerson', 'nationality'],
+['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birthDate'],
+['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'deathDate']]
+</Step1>
+
+Reasoning:
+1. 'title' is mapped to 'dcterms:title' for 'aac-ont:CulturalHeritageObject1' as it represents the title of an artwork.
+2. 'name' is mapped to 'ElementsGr2:nameOfThePerson' for 'aac-ont:Person1' as it represents the artist's name.
+3. 'nationality' is mapped to 'ElementsGr2:countryAssociatedWithThePerson' for 'aac-ont:Person1' as it represents the artist's nationality.
+4. 'birthDate' is mapped to 'ElementsGr2:dateOfBirth' for 'aac-ont:Person1' as it represents the artist's birth year.
+5. 'deathDate' is mapped to 'ElementsGr2:dateOfDeath' for 'aac-ont:Person1' as it represents the artist's death year.
+These mappings are consistent with the ontology and the examples provided in <Knowledge2>.
+
+<Step2>
+[['edm:EuropeanaAggregation1', 'edm:aggregatedCHO', 'aac-ont:CulturalHeritageObject1'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:creator', 'aac-ont:Person1'],
+['aac-ont:CulturalHeritageObject1', 'aac-ont:sitter', 'aac-ont:Person1']]
+</Step2>
+
+Reasoning:
+1. We use 'edm:EuropeanaAggregation1' as the root node to connect to 'aac-ont:CulturalHeritageObject1' using the 'edm:aggregatedCHO' relation. This is based on the pattern observed in the examples and ensures that the cultural heritage object is part of a larger aggregation.
+2. We connect 'aac-ont:CulturalHeritageObject1' to 'aac-ont:Person1' using the 'dcterms:creator' relation. This relationship represents that the person (artist) is the creator of the cultural heritage object (artwork).
+3. We also add an additional connection between 'aac-ont:CulturalHeritageObject1' and 'aac-ont:Person1' using the 'aac-ont:sitter' relation. While this might not always be applicable (as not all artworks depict the artist), it provides a potential connection that could be relevant in some cases, especially for portraits or self-portraits.
+These connections ensure that all semantic types are linked to each other, following <Rule2> from <Knowledge3>. The relationships are based on the ontology and the examples provided, and they logically connect the artwork (CulturalHeritageObject) with its creator (Person).
+
+<Step1>
+[['aac-ont:CulturalHeritageObject1', 'dcterms:title', 'title'],
+['edm:WebResource1', 'karma:classLink', 'photo'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:extent', 'dimensions'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:medium', 'technique'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:provenance', 'credittext'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:created', 'artyear'],
+['foaf:Document1', 'karma:classLink', 'link'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:description', 'artdesc'],
+['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'artist'],
+['aac-ont:Person1', 'ElementsGr2:countryAssociatedWithThePerson', 'nationality'],
+['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'artistBirth'],
+['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'artistDeath']]
+</Step1><Step2>
+[['edm:EuropeanaAggregation1', 'edm:aggregatedCHO', 'aac-ont:CulturalHeritageObject1'],
+['edm:EuropeanaAggregation1', 'edm:hasView', 'edm:WebResource1'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:creator', 'aac-ont:Person1'],
+['aac-ont:CulturalHeritageObject1', 'foaf:page', 'foaf:Document1'],
+['aac-ont:Person1', 'aac-ont:creatorOf', 'aac-ont:CulturalHeritageObject1']]
+</Step2><Step1>
+[['aac-ont:CulturalHeritageObject1', 'dcterms:description', 'description'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:title', 'title'],
+['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'artist'],
+['aac-ont:CulturalHeritageObject1', 'dc:subject', 'subjectTags'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:provenance', 'credit'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:medium', 'materials'],
+['edm:WebResource1', 'karma:classLink', 'imageURL'],
+['aac-ont:CulturalHeritageObject1', 'aac-ont:accessionNumber', 'accessionID'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:created', 'dateCreated'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:extent', 'dimensions'],
+['skos:Concept1', 'skos:prefLabel', 'techniqueType']]
+</Step1><Step2>
+[['edm:EuropeanaAggregation1', 'edm:aggregatedCHO', 'aac-ont:CulturalHeritageObject1'],
+['edm:EuropeanaAggregation1', 'edm:hasView', 'edm:WebResource1'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:creator', 'aac-ont:Person1'],
+['aac-ont:CulturalHeritageObject1', 'edm:hasType', 'skos:Concept1'],
+['aac-ont:CulturalHeritageObject1', 'foaf:depiction', 'edm:WebResource1']]
+</Step2><Step1>
+[['aac-ont:CulturalHeritageObject1', 'aac-ont:objectId', 'idNumber'],
+['skos:Concept1', 'skos:prefLabel', 'category'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:title', 'title'],
+['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'maker'],
+['aac-ont:Person1', 'ElementsGr2:countryAssociatedWithThePerson', 'makerBioCountry'],
+['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birthDate'],
+['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'deathDate'],
+['aac-ont:Place1', 'rdfs:label', 'placeMade'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:medium', 'materials'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:extent', 'measurements'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:description', 'description'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:provenance', 'creditLine'],
+['aac-ont:Organization1', 'foaf:name', 'owner'],
+['skos:Concept2', 'skos:prefLabel', 'option'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:created', 'createDate']]
+</Step1><Step2>
+[['edm:EuropeanaAggregation1', 'edm:aggregatedCHO', 'aac-ont:CulturalHeritageObject1'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:creator', 'aac-ont:Person1'],
+['aac-ont:CulturalHeritageObject1', 'edm:hasType', 'skos:Concept1'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:spatial', 'aac-ont:Place1'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:subject', 'skos:Concept2'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:provenance', 'aac-ont:Organization1']]
+</Step2><Step1>
+[['aac-ont:CulturalHeritageObject1', 'dcterms:title', 'title'],
+['foaf:Document1', 'karma:classLink', 'sourceURL'],
+['edm:WebResource1', 'karma:classLink', 'imageURL'],
+['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'artist'],
+['aac-ont:Person1', 'ElementsGr2:countryAssociatedWithThePerson', 'nationality'],
+['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birthDate'],
+['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'deathDate'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:created', 'creationDate'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:medium', 'materials'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:extent', 'dimensions'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:provenance', 'creditLine'],
+['aac-ont:CulturalHeritageObject1', 'aac-ont:accessionNumber', 'accessionNumber'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:description', 'galleryLabel'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:provenance', 'provenance'],
+['foaf:Document2', 'karma:classLink', 'relatedArtworksURL'],
+['aac-ont:CulturalHeritageObject2', 'dcterms:title', 'relatedArtworksTitle'],
+['skos:Concept1', 'skos:prefLabel', 'keywords']]
+</Step1><Step2>
+[['edm:EuropeanaAggregation1', 'edm:aggregatedCHO', 'aac-ont:CulturalHeritageObject1'],
+['edm:EuropeanaAggregation1', 'edm:hasView', 'edm:WebResource1'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:creator', 'aac-ont:Person1'],
+['aac-ont:CulturalHeritageObject1', 'foaf:page', 'foaf:Document1'],
+['aac-ont:CulturalHeritageObject1', 'edm:isRelatedTo', 'aac-ont:CulturalHeritageObject2'],
+['aac-ont:CulturalHeritageObject2', 'foaf:page', 'foaf:Document2'],
+['aac-ont:CulturalHeritageObject1', 'dc:subject', 'skos:Concept1']]
+</Step2><Step1>
+[['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'artistName'],
+['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birthDate'],
+['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'deathDate'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:medium', 'subtypeOfArt'],
+['skos:Concept1', 'skos:prefLabel', 'typeOfArt'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:title', 'title'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:created', 'dateMade'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:provenance', 'credit'],
+['aac-ont:CulturalHeritageObject1', 'dc:subject', 'keywords'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:description', 'inscription'],
+['aac-ont:CulturalHeritageObject1', 'aac-ont:accessionNumber', 'accessionID'],
+['edm:WebResource1', 'karma:classLink', 'picURL'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:extent', 'dimensions']]
+</Step1><Step2>
+[['edm:EuropeanaAggregation1', 'edm:aggregatedCHO', 'aac-ont:CulturalHeritageObject1'],
+['edm:EuropeanaAggregation1', 'edm:hasView', 'edm:WebResource1'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:creator', 'aac-ont:Person1'],
+['aac-ont:CulturalHeritageObject1', 'edm:hasType', 'skos:Concept1'],
+['aac-ont:Person1', 'aac-ont:creatorOf', 'aac-ont:CulturalHeritageObject1']]
+</Step2><Step1>
+[['aac-ont:CulturalHeritageObject1', 'dcterms:title', 'title'],
+['foaf:Document1', 'karma:classLink', 'sourceURL'],
+['edm:WebResource1', 'karma:classLink', 'imageURL'],
+['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'artist'],
+['aac-ont:Person1', 'ElementsGr2:countryAssociatedWithThePerson', 'nationality'],
+['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birthDate'],
+['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'deathDate'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:created', 'creationDate'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:medium', 'materials'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:extent', 'dimensions'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:provenance', 'creditLine'],
+['aac-ont:CulturalHeritageObject1', 'aac-ont:accessionNumber', 'accessionNumber'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:description', 'galleryLabel'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:provenance', 'provenance'],
+['foaf:Document2', 'karma:classLink', 'relatedArtworksURL'],
+['aac-ont:CulturalHeritageObject2', 'dcterms:title', 'relatedArtworksTitle'],
+['skos:Concept1', 'skos:prefLabel', 'keywords']]
+</Step1><Step2>
+[['edm:EuropeanaAggregation1', 'edm:aggregatedCHO', 'aac-ont:CulturalHeritageObject1'],
+['edm:EuropeanaAggregation1', 'edm:hasView', 'edm:WebResource1'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:creator', 'aac-ont:Person1'],
+['aac-ont:CulturalHeritageObject1', 'foaf:page', 'foaf:Document1'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:subject', 'skos:Concept1'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:relation', 'aac-ont:CulturalHeritageObject2'],
+['aac-ont:CulturalHeritageObject2', 'foaf:page', 'foaf:Document2']]
+</Step2><Step1>
+[['aac-ont:CulturalHeritageObject1', 'aac-ont:objectId', 'ID'],
+['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'artistName'],
+['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birthDate'],
+['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'deathDate'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:title', 'title'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:created', 'artworkDate'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:description', 'artworkDetails'],
+['aac-ont:CulturalHeritageObject1', 'aac-ont:accessionNumber', 'origin'],
+['edm:WebResource1', 'karma:classLink', 'imageURL']]
+</Step1><Step2>
+[['edm:EuropeanaAggregation1', 'edm:aggregatedCHO', 'aac-ont:CulturalHeritageObject1'],
+['edm:EuropeanaAggregation1', 'edm:hasView', 'edm:WebResource1'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:creator', 'aac-ont:Person1']]
+</Step2><Step1>
+[['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'artistName'],
+['aac-ont:Person1', 'ElementsGr2:countryAssociatedWithThePerson', 'nationality'],
+['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birthDate'],
+['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'deathDate'],
+['aac-ont:Person1', 'dcterms:description', 'longBiography'],
+['aac-ont:Person1', 'ElementsGr2:professionOrOccupation', 'occupation']]
+</Step1><Step2>
+[['aac-ont:CulturalHeritageObject1', 'dcterms:creator', 'aac-ont:Person1']]
+</Step2>
+
+Explanation:
+Although there is no direct artwork information in the given table, we can infer that this table is about artists who have created cultural heritage objects. Therefore, we can establish a relationship between a hypothetical cultural heritage object and the person (artist) described in the table.
+
+The relation 'dcterms:creator' is appropriate to link a cultural heritage object to its creator (the artist). This relation is derived from the basic relation [edm:ProvidedCHO, dc:creator, edm:Agent] in the <Knowledge1>, where aac-ont:CulturalHeritageObject is a subclass of edm:ProvidedCHO, and aac-ont:Person is a subclass of edm:Agent.
+
+This step ensures that all semantic types (in this case, aac-ont:Person1) are linked to other types, satisfying <Rule2> from <Knowledge3>.
+
+<Step1>
+[['aac-ont:CulturalHeritageObject1', 'aac-ont:objectId', 'objectID'],
+['aac-ont:CulturalHeritageObject1', 'aac-ont:accessionNumber', 'objectNumber'],
+['skos:Concept1', 'skos:prefLabel', 'classification'],
+['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'alphaSort'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:title', 'title'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:created', 'dated'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:medium', 'medium'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:extent', 'dimensions'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:description', 'description']]
+</Step1><Step2>
+[['edm:EuropeanaAggregation1', 'edm:aggregatedCHO', 'aac-ont:CulturalHeritageObject1'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:creator', 'aac-ont:Person1'],
+['aac-ont:CulturalHeritageObject1', 'edm:hasType', 'skos:Concept1']]
+</Step2><Step1>
+[['edm:WebResource1', 'karma:classLink', 'imageURL'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:title', 'title'],
+['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'name'],
+['aac-ont:Person1', 'ElementsGr2:countryAssociatedWithThePerson', 'nationality'],
+['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birth'],
+['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'death'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:created', 'date'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:medium', 'medium'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:extent', 'dimensions'],
+['skos:Concept1', 'skos:prefLabel', 'classification'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:provenance', 'credit'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:provenance', 'provenance'],
+['aac-ont:CulturalHeritageObject1', 'aac-ont:accessionNumber', 'accession']]
+</Step1><Step2>
+[['edm:EuropeanaAggregation1', 'edm:aggregatedCHO', 'aac-ont:CulturalHeritageObject1'],
+['edm:EuropeanaAggregation1', 'edm:hasView', 'edm:WebResource1'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:creator', 'aac-ont:Person1'],
+['aac-ont:CulturalHeritageObject1', 'edm:hasType', 'skos:Concept1'],
+['aac-ont:Person1', 'foaf:made', 'aac-ont:CulturalHeritageObject1']]
+</Step2><Step1>
+[['aac-ont:CulturalHeritageObject1', 'aac-ont:accessionNumber', 'access'],
+['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'artist'],
+['aac-ont:Person1', 'ElementsGr2:countryAssociatedWithThePerson', 'nationality'],
+['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birthDate'],
+['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'deathDate'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:title', 'title'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:created', 'made'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:provenance', 'prov'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:extent', 'dim'],
+['edm:WebResource1', 'karma:classLink', 'imageURL']]
+</Step1><Step2>
+[['edm:EuropeanaAggregation1', 'edm:aggregatedCHO', 'aac-ont:CulturalHeritageObject1'],
+['edm:EuropeanaAggregation1', 'edm:hasView', 'edm:WebResource1'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:creator', 'aac-ont:Person1'],
+['aac-ont:Person1', 'aac-ont:creatorOf', 'aac-ont:CulturalHeritageObject1']]
+</Step2><Step1>
+[['aac-ont:CulturalHeritageObject1', 'dcterms:title', 'titleofartwork'],
+['aac-ont:Person1', 'ElementsGr2:nameOfThePerson', 'artistName'],
+['aac-ont:Person1', 'ElementsGr2:countryAssociatedWithThePerson', 'nationality'],
+['aac-ont:Person1', 'ElementsGr2:dateOfBirth', 'birthYear'],
+['aac-ont:Person1', 'ElementsGr2:dateOfDeath', 'deathYear'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:medium', 'typeofartwork'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:extent', 'dimensions'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:provenance', 'credit'],
+['aac-ont:CulturalHeritageObject1', 'aac-ont:accessionNumber', 'accessionID'],
+['edm:WebResource1', 'karma:classLink', 'imageURL']]
+</Step1><Step2>
+[['edm:EuropeanaAggregation1', 'edm:aggregatedCHO', 'aac-ont:CulturalHeritageObject1'],
+['edm:EuropeanaAggregation1', 'edm:hasView', 'edm:WebResource1'],
+['aac-ont:CulturalHeritageObject1', 'dcterms:creator', 'aac-ont:Person1']]
+</Step2>

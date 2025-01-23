@@ -1,0 +1,35 @@
+[
+    {
+        "ID":"27824",
+        "artistName":"Ben Abril",
+        "birthDate":"1923",
+        "deathDate":"1995",
+        "title":"The Old Hall of Records",
+        "artworkDate":"1966",
+        "artworkDetails":"Painting Oil on canvas 48 3/16 x 60 1/16 in. 122.4 x 152.56 cm Signed lower right: BEN ABRIL. Inscribed and dated lower left: OLD HALL OF RECORDS / LOS ANGELES CALIF. 1966 Museum Associates Acquisition Fund",
+        "origin":"M.67.89",
+        "imageURL":"http://collectionsonline.lacma.org/MWEBimages/aa_mm/full/M67_89.jpg"
+    },
+    {
+        "ID":"10763",
+        "artistName":"Wayman Adams",
+        "birthDate":"1883",
+        "deathDate":"1959",
+        "title":"Portrait of William Preston Harrison",
+        "artworkDate":"1924",
+        "artworkDetails":"Painting Oil on canvas 52 1/16 x 40 1/16 in. 132.24 x 101.76 cm Mr. and Mrs. William Preston Harrison Collection",
+        "origin":"25.6.2",
+        "imageURL":"http://collectionsonline.lacma.org/MWEBimages/all%20departments/thumb/25_6_2.jpg"
+    },
+    {
+        "ID":"48602",
+        "artistName":"John White Alexander",
+        "birthDate":"1856",
+        "deathDate":"1915",
+        "title":"Portrait of Mrs. John White Alexander",
+        "artworkDate":"1902",
+        "artworkDetails":"Painting Oil on canvas 62 1/4 x 52 1/8 in. 158.2 x 132.4 cm Gift of Dr. and Mrs. Matthew S. Mickiewicz",
+        "origin":"M.81.182",
+        "imageURL":"http://collectionsonline.lacma.org/MWEBimages/aa_mm/full/M81_182.jpg"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "Number":"1",
+        "Team":"South Africa",
+        "FullName":"Moeneeb Josephs",
+        "Position":"GK",
+        "ClubCountry":"RSA",
+        "Club":"Orlando Pirates FC",
+        "IsCaptain":"FALSE",
+        "DateOfBirth":"5/19/1980"
+    },
+    {
+        "Number":"2",
+        "Team":"South Africa",
+        "FullName":"Siboniso Gaxa",
+        "Position":"DF",
+        "ClubCountry":"RSA",
+        "Club":"Mamelodi Sundowns F.C.",
+        "IsCaptain":"FALSE",
+        "DateOfBirth":"4/6/1984"
+    },
+    {
+        "Number":"3",
+        "Team":"South Africa",
+        "FullName":"Tsepo Masilela",
+        "Position":"DF",
+        "ClubCountry":"ISR",
+        "Club":"Maccabi Haifa F.C.",
+        "IsCaptain":"FALSE",
+        "DateOfBirth":"5/5/1985"
+    }
+]

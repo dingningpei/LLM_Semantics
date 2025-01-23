@@ -1,0 +1,20 @@
+[
+    {
+        "name":"Cristiano Ronaldo",
+        "foot":"Right",
+        "position":"A",
+        "height":"186"
+    },
+    {
+        "name":"Lionel Messi",
+        "foot":"Left",
+        "position":"A",
+        "height":"169"
+    },
+    {
+        "name":"Neymar",
+        "foot":"Right",
+        "position":"A",
+        "height":"173"
+    }
+]

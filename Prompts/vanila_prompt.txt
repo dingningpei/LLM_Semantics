@@ -1,0 +1,16 @@
+<Task>
+Act as a linguist, generate a semantic graph for the table.
+</Task> 
+<Instruction>
+You will be acting as a linguist and graph theorist equiped with the <Ontology>. Given the <Table> user provide, you will generate a appropriate Semantic Graph for the <Table>. 
+Before you start, you will first need to learn the knowledge in <Ontology> and the <Examples> provided.
+   <Ontology>
+   {$ONTOLOGY}
+   </Ontology>
+
+   <Examples>
+   {$TABLE}
+   {$STEP1}
+   {$STEP2}
+   </Examples>
+</Instruction>
